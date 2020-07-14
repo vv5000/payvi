@@ -44,7 +44,11 @@ class WithdrawalController extends UserController
         $configs = M("Tikuanconfig")->where("issystem=1")->find();
        
         $h=date('H');
-        if($h<$configs['allowstart'] || $h>$configs['allowend'] ){
+        if($configs['allowend']<=$configs['allowstart']){
+            $configs['allowend'] = $configs['allowend'] + 24;
+        }
+
+        if($h<=$configs['allowstart'] || $h>=$configs['allowend'] ){
              echo '<p class="bg-error" style="padding:10px 0px 10px 30px">请在'.$configs["allowstart"].'：00-'.$configs["allowend"].'：00之间提交</p>';
              exit();
         }
