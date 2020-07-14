@@ -1,0 +1,42 @@
+【2020-05-21 10:31:16】
+订单号：20200521103052995149
+通知地址：http://pay.365cpb.com/Pay_Charges_notify.html
+通知报文：memberid=20002&orderid=C20200521103052706364&transaction_id=20200521103052995149&amount=100.0000&datetime=20200521103116&returncode=00&sign=8C98D4C93FAC119EB0197F1B8FBE1845&attach=
+HTTP状态：
+返回：OK
+
+【2020-05-21 10:31:18】
+订单号：20200521103052995149
+通知地址：http://pay.365cpb.com/Pay_Charges_notify.html
+通知报文：memberid=20002&orderid=C20200521103052706364&transaction_id=20200521103052995149&amount=100.0000&datetime=20200521103118&returncode=00&sign=579024FC45DDD78034EC4CE66B73762C&attach=
+HTTP状态：
+返回：OK
+
+【2020-05-21 10:31:20】
+订单号：20200521103052995149
+通知地址：http://pay.365cpb.com/Pay_Charges_notify.html
+通知报文：memberid=20002&orderid=C20200521103052706364&transaction_id=20200521103052995149&amount=100.0000&datetime=20200521103120&returncode=00&sign=B9FD009B09F06BDDC3F5713EBFDADF65&attach=
+HTTP状态：
+返回：OK
+
+【2020-05-21 11:01:36】
+订单号：20200521105607555052
+通知地址：http://pay.365cpb.com/Pay_Charges_notify.html
+通知报文：memberid=20002&orderid=C20200521105606816485&transaction_id=20200521105607555052&amount=100.0000&datetime=20200521110136&returncode=00&sign=AF8111203F3C7B214C98B9E0C2E10422&attach=
+HTTP状态：
+返回：OK
+
+【2020-05-21 11:01:38】
+订单号：20200521105607555052
+通知地址：http://pay.365cpb.com/Pay_Charges_notify.html
+通知报文：memberid=20002&orderid=C20200521105606816485&transaction_id=20200521105607555052&amount=100.0000&datetime=20200521110138&returncode=00&sign=5AEE85E8D52336F16EDE26CC32988168&attach=
+HTTP状态：
+返回：OK
+
+【2020-05-21 11:01:40】
+订单号：20200521105607555052
+通知地址：http://pay.365cpb.com/Pay_Charges_notify.html
+通知报文：memberid=20002&orderid=C20200521105606816485&transaction_id=20200521105607555052&amount=100.0000&datetime=20200521110140&returncode=00&sign=E7A7A573D5A3433E0122DE3E3C9EA8FA&attach=
+HTTP状态：
+返回：OK
+

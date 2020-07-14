@@ -1,0 +1,14 @@
+【2020-03-13 17:15:16】
+订单号：20200313171412529910
+通知地址：https://wanjia365.cn//Public.server.do
+通知报文：memberid=191095866&orderid=X2003131714117335&transaction_id=20200313171412529910&amount=100.0000&datetime=20200313171515&returncode=00&sign=44D5EE1FEAB4747B804CFEC955AD7D4F&attach=487,http://47.56.193.165/Account.jhrecharge.do
+HTTP状态：
+返回：OK55
+
+【2020-03-13 17:26:59】
+订单号：20200313172614544999
+通知地址：https://wanjia365.cn//Public.server.do
+通知报文：memberid=191095866&orderid=U2003131726124010&transaction_id=20200313172614544999&amount=100.0000&datetime=20200313172659&returncode=00&sign=800F5AA28D197355E84F45E7A77F22FD&attach=242,http://47.56.193.165/Account.jhrecharge.do
+HTTP状态：
+返回：OK55
+

@@ -1,0 +1,259 @@
+【2019-11-14 00:12:44】
+订单号：20191114000204995110
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11140002045130&transaction_id=20191114000204995110&amount=200.0000&datetime=20191114001242&returncode=00&sign=34DA05E5B69EBA1BB43691C5A359B795&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 00:21:41】
+订单号：20191114001944481019
+通知地址：http://bspay.7171r.com/Notify/Async/apiToken/D41BD23595D3EF7D3806D4F43D705ADE
+通知报文：memberid=191165591&orderid=C2191957394808425551&transaction_id=20191114001944481019&amount=500.0000&datetime=20191114002140&returncode=00&sign=45D510ECC13ED9A50EA5C95244AC483A&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-14 00:57:14】
+订单号：20191113213603515097
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11132136035090&transaction_id=20191113213603515097&amount=101.0000&datetime=20191114005713&returncode=00&sign=E1DA258DA8D5EDFAC16B178FFF30F939&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 11:39:59】
+订单号：20191114113353494810
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141131257170&transaction_id=20191114113353494810&amount=101.0000&datetime=20191114113958&returncode=00&sign=43F76B056523824B5A35BA1ABD8C9580&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 11:44:12】
+订单号：20191113193838101994
+通知地址：http://bspay.7171r.com/Notify/Async/apiToken/D41BD23595D3EF7D3806D4F43D705ADE
+通知报文：memberid=191165591&orderid=C2191989911541769581&transaction_id=20191113193838101994&amount=100.0000&datetime=20191114114409&returncode=00&sign=663D827471A09BF1AD59FF2FFDCD15FD&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-14 11:44:16】
+订单号：20191113193153571025
+通知地址：http://bspay.7171r.com/Notify/Async/apiToken/D41BD23595D3EF7D3806D4F43D705ADE
+通知报文：memberid=191165591&orderid=C2191946519205003442&transaction_id=20191113193153571025&amount=1000.0000&datetime=20191114114416&returncode=00&sign=1B9D9020F30D46EC79203DB9D021C61F&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-14 11:44:23】
+订单号：20191113192611515397
+通知地址：http://bspay.7171r.com/Notify/Async/apiToken/D41BD23595D3EF7D3806D4F43D705ADE
+通知报文：memberid=191165591&orderid=C2191932422850700565&transaction_id=20191113192611515397&amount=500.0000&datetime=20191114114423&returncode=00&sign=A44D7F69068ED30B2035D0486346D4AF&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-14 12:09:24】
+订单号：20191114120726101485
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141204581954&transaction_id=20191114120726101485&amount=600.0000&datetime=20191114120923&returncode=00&sign=78672493E16FC25ABBB44973E53679C9&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 13:18:55】
+订单号：20191114131613100981
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141313455373&transaction_id=20191114131613100981&amount=200.0000&datetime=20191114131852&returncode=00&sign=D5CAB4E9081289239009AF2DD186E944&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 13:57:22】
+订单号：20191114135156995053
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141349291004&transaction_id=20191114135156995053&amount=101.0000&datetime=20191114135720&returncode=00&sign=36EB5111B7CDD5B52E20091AC3FF2616&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 14:41:58】
+订单号：20191114143921575697
+通知地址：https://www.jiufupay.cn/Pay_Charges_notify.html
+通知报文：memberid=20002&orderid=C20191114143921893086&transaction_id=20191114143921575697&amount=100.0000&datetime=20191114144157&returncode=00&sign=46F33FA1120D0FD77CE5AA6A5C45B5B3&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-14 15:21:35】
+订单号：20191114144549100531
+通知地址：https://www.jiufupay.cn/Pay_Charges_notify.html
+通知报文：memberid=20002&orderid=C20191114144549231130&transaction_id=20191114144549100531&amount=100.0000&datetime=20191114152135&returncode=00&sign=9BD5258BFACB9BEDE81AE5647FBE2445&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-14 15:33:06】
+订单号：20191114153103554953
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141528361983&transaction_id=20191114153103554953&amount=101.0000&datetime=20191114153305&returncode=00&sign=15126AC77B0B077C9391538D36074933&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 17:06:57】
+订单号：20191114165945495153
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141657175000&transaction_id=20191114165945495153&amount=101.0000&datetime=20191114170656&returncode=00&sign=56997AED2C03BC1897CF3F32A45CA33A&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 17:57:36】
+订单号：20191114175533539948
+通知地址：http://d33695bd.ngrok.io/test/notify
+通知报文：memberid=191209912&orderid=1000000020191114175257074&transaction_id=20191114175533539948&amount=100.0000&datetime=20191114175735&returncode=00&sign=1B56821A95D6B2676146FCB8AB5A78BF&attach=
+HTTP状态：
+返回：
+
+【2019-11-14 18:14:00】
+订单号：20191114181119555050
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141808515229&transaction_id=20191114181119555050&amount=300.0000&datetime=20191114181358&returncode=00&sign=69767269887385B733A838C4BFB8C8FA&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 18:20:28】
+订单号：20191114181904565657
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141816373879&transaction_id=20191114181904565657&amount=101.0000&datetime=20191114182026&returncode=00&sign=5CEB88E3EA87293BB4E0464CB24A20C4&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 18:24:12】
+订单号：20191113222713494897
+通知地址：https://www.jiufupay.cn/Pay_Charges_notify.html
+通知报文：memberid=20002&orderid=C20191113222712978538&transaction_id=20191113222713494897&amount=100.0000&datetime=20191114182411&returncode=00&sign=4EBA76CF662CDB2980D08DC993C32FBE&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-14 18:48:39】
+订单号：20191114184628525055
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141844018030&transaction_id=20191114184628525055&amount=101.0000&datetime=20191114184837&returncode=00&sign=3BFC8765D9722AA4DFD247808C9C9DFB&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 19:15:38】
+订单号：20191114191348995797
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141911216168&transaction_id=20191114191348995797&amount=101.0000&datetime=20191114191537&returncode=00&sign=DD18614324913DFB1BD16BD244E0D59B&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 19:17:11】
+订单号：20191114191536565057
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141913094030&transaction_id=20191114191536565057&amount=101.0000&datetime=20191114191710&returncode=00&sign=34C62459B93395FC06924CA162608FF2&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 19:19:31】
+订单号：20191114191809499755
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141915421876&transaction_id=20191114191809499755&amount=200.1000&datetime=20191114191929&returncode=00&sign=1B15ABAB391355760A65828045D52C97&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 19:28:04】
+订单号：20191114190506509997
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141902391798&transaction_id=20191114190506509997&amount=101.0000&datetime=20191114192802&returncode=00&sign=FD4A358F8D82FD2203D2B9EDF69D2B93&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 19:28:08】
+订单号：20191114190506509997
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141902391798&transaction_id=20191114190506509997&amount=101.0000&datetime=20191114192808&returncode=00&sign=EE51234C1DEDE6C086D30838E65A82C7&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 19:28:09】
+订单号：20191114190506509997
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141902391798&transaction_id=20191114190506509997&amount=101.0000&datetime=20191114192809&returncode=00&sign=C05A4B702662872EE3EA8EE732C7364F&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 19:28:32】
+订单号：20191114190506509997
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141902391798&transaction_id=20191114190506509997&amount=101.0000&datetime=20191114192832&returncode=00&sign=FD7F7487912E880B1693B210A745F47F&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 19:30:25】
+订单号：20191114192900999955
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141926335518&transaction_id=20191114192900999955&amount=101.0000&datetime=20191114193024&returncode=00&sign=30EB168673537235DE2B3DD2954BAEC0&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 19:30:45】
+订单号：20191114192513574910
+通知地址：http://bspay.7171r.com/Notify/Async/apiToken/D41BD23595D3EF7D3806D4F43D705ADE
+通知报文：memberid=191165591&orderid=C2191928661807616204&transaction_id=20191114192513574910&amount=200.0000&datetime=20191114193045&returncode=00&sign=7390BF7B35B3C2602778228D31914A43&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-14 19:30:53】
+订单号：20191114192513574910
+通知地址：http://bspay.7171r.com/Notify/Async/apiToken/D41BD23595D3EF7D3806D4F43D705ADE
+通知报文：memberid=191165591&orderid=C2191928661807616204&transaction_id=20191114192513574910&amount=200.0000&datetime=20191114193052&returncode=00&sign=B0A11C86047D0281AF5C8DF1374D17A2&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-14 19:31:03】
+订单号：20191114192852529755
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11141926256178&transaction_id=20191114192852529755&amount=400.5000&datetime=20191114193102&returncode=00&sign=ACB83E7B51719D3DB87E7A492385AA58&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-14 23:07:37】
+订单号：20191114230633575152
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911142306282387&transaction_id=20191114230633575152&amount=200.0000&datetime=20191114230737&returncode=00&sign=2162AC222BB4F6212DF498ED2F8F3FC5&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-14 23:12:56】
+订单号：20191114231149535310
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911142311482451&transaction_id=20191114231149535310&amount=100.0000&datetime=20191114231256&returncode=00&sign=7BFD4C962FA12435D8A0B816F6CE03E3&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-14 23:13:28】
+订单号：20191114223105579852
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911142231006971&transaction_id=20191114223105579852&amount=100.0400&datetime=20191114231318&returncode=00&sign=CC00709BEF960CBA5D9B8D10F639C34F&attach=
+HTTP状态：
+返回：
+
+【2019-11-14 23:14:27】
+订单号：20191114230255102995
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911142302531743&transaction_id=20191114230255102995&amount=1800.0600&datetime=20191114231427&returncode=00&sign=1A978C41A5FE4C95BDFBC15DE01E08A2&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-14 23:19:13】
+订单号：20191114231752485054
+通知地址：http://bspay.7171r.com/Notify/Async/apiToken/D41BD23595D3EF7D3806D4F43D705ADE
+通知报文：memberid=191165591&orderid=C2191948891512156533&transaction_id=20191114231752485054&amount=300.0000&datetime=20191114231911&returncode=00&sign=8ABEA20BBA0FEA28ECA263535745502E&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-14 23:22:25】
+订单号：20191114230151102515
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911142301479120&transaction_id=20191114230151102515&amount=1800.0100&datetime=20191114232223&returncode=00&sign=521B3DF9067020C8DB029A8286E7F39C&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-14 23:22:36】
+订单号：20191114230151102515
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911142301479120&transaction_id=20191114230151102515&amount=1800.0100&datetime=20191114232226&returncode=00&sign=C7BC0A21D78E23EDC1AA0D89E9A59CF5&attach=
+HTTP状态：
+返回：
+

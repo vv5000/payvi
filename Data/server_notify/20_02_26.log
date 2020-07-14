@@ -1,0 +1,369 @@
+【2020-02-26 21:26:39】
+订单号：20200226212608485650
+通知地址：http://111.231.203.123:8664/Mpay_Notice.aspx
+通知报文：memberid=200245386&orderid=0b31fa48f2e34feb8554e&transaction_id=20200226212608485650&amount=500.0000&datetime=20200226212637&returncode=00&sign=1545C540867F82AF9FC6BE3D55AF60A0&attach=121540
+HTTP状态：
+返回：签名无效,回掉失败
+
+【2020-02-26 21:41:37】
+订单号：20200226213846549749
+通知地址：http://111.231.203.123:8664/Mpay_Notice.aspx
+通知报文：memberid=200245386&orderid=f36c1647c5f342eab4d18&transaction_id=20200226213846549749&amount=500.0000&datetime=20200226214137&returncode=00&sign=CCC22EA5EF26DED7378CBB5044B40A24&attach=121537
+HTTP状态：
+返回：签名无效,回掉失败
+
+【2020-02-26 21:41:43】
+订单号：20200226213846549749
+通知地址：http://111.231.203.123:8664/Mpay_Notice.aspx
+通知报文：memberid=200245386&orderid=f36c1647c5f342eab4d18&transaction_id=20200226213846549749&amount=500.0000&datetime=20200226214143&returncode=00&sign=D92E99C193F490FFC89D81B3AB5CF65B&attach=121537
+HTTP状态：
+返回：签名无效,回掉失败
+
+【2020-02-26 21:41:50】
+订单号：20200226213846549749
+通知地址：http://111.231.203.123:8664/Mpay_Notice.aspx
+通知报文：memberid=200245386&orderid=f36c1647c5f342eab4d18&transaction_id=20200226213846549749&amount=500.0000&datetime=20200226214150&returncode=00&sign=3D60920C7E9F60697B11EBF9AC40FBEA&attach=121537
+HTTP状态：
+返回：签名无效,回掉失败
+
+【2020-02-26 21:41:54】
+订单号：20200226213846549749
+通知地址：http://111.231.203.123:8664/Mpay_Notice.aspx
+通知报文：memberid=200245386&orderid=f36c1647c5f342eab4d18&transaction_id=20200226213846549749&amount=500.0000&datetime=20200226214150&returncode=00&sign=3D60920C7E9F60697B11EBF9AC40FBEA&attach=121537
+HTTP状态：
+返回：签名无效,回掉失败
+
+【2020-02-26 21:42:22】
+订单号：20200226213846549749
+通知地址：http://111.231.203.123:8664/Mpay_Notice.aspx
+通知报文：memberid=200245386&orderid=f36c1647c5f342eab4d18&transaction_id=20200226213846549749&amount=500.0000&datetime=20200226214221&returncode=00&sign=901B8F6E9773C1FB27D3C45C38DAB732&attach=121537
+HTTP状态：
+返回：签名无效,回掉失败
+
+【2020-02-26 21:42:38】
+订单号：20200226213846549749
+通知地址：http://111.231.203.123:8664/Mpay_Notice.aspx
+通知报文：memberid=200245386&orderid=f36c1647c5f342eab4d18&transaction_id=20200226213846549749&amount=500.0000&datetime=20200226214237&returncode=00&sign=60605528A28D5069E6799A94BA85F3C5&attach=121537
+HTTP状态：
+返回：签名无效,回掉失败
+
+【2020-02-26 21:43:34】
+订单号：20200226213846549749
+通知地址：http://111.231.203.123:8664/Mpay_Notice.aspx
+通知报文：memberid=200245386&orderid=f36c1647c5f342eab4d18&transaction_id=20200226213846549749&amount=500.0000&datetime=20200226214324&returncode=00&sign=054E6E42811645F606184183B56A0B05&attach=121537
+HTTP状态：
+返回：
+
+【2020-02-26 21:44:33】
+订单号：20200226213846549749
+通知地址：http://111.231.203.123:8664/Mpay_Notice.aspx
+通知报文：memberid=200245386&orderid=f36c1647c5f342eab4d18&transaction_id=20200226213846549749&amount=500.0000&datetime=20200226214432&returncode=00&sign=BFBC28C70038D59AF68611BBFBCE70F3&attach=121537
+HTTP状态：
+返回：签名无效,回掉失败
+
+【2020-02-26 21:49:13】
+订单号：20200226213846549749
+通知地址：http://111.231.203.123:8664/Mpay_Notice.aspx
+通知报文：memberid=200245386&orderid=f36c1647c5f342eab4d18&transaction_id=20200226213846549749&amount=500.0000&datetime=20200226214912&returncode=00&sign=EA6AFE5C22F49F0C7EC525CEB7800208&attach=121537
+HTTP状态：
+返回：签名无效,回掉失败
+
+【2020-02-26 21:54:35】
+订单号：20200226213846549749
+通知地址：http://111.231.203.123:8664/Mpay_Notice.aspx
+通知报文：memberid=200245386&orderid=f36c1647c5f342eab4d18&transaction_id=20200226213846549749&amount=500.0000&datetime=20200226215434&returncode=00&sign=966B90CE8DFEF7A6E53EFC3D7DC70BCE&attach=121537
+HTTP状态：
+返回：签名无效,回掉失败
+
+【2020-02-26 22:03:17】
+订单号：20200226213846549749
+通知地址：http://111.231.203.123:8664/Mpay_Notice.aspx
+通知报文：memberid=200245386&orderid=f36c1647c5f342eab4d18&transaction_id=20200226213846549749&amount=500.0000&datetime=20200226220316&returncode=00&sign=783703E3B56C881930EF07363965CBCB&attach=121537
+HTTP状态：
+返回：<!DOCTYPE html>
+<html>
+    <head>
+        <title>“,”附近有语法错误。</title>
+        <meta name="viewport" content="width=device-width" />
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Consolas","Lucida Console",Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:pointer; }
+         @media screen and (max-width: 639px) {
+          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }
+         }
+         @media screen and (max-width: 479px) {
+          pre { width: 280px; }
+         }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>“/”应用程序中的服务器错误。<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>“,”附近有语法错误。</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> 说明: </b>执行当前 Web 请求期间，出现未经处理的异常。请检查堆栈跟踪信息，以了解有关该错误以及代码中导致错误的出处的详细信息。
+
+            <br><br>
+
+            <b> 异常详细信息: </b>System.Data.SqlClient.SqlException: “,”附近有语法错误。<br><br>
+
+            <b>源错误:</b> <br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+行 125:		using (conn)  
+行 126:		{  
+<font color=red>行 127:			cmd.ExecuteNonQuery(); //执行语句 
+</font>行 128:			conn.Close();		
+行 129:		}  </pre>                      </code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <b> 源文件: </b> d:\网站\支付\Mpay_Notice.aspx.cs<b> &nbsp;&nbsp; 行: </b> 127
+            <br><br>
+
+            <b>堆栈跟踪:</b> <br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+[SqlException (0x80131904): “,”附近有语法错误。]
+   System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction) +3318656
+   System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose) +334
+   System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady) +4289
+   System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite) +1339
+   System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean&amp; usedCache, Boolean asyncWrite, Boolean inRetry) +434
+   System.Data.SqlClient.SqlCommand.ExecuteNonQuery() +391
+   ZhenXin_Notice.AddOrderInfo(String sqlstr) in d:\网站\支付\Mpay_Notice.aspx.cs:127
+   ZhenXin_Notice.Page_Load(Object sender, EventArgs e) in d:\网站\支付\Mpay_Notice.aspx.cs:61
+   System.Web.UI.Control.OnLoad(EventArgs e) +108
+   System.Web.UI.Control.LoadRecursive() +90
+   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +1533
+</pre>                      </code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <hr width=100% size=1 color=silver>
+
+            <b>版本信息:</b>&nbsp;Microsoft .NET Framework 版本:4.0.30319; ASP.NET 版本:4.8.4069.0
+
+            </font>
+
+    </body>
+</html>
+<!-- 
+[SqlException]: “,”附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 ZhenXin_Notice.AddOrderInfo(String sqlstr) 位置 d:\网站\支付\Mpay_Notice.aspx.cs:行号 127
+   在 ZhenXin_Notice.Page_Load(Object sender, EventArgs e) 位置 d:\网站\支付\Mpay_Notice.aspx.cs:行号 61
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[HttpUnhandledException]: 引发类型为“System.Web.HttpUnhandledException”的异常。
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.mpay_notice_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\658e8c96\ebc7b359\App_Web_tzwwqlqc.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--><!-- 
+此错误页可能包含敏感信息，因为 ASP.NET 通过 &lt;customErrors mode="Off"/&gt; 被配置为显示详细错误消息。请考虑在生产环境中使用 &lt;customErrors mode="On"/&gt; 或 &lt;customErrors mode="RemoteOnly"/&gt;。-->
+
+【2020-02-26 22:57:33】
+订单号：20200226213846549749
+通知地址：http://111.231.203.123:8664/Mpay_Notice.aspx
+通知报文：memberid=200245386&orderid=f36c1647c5f342eab4d18&transaction_id=20200226213846549749&amount=500.0000&datetime=20200226225729&returncode=00&sign=9B8680FE881DE800983173CC247B8EC0&attach=121537
+HTTP状态：
+返回：签名无效,回掉失败
+
+【2020-02-26 23:31:37】
+订单号：20200226213846549749
+通知地址：http://111.231.203.123:8664/Mpay_Notice.aspx
+通知报文：memberid=200245386&orderid=f36c1647c5f342eab4d18&transaction_id=20200226213846549749&amount=500.0000&datetime=20200226233136&returncode=00&sign=17E9C32ADBF93E9F5B0F90A37A22091B&attach=121537
+HTTP状态：
+返回：<!DOCTYPE html>
+<html>
+    <head>
+        <title>编译错误</title>
+        <meta name="viewport" content="width=device-width" />
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Consolas","Lucida Console",Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:pointer; }
+         @media screen and (max-width: 639px) {
+          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }
+         }
+         @media screen and (max-width: 479px) {
+          pre { width: 280px; }
+         }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>“/”应用程序中的服务器错误。<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>编译错误</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> 说明: </b>在编译向该请求提供服务所需资源的过程中出现错误。请检查下列特定错误详细信息并适当地修改源代码。
+            <br><br>
+
+            <b> 编译器错误消息: </b>CS1513: 应输入 }<br><br>
+<b>源错误:</b><br><br>
+            <table width=100% bgcolor="#ffffcc">
+               <tr><td>
+                              </td></tr>
+               <tr>
+                  <td>
+                      <code><pre>
+
+行 104:
+行 105:
+<font color=red>行 106:    }
+</font>行 107:	
+行 108:	// 是否存在订单 true: 存在  false: 不存在</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <b>源文件:</b> d:\网站\支付\Mpay_Notice.aspx.cs
+            &nbsp;&nbsp; <b>行:</b>  106
+            <br><br>
+<br><div class="expandable" onclick="OnToggleTOCLevel1('compilerOutputDiv')">显示详细的编译器输出:</div>
+<div id="compilerOutputDiv" style="display: none;">
+            <br>            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>c:\windows\system32\inetsrv&gt; &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe&quot; /t:library /utf8output /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.WorkflowServices\v4.0_4.0.0.0__31bf3856ad364e35\System.WorkflowServices.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.Services\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.IdentityModel\v4.0_4.0.0.0__b77a5c561934e089\System.IdentityModel.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.CSharp\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.CSharp.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.Extensions\v4.0_4.0.0.0__31bf3856ad364e35\System.Web.Extensions.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Activities\v4.0_4.0.0.0__31bf3856ad364e35\System.Activities.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.Activation\v4.0_4.0.0.0__31bf3856ad364e35\System.ServiceModel.Activation.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Data.DataSetExtensions\v4.0_4.0.0.0__b77a5c561934e089\System.Data.DataSetExtensions.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.Web\v4.0_4.0.0.0__31bf3856ad364e35\System.ServiceModel.Web.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.Activities\v4.0_4.0.0.0__31bf3856ad364e35\System.ServiceModel.Activities.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_64\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll&quot; /R:&quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.ApplicationServices\v4.0_4.0.0.0__31bf3856ad364e35\System.Web.ApplicationServices.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_64\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.JScript\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.JScript.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ComponentModel.DataAnnotations\v4.0_4.0.0.0__31bf3856ad364e35\System.ComponentModel.DataAnnotations.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel\v4.0_4.0.0.0__b77a5c561934e089\System.ServiceModel.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.DynamicData\v4.0_4.0.0.0__31bf3856ad364e35\System.Web.DynamicData.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_64\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll&quot; /out:&quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\658e8c96\ebc7b359\App_Web_yyjdkk22.dll&quot; /D:DEBUG /debug+ /optimize- /w:4 /nowarn:1659;1699;1701;612;618 /warnaserror-  &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\658e8c96\ebc7b359\App_Web_yyjdkk22.0.cs&quot; &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\658e8c96\ebc7b359\App_Web_yyjdkk22.1.cs&quot; &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\658e8c96\ebc7b359\App_Web_yyjdkk22.2.cs&quot;
+
+
+Microsoft (R) Visual C# Compiler version 4.8.3761.0
+
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+
+d:\网站\支付\Mpay_Notice.aspx.cs(106,6): error CS1513: 应输入 }
+</pre>                      </code>
+
+                  </td>
+               </tr>
+            </table>
+
+            
+
+</div>
+<br><div class="expandable" onclick="OnToggleTOCLevel1('dynamicCodeDiv')">显示完整的编译源:</div>
+<div id="dynamicCodeDiv" style="display: none;">
+            <br>            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>行 1:    #pragma checksum &quot;D:\网站\支付\Mpay_Notice.aspx&quot; &quot;{ff1816ec-aa5e-4d10-87f7-6f4963833460}&quot; &quot;49A86804D45F2E33F7AEEB01EBED72C4171D2FBF&quot;行 2:    //------------------------------------------------------------------------------行 3:    // &lt;auto-generated&gt;行 4:    //     此代码由工具生成。行 5:    //     运行时版本:4.0.30319.42000行 6:    //行 7:    //     对此文件的更改可能会导致不正确的行为，并且如果行 8:    //     重新生成代码，这些更改将会丢失。行 9:    // &lt;/auto-generated&gt;行 10:   //------------------------------------------------------------------------------行 11:   行 12:   行 13:   行 14:   public partial class ZhenXin_Notice : System.Web.SessionState.IRequiresSessionState {行 15:       行 16:       protected System.Web.Profile.DefaultProfile Profile {行 17:           get {行 18:               return ((System.Web.Profile.DefaultProfile)(this.Context.Profile));行 19:           }行 20:       }行 21:       行 22:       protected System.Web.HttpApplication ApplicationInstance {行 23:           get {行 24:               return ((System.Web.HttpApplication)(this.Context.ApplicationInstance));行 25:           }行 26:       }行 27:   }行 28:   namespace ASP {行 29:       行 30:       #line 388 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 31:       using System.Configuration;行 32:       行 33:       #line default行 34:       #line hidden行 35:       行 36:       #line 391 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 37:       using System.Text.RegularExpressions;行 38:       行 39:       #line default行 40:       #line hidden行 41:       行 42:       #line 392 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 43:       using System.Web;行 44:       行 45:       #line default行 46:       #line hidden行 47:       行 48:       #line 396 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 49:       using System.Web.Security;行 50:       行 51:       #line default行 52:       #line hidden行 53:       行 54:       #line 400 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 55:       using System.Web.UI.WebControls.WebParts;行 56:       行 57:       #line default行 58:       #line hidden行 59:       行 60:       #line 385 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 61:       using System.Collections.Generic;行 62:       行 63:       #line default行 64:       #line hidden行 65:       行 66:       #line 394 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 67:       using System.Web.DynamicData;行 68:       行 69:       #line default行 70:       #line hidden行 71:       行 72:       #line 386 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 73:       using System.Collections.Specialized;行 74:       行 75:       #line default行 76:       #line hidden行 77:       行 78:       #line 402 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 79:       using System.Xml.Linq;行 80:       行 81:       #line default行 82:       #line hidden行 83:       行 84:       #line 384 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 85:       using System.Collections;行 86:       行 87:       #line default行 88:       #line hidden行 89:       行 90:       #line 389 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 91:       using System.Linq;行 92:       行 93:       #line default行 94:       #line hidden行 95:       行 96:       #line 398 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 97:       using System.Web.UI;行 98:       行 99:       #line default行 100:      #line hidden行 101:      行 102:      #line 397 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 103:      using System.Web.Profile;行 104:      行 105:      #line default行 106:      #line hidden行 107:      行 108:      #line 390 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 109:      using System.Text;行 110:      行 111:      #line default行 112:      #line hidden行 113:      行 114:      #line 401 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 115:      using System.Web.UI.HtmlControls;行 116:      行 117:      #line default行 118:      #line hidden行 119:      行 120:      #line 393 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 121:      using System.Web.Caching;行 122:      行 123:      #line default行 124:      #line hidden行 125:      行 126:      #line 383 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 127:      using System;行 128:      行 129:      #line default行 130:      #line hidden行 131:      行 132:      #line 399 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 133:      using System.Web.UI.WebControls;行 134:      行 135:      #line default行 136:      #line hidden行 137:      行 138:      #line 395 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 139:      using System.Web.SessionState;行 140:      行 141:      #line default行 142:      #line hidden行 143:      行 144:      #line 387 &quot;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config&quot;行 145:      using System.ComponentModel.DataAnnotations;行 146:      行 147:      #line default行 148:      #line hidden行 149:      行 150:      行 151:      [System.Runtime.CompilerServices.CompilerGlobalScopeAttribute()]行 152:      public class mpay_notice_aspx : global::ZhenXin_Notice, System.Web.IHttpHandler {行 153:          行 154:          private static bool @__initialized;行 155:          行 156:          private static object @__fileDependencies;行 157:          行 158:          [System.Diagnostics.DebuggerNonUserCodeAttribute()]行 159:          public mpay_notice_aspx() {行 160:              string[] dependencies;行 161:              行 162:              #line 912304 &quot;D:\网站\支付\Mpay_Notice.aspx.cs&quot;行 163:              ((global::System.Web.UI.Page)(this)).AppRelativeVirtualPath = &quot;~/Mpay_Notice.aspx&quot;;行 164:              行 165:              #line default行 166:              #line hidden行 167:              if ((global::ASP.mpay_notice_aspx.@__initialized == false)) {行 168:                  dependencies = new string[2];行 169:                  dependencies[0] = &quot;~/Mpay_Notice.aspx&quot;;行 170:                  dependencies[1] = &quot;~/Mpay_Notice.aspx.cs&quot;;行 171:                  global::ASP.mpay_notice_aspx.@__fileDependencies = this.GetWrappedFileDependencies(dependencies);行 172:                  global::ASP.mpay_notice_aspx.@__initialized = true;行 173:              }行 174:              this.Server.ScriptTimeout = 30000000;行 175:          }行 176:          行 177:          [System.Diagnostics.DebuggerNonUserCodeAttribute()]行 178:          private void @__BuildControlTree(mpay_notice_aspx @__ctrl) {行 179:              行 180:              #line 1 &quot;D:\网站\支付\Mpay_Notice.aspx&quot;行 181:              this.InitializeCulture();行 182:              行 183:              #line default行 184:              #line hidden行 185:          }行 186:          行 187:          行 188:          #line 912304 &quot;D:\网站\支付\Mpay_Notice.aspx.cs&quot;行 189:          [System.Diagnostics.DebuggerNonUserCodeAttribute()]行 190:          protected override void FrameworkInitialize() {行 191:              base.FrameworkInitialize();行 192:              this.@__BuildControlTree(this);行 193:              this.AddWrappedFileDependencies(global::ASP.mpay_notice_aspx.@__fileDependencies);行 194:              this.Request.ValidateInput();行 195:          }行 196:          行 197:          #line default行 198:          #line hidden行 199:          行 200:          [System.Diagnostics.DebuggerNonUserCodeAttribute()]行 201:          public override int GetTypeHashCode() {行 202:              return 5381;行 203:          }行 204:          行 205:          [System.Diagnostics.DebuggerNonUserCodeAttribute()]行 206:          public override void ProcessRequest(System.Web.HttpContext context) {行 207:              base.ProcessRequest(context);行 208:          }行 209:      }行 210:  }行 211:  </pre>                      </code>
+
+                  </td>
+               </tr>
+            </table>
+
+            
+
+</div>
+
+        <script type="text/javascript">
+        function OnToggleTOCLevel1(level2ID)
+        {
+        var elemLevel2 = document.getElementById(level2ID);
+        if (elemLevel2.style.display == 'none')
+        {
+            elemLevel2.style.display = '';
+        }
+        else {
+            elemLevel2.style.display = 'none';
+        }
+        }
+        </script>
+                            <br><br>
+
+            <hr width=100% size=1 color=silver>
+
+            <b>版本信息:</b>&nbsp;Microsoft .NET Framework 版本:4.0.30319; ASP.NET 版本:4.8.4069.0
+
+            </font>
+
+    </body>
+</html>
+<!-- 
+[HttpCompileException]: d:\网站\支付\Mpay_Notice.aspx.cs(106): error CS1513: 应输入 }
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--><!-- 
+此错误页可能包含敏感信息，因为 ASP.NET 通过 &lt;customErrors mode="Off"/&gt; 被配置为显示详细错误消息。请考虑在生产环境中使用 &lt;customErrors mode="On"/&gt; 或 &lt;customErrors mode="RemoteOnly"/&gt;。-->
+
+【2020-02-26 23:37:49】
+订单号：20200226213846549749
+通知地址：http://111.231.203.123:8664/Mpay_Notice.aspx
+通知报文：memberid=200245386&orderid=f36c1647c5f342eab4d18&transaction_id=20200226213846549749&amount=500.0000&datetime=20200226233748&returncode=00&sign=C8DDB94E8CED982B31203802C8C7C401&attach=121537
+HTTP状态：
+返回：签名无效,回调失败
+
+【2020-02-26 23:37:57】
+订单号：20200226213846549749
+通知地址：http://111.231.203.123:8664/Mpay_Notice.aspx
+通知报文：memberid=200245386&orderid=f36c1647c5f342eab4d18&transaction_id=20200226213846549749&amount=500.0000&datetime=20200226233756&returncode=00&sign=CCC0249A67F6EA8968084D80663E5066&attach=121537
+HTTP状态：
+返回：签名无效,回调失败
+

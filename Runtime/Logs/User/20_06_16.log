@@ -1,0 +1,2161 @@
+[ 2020-06-16T10:58:44+08:00 ] 180.163.220.68 /Agent_Login_verifycode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000659s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000285s ]
+
+[ 2020-06-16T10:58:56+08:00 ] 42.236.10.117 /Agent_Login_verifycode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000455s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000263s ]
+
+[ 2020-06-16T10:59:09+08:00 ] 42.236.10.125 /Agent_Login_verifycode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000677s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000258s ]
+
+[ 2020-06-16T14:18:45+08:00 ] 211.95.50.8 /Agent_Login_verifycode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000474s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000258s ]
+
+[ 2020-06-16T14:19:00+08:00 ] 211.95.50.8 /agent_Login_forgetpwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000455s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000484s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000330s ]
+
+[ 2020-06-16T19:52:40+08:00 ] 111.231.134.42 /Agent_Login_verifycode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000449s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000261s ]
+
+[ 2020-06-16T19:52:48+08:00 ] 180.163.220.4 /Agent_Login_verifycode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000711s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000256s ]
+
+[ 2020-06-16T19:52:49+08:00 ] 42.236.10.93 /Agent_Login_verifycode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000521s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000251s ]
+
+[ 2020-06-16T19:52:55+08:00 ] 180.163.220.4 /Agent_Login_verifycode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000441s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000250s ]
+
+[ 2020-06-16T19:53:49+08:00 ] 42.236.10.75 /Agent_Login_verifycode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000443s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000218s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000247s ]
+
+[ 2020-06-16T19:54:00+08:00 ] 42.236.10.84 /Agent_Login_verifycode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000453s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000249s ]
+
+[ 2020-06-16T20:08:00+08:00 ] 111.231.134.42 /user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000446s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000474s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 7 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 8 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 9 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 10 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 37 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 38 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 39 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 72 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant open_charge - assumed 'open_charge' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 118 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 119 行.
+NOTIC: [8] Use of undefined constant df_api - assumed 'df_api' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 131 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 134 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 140 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 154 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000274s ]
+
+[ 2020-06-16T20:08:00+08:00 ] 111.231.134.42 /agent_Index_main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000462s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000490s ]
+NOTIC: [8] Undefined variable: category /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: dataone /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: datatwo /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: ipItem /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 100 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000215s ]
+
+[ 2020-06-16T20:08:04+08:00 ] 180.163.220.68 /user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000444s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000471s ]
+NOTIC: [2] ksort() expects parameter 1 to be array, null given /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 12 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 13 行.
+NOTIC: [8] Undefined index: session_random /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 36 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 45 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 45 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 45 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 7 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 7 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 8 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 8 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 9 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 9 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 10 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 10 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 37 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 37 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 38 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 38 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 39 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 39 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 40 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 72 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 72 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 118 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 118 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 119 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 119 行.
+NOTIC: [8] Use of undefined constant df_api - assumed 'df_api' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 131 行.
+NOTIC: [8] Undefined index: df_api /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 131 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 134 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 134 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 140 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 140 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 154 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 154 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 168 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000312s ]
+
+[ 2020-06-16T20:08:04+08:00 ] 180.163.220.68 /user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000463s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000497s ]
+NOTIC: [2] ksort() expects parameter 1 to be array, null given /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 12 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 13 行.
+NOTIC: [8] Undefined index: session_random /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 36 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 45 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 45 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 45 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 7 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 7 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 8 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 8 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 9 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 9 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 10 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 10 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 37 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 37 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 38 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 38 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 39 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 39 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 40 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 72 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 72 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 118 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 118 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 119 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 119 行.
+NOTIC: [8] Use of undefined constant df_api - assumed 'df_api' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 131 行.
+NOTIC: [8] Undefined index: df_api /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 131 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 134 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 134 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 140 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 140 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 154 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 154 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 168 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000297s ]
+
+[ 2020-06-16T20:08:04+08:00 ] 180.163.220.68 /agent_Login_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000442s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000469s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+NOTIC: [8] Undefined variable: verifycode /www/wwwroot/web/Runtime/Cache/User/cd7f950d5de11f03979102b93709231a.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000286s ]
+
+[ 2020-06-16T20:08:50+08:00 ] 111.231.134.42 /agent_Account_changeRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000442s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000473s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 56 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 56 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 56 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 56 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 56 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 56 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2020-06-16T20:08:55+08:00 ] 113.201.6.58 /user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000444s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000472s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 7 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 8 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 9 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 10 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 37 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 38 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 39 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 72 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant open_charge - assumed 'open_charge' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 118 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 119 行.
+NOTIC: [8] Use of undefined constant df_api - assumed 'df_api' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 131 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 134 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 140 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 154 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000297s ]
+
+[ 2020-06-16T20:08:55+08:00 ] 113.201.6.58 /agent_Index_main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000444s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000471s ]
+NOTIC: [8] Undefined variable: category /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: dataone /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: datatwo /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: ipItem /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 100 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000236s ]
+
+[ 2020-06-16T20:08:56+08:00 ] 111.231.134.42 /agent_Withdrawal_batchdf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000451s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000481s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000037s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.005766s ]
+NOTIC: [8] Undefined index: b /www/wwwroot/web/Application/User/Controller/WithdrawalController.class.php 第 57 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2020-06-16T20:09:06+08:00 ] 113.201.6.58 /agent_Account_changeRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000449s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000479s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000317s ]
+
+[ 2020-06-16T20:09:41+08:00 ] 113.201.6.58 /agent_Withdrawal_payment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000447s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2020-06-16T20:09:43+08:00 ] 113.201.6.58 /agent_Withdrawal_batchdf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000621s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000658s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000044s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.006131s ]
+NOTIC: [8] Undefined index: b /www/wwwroot/web/Application/User/Controller/WithdrawalController.class.php 第 57 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2020-06-16T20:09:46+08:00 ] 111.231.134.42 /user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000447s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 7 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 8 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 9 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 10 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 37 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 38 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 39 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 72 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant open_charge - assumed 'open_charge' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 118 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 119 行.
+NOTIC: [8] Use of undefined constant df_api - assumed 'df_api' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 131 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 134 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 140 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 154 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006360s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000297s ]
+
+[ 2020-06-16T20:09:47+08:00 ] 113.201.6.58 /agent_Index_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000443s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000471s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 7 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 8 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 9 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 10 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 37 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 38 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 39 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 72 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant open_charge - assumed 'open_charge' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 118 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 119 行.
+NOTIC: [8] Use of undefined constant df_api - assumed 'df_api' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 131 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 134 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 140 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 154 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000280s ]
+
+[ 2020-06-16T20:09:47+08:00 ] 113.201.6.58 /agent_Index_main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000443s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000471s ]
+NOTIC: [8] Undefined variable: category /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: dataone /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: datatwo /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: ipItem /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 100 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000213s ]
+
+[ 2020-06-16T20:09:49+08:00 ] 111.231.134.42 /agent_Index_main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000449s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000477s ]
+NOTIC: [8] Undefined variable: category /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: dataone /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: datatwo /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: ipItem /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 100 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000196s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000214s ]
+
+[ 2020-06-16T20:09:51+08:00 ] 113.201.6.58 /agent_Account_changeRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000438s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000467s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2020-06-16T20:10:23+08:00 ] 111.231.134.42 /agent_Withdrawal_batchdf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000460s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000490s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000051s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.005725s ]
+NOTIC: [8] Undefined index: b /www/wwwroot/web/Application/User/Controller/WithdrawalController.class.php 第 57 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2020-06-16T20:10:32+08:00 ] 111.231.134.42 /agent_Withdrawal_batchdf.html?b%5B0%5D%5Bbankname%5D=%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C&b%5B0%5D%5Baccountname%5D=123456&b%5B0%5D%5Bcardnumber%5D=123456&b%5B0%5D%5Bmoney%5D=120&b%5B1%5D%5Bbankname%5D=&b%5B1%5D%5Baccountname%5D=&b%5B1%5D%5Bcardnumber%5D=&b%5B1%5D%5Bmoney%5D=&b%5B2%5D%5Bbankname%5D=&b%5B2%5D%5Baccountname%5D=&b%5B2%5D%5Bcardnumber%5D=&b%5B2%5D%5Bmoney%5D=&b%5B3%5D%5Bbankname%5D=&b%5B3%5D%5Baccountname%5D=&b%5B3%5D%5Bcardnumber%5D=&b%5B3%5D%5Bmoney%5D=&b%5B4%5D%5Bbankname%5D=&b%5B4%5D%5Baccountname%5D=&b%5B4%5D%5Bcardnumber%5D=&b%5B4%5D%5Bmoney%5D=&b%5B5%5D%5Bbankname%5D=&b%5B5%5D%5Baccountname%5D=&b%5B5%5D%5Bcardnumber%5D=&b%5B5%5D%5Bmoney%5D=&b%5B6%5D%5Bbankname%5D=&b%5B6%5D%5Baccountname%5D=&b%5B6%5D%5Bcardnumber%5D=&b%5B6%5D%5Bmoney%5D=&b%5B7%5D%5Bbankname%5D=&b%5B7%5D%5Baccountname%5D=&b%5B7%5D%5Bcardnumber%5D=&b%5B7%5D%5Bmoney%5D=&b%5B8%5D%5Bbankname%5D=&b%5B8%5D%5Baccountname%5D=&b%5B8%5D%5Bcardnumber%5D=&b%5B8%5D%5Bmoney%5D=&b%5B9%5D%5Bbankname%5D=&b%5B9%5D%5Baccountname%5D=&b%5B9%5D%5Bcardnumber%5D=&b%5B9%5D%5Bmoney%5D=&auth_type=0&password=123456&__hash__=dadb5e7cc842d5152177ac07345c74f5_0a0984eaa538a754e6a80fe4f3f6af6b
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000450s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000480s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000036s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.005905s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2020-06-16T20:11:05+08:00 ] 111.231.134.42 /agent_Withdrawal_payment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000461s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000491s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2020-06-16T20:11:38+08:00 ] 111.231.134.42 /agent_Withdrawal_batchdf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000453s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000483s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000039s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.006052s ]
+NOTIC: [8] Undefined index: b /www/wwwroot/web/Application/User/Controller/WithdrawalController.class.php 第 57 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2020-06-16T20:11:48+08:00 ] 111.231.134.42 /agent_Withdrawal_batchdf.html?b%5B0%5D%5Bbankname%5D=%E5%86%9C%E4%B8%9A%E9%93%B6%E8%A1%8C&b%5B0%5D%5Baccountname%5D=123456&b%5B0%5D%5Bcardnumber%5D=123456&b%5B0%5D%5Bmoney%5D=123&b%5B1%5D%5Bbankname%5D=&b%5B1%5D%5Baccountname%5D=&b%5B1%5D%5Bcardnumber%5D=&b%5B1%5D%5Bmoney%5D=&b%5B2%5D%5Bbankname%5D=&b%5B2%5D%5Baccountname%5D=&b%5B2%5D%5Bcardnumber%5D=&b%5B2%5D%5Bmoney%5D=&b%5B3%5D%5Bbankname%5D=&b%5B3%5D%5Baccountname%5D=&b%5B3%5D%5Bcardnumber%5D=&b%5B3%5D%5Bmoney%5D=&b%5B4%5D%5Bbankname%5D=&b%5B4%5D%5Baccountname%5D=&b%5B4%5D%5Bcardnumber%5D=&b%5B4%5D%5Bmoney%5D=&b%5B5%5D%5Bbankname%5D=&b%5B5%5D%5Baccountname%5D=&b%5B5%5D%5Bcardnumber%5D=&b%5B5%5D%5Bmoney%5D=&b%5B6%5D%5Bbankname%5D=&b%5B6%5D%5Baccountname%5D=&b%5B6%5D%5Bcardnumber%5D=&b%5B6%5D%5Bmoney%5D=&b%5B7%5D%5Bbankname%5D=&b%5B7%5D%5Baccountname%5D=&b%5B7%5D%5Bcardnumber%5D=&b%5B7%5D%5Bmoney%5D=&b%5B8%5D%5Bbankname%5D=&b%5B8%5D%5Baccountname%5D=&b%5B8%5D%5Bcardnumber%5D=&b%5B8%5D%5Bmoney%5D=&b%5B9%5D%5Bbankname%5D=&b%5B9%5D%5Baccountname%5D=&b%5B9%5D%5Bcardnumber%5D=&b%5B9%5D%5Bmoney%5D=&auth_type=0&password=123456&__hash__=dadb5e7cc842d5152177ac07345c74f5_0a0984eaa538a754e6a80fe4f3f6af6b
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000465s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000498s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000045s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.005794s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000330s ]
+
+[ 2020-06-16T20:11:50+08:00 ] 111.231.134.42 /agent_Withdrawal_payment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000452s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000482s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2020-06-16T20:11:58+08:00 ] 111.231.134.42 /agent_Withdrawal_payment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000440s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000470s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2020-06-16T20:11:59+08:00 ] 111.231.134.42 /agent_Withdrawal_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000455s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000485s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2020-06-16T20:12:01+08:00 ] 111.231.134.42 /agent_Withdrawal_payment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000466s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000498s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2020-06-16T20:12:34+08:00 ] 111.231.134.42 /agent_Withdrawal_payment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000468s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000498s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2020-06-16T20:12:43+08:00 ] 111.231.134.42 /agent_Withdrawal_batchdf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000464s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000494s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000038s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.005705s ]
+NOTIC: [8] Undefined index: b /www/wwwroot/web/Application/User/Controller/WithdrawalController.class.php 第 57 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2020-06-16T20:12:46+08:00 ] 113.201.6.58 /agent_Account_changeRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000467s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000497s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2020-06-16T20:12:51+08:00 ] 111.231.134.42 /agent_Withdrawal_batchdf.html?b%5B0%5D%5Bbankname%5D=%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C&b%5B0%5D%5Baccountname%5D=111&b%5B0%5D%5Bcardnumber%5D=111&b%5B0%5D%5Bmoney%5D=111&b%5B1%5D%5Bbankname%5D=&b%5B1%5D%5Baccountname%5D=&b%5B1%5D%5Bcardnumber%5D=&b%5B1%5D%5Bmoney%5D=&b%5B2%5D%5Bbankname%5D=&b%5B2%5D%5Baccountname%5D=&b%5B2%5D%5Bcardnumber%5D=&b%5B2%5D%5Bmoney%5D=&b%5B3%5D%5Bbankname%5D=&b%5B3%5D%5Baccountname%5D=&b%5B3%5D%5Bcardnumber%5D=&b%5B3%5D%5Bmoney%5D=&b%5B4%5D%5Bbankname%5D=&b%5B4%5D%5Baccountname%5D=&b%5B4%5D%5Bcardnumber%5D=&b%5B4%5D%5Bmoney%5D=&b%5B5%5D%5Bbankname%5D=&b%5B5%5D%5Baccountname%5D=&b%5B5%5D%5Bcardnumber%5D=&b%5B5%5D%5Bmoney%5D=&b%5B6%5D%5Bbankname%5D=&b%5B6%5D%5Baccountname%5D=&b%5B6%5D%5Bcardnumber%5D=&b%5B6%5D%5Bmoney%5D=&b%5B7%5D%5Bbankname%5D=&b%5B7%5D%5Baccountname%5D=&b%5B7%5D%5Bcardnumber%5D=&b%5B7%5D%5Bmoney%5D=&b%5B8%5D%5Bbankname%5D=&b%5B8%5D%5Baccountname%5D=&b%5B8%5D%5Bcardnumber%5D=&b%5B8%5D%5Bmoney%5D=&b%5B9%5D%5Bbankname%5D=&b%5B9%5D%5Baccountname%5D=&b%5B9%5D%5Bcardnumber%5D=&b%5B9%5D%5Bmoney%5D=&auth_type=0&password=123456&__hash__=dadb5e7cc842d5152177ac07345c74f5_0a0984eaa538a754e6a80fe4f3f6af6b
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000447s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000476s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000044s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.005712s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000330s ]
+
+[ 2020-06-16T20:12:53+08:00 ] 111.231.134.42 /agent_Withdrawal_payment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000460s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000332s ]
+
+[ 2020-06-16T20:13:25+08:00 ] 113.201.6.58 /agent_Account_reconciliation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000464s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000496s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000293s ]
+
+[ 2020-06-16T20:13:30+08:00 ] 113.201.6.58 /agent_Account_complaintsDeposit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000451s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000481s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+NOTIC: [8] Undefined variable: tongdao /www/wwwroot/web/Runtime/Cache/User/0242469b089735174aa31911184cc5b7.php 第 147 行.
+NOTIC: [8] Undefined variable: bank /www/wwwroot/web/Runtime/Cache/User/0242469b089735174aa31911184cc5b7.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000206s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000226s ]
+
+[ 2020-06-16T20:13:31+08:00 ] 113.201.6.58 /agent_Account_channelFinance.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000457s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000487s ]
+NOTIC: [2] bcdiv(): Division by zero /www/wwwroot/web/Application/User/Controller/AccountController.class.php 第 861 行.
+NOTIC: [2] bcdiv(): Division by zero /www/wwwroot/web/Application/User/Controller/AccountController.class.php 第 861 行.
+NOTIC: [2] bcdiv(): Division by zero /www/wwwroot/web/Application/User/Controller/AccountController.class.php 第 861 行.
+NOTIC: [2] bcdiv(): Division by zero /www/wwwroot/web/Application/User/Controller/AccountController.class.php 第 861 行.
+NOTIC: [2] bcdiv(): Division by zero /www/wwwroot/web/Application/User/Controller/AccountController.class.php 第 861 行.
+NOTIC: [2] bcdiv(): Division by zero /www/wwwroot/web/Application/User/Controller/AccountController.class.php 第 861 行.
+NOTIC: [2] bcdiv(): Division by zero /www/wwwroot/web/Application/User/Controller/AccountController.class.php 第 861 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000273s ]
+
+[ 2020-06-16T20:13:33+08:00 ] 113.201.6.58 /agent_Account_changeRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000458s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000489s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant ymoney - assumed 'ymoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+NOTIC: [8] Use of undefined constant gmoney - assumed 'gmoney' /www/wwwroot/web/Runtime/Cache/User/c1a3d30f96ea1fe32934762b403e9f2e.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000313s ]
+
+[ 2020-06-16T20:13:37+08:00 ] 111.231.134.42 /agent_Withdrawal_payment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000468s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000499s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2020-06-16T20:14:37+08:00 ] 111.231.134.42 /agent_Withdrawal_payment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000473s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000503s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2020-06-16T20:14:58+08:00 ] 111.231.134.42 /user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000475s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000505s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 7 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 8 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 9 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 10 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 37 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 38 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 39 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 72 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant open_charge - assumed 'open_charge' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 118 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 119 行.
+NOTIC: [8] Use of undefined constant df_api - assumed 'df_api' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 131 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 134 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 140 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 154 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006378s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000274s ]
+
+[ 2020-06-16T20:15:00+08:00 ] 111.231.134.42 /agent_Index_main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000452s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000481s ]
+NOTIC: [8] Undefined variable: category /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: dataone /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: datatwo /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: ipItem /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 100 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000216s ]
+
+[ 2020-06-16T20:15:03+08:00 ] 111.231.134.42 /agent_Withdrawal_batchdf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000436s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000465s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000038s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.005644s ]
+NOTIC: [8] Undefined index: b /www/wwwroot/web/Application/User/Controller/WithdrawalController.class.php 第 57 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2020-06-16T20:15:05+08:00 ] 111.231.134.42 /agent_Withdrawal_payment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000453s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000484s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2020-06-16T20:15:07+08:00 ] 111.231.134.42 /agent_Withdrawal_batchdf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000463s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000497s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000045s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.005711s ]
+NOTIC: [8] Undefined index: b /www/wwwroot/web/Application/User/Controller/WithdrawalController.class.php 第 57 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2020-06-16T20:15:08+08:00 ] 111.231.134.42 /user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000580s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000617s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 7 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 8 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 9 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 10 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 37 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 38 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 39 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 72 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant open_charge - assumed 'open_charge' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 118 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 119 行.
+NOTIC: [8] Use of undefined constant df_api - assumed 'df_api' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 131 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 134 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 140 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 154 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000283s ]
+
+[ 2020-06-16T20:15:08+08:00 ] 111.231.134.42 /agent_Index_main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000447s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000475s ]
+NOTIC: [8] Undefined variable: category /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: dataone /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: datatwo /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: ipItem /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 100 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000230s ]
+
+[ 2020-06-16T20:15:12+08:00 ] 111.231.134.42 /agent_Withdrawal_clearing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000441s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000471s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+NOTIC: [8] Use of undefined constant t1zt - assumed 't1zt' /www/wwwroot/web/Runtime/Cache/User/de2411f4124e1f9d67d82a8b67210965.php 第 33 行.
+NOTIC: [8] Use of undefined constant t1zt - assumed 't1zt' /www/wwwroot/web/Runtime/Cache/User/de2411f4124e1f9d67d82a8b67210965.php 第 33 行.
+NOTIC: [8] Use of undefined constant tkzxmoney - assumed 'tkzxmoney' /www/wwwroot/web/Runtime/Cache/User/de2411f4124e1f9d67d82a8b67210965.php 第 34 行.
+NOTIC: [8] Use of undefined constant tkzdmoney - assumed 'tkzdmoney' /www/wwwroot/web/Runtime/Cache/User/de2411f4124e1f9d67d82a8b67210965.php 第 35 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/de2411f4124e1f9d67d82a8b67210965.php 第 39 行.
+NOTIC: [8] Use of undefined constant tktype - assumed 'tktype' /www/wwwroot/web/Runtime/Cache/User/de2411f4124e1f9d67d82a8b67210965.php 第 41 行.
+NOTIC: [8] Use of undefined constant tktype - assumed 'tktype' /www/wwwroot/web/Runtime/Cache/User/de2411f4124e1f9d67d82a8b67210965.php 第 42 行.
+NOTIC: [8] Use of undefined constant sxffixed - assumed 'sxffixed' /www/wwwroot/web/Runtime/Cache/User/de2411f4124e1f9d67d82a8b67210965.php 第 43 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/de2411f4124e1f9d67d82a8b67210965.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000286s ]
+
+[ 2020-06-16T20:15:13+08:00 ] 111.231.134.42 /agent_Withdrawal_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000463s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000493s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000291s ]
+
+[ 2020-06-16T20:15:16+08:00 ] 111.231.134.42 /agent_Withdrawal_payment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000439s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000468s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2020-06-16T20:15:25+08:00 ] 111.231.134.42 /agent_Index_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000447s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 7 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 8 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 9 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 10 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 37 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 38 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 39 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 72 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant open_charge - assumed 'open_charge' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 118 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 119 行.
+NOTIC: [8] Use of undefined constant df_api - assumed 'df_api' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 131 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 134 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 140 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 154 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000289s ]
+
+[ 2020-06-16T20:15:25+08:00 ] 111.231.134.42 /agent_Index_main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000447s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000474s ]
+NOTIC: [8] Undefined variable: category /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: dataone /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: datatwo /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: ipItem /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 100 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000226s ]
+
+[ 2020-06-16T20:15:33+08:00 ] 111.231.134.42 /agent_Withdrawal_batchdf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000474s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000506s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000040s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.005737s ]
+NOTIC: [8] Undefined index: b /www/wwwroot/web/Application/User/Controller/WithdrawalController.class.php 第 57 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2020-06-16T20:15:45+08:00 ] 111.231.134.42 /agent_Withdrawal_batchdf.html?b%5B0%5D%5Bbankname%5D=%E5%85%B4%E4%B8%9A%E9%93%B6%E8%A1%8C&b%5B0%5D%5Baccountname%5D=111&b%5B0%5D%5Bcardnumber%5D=111&b%5B0%5D%5Bmoney%5D=111&b%5B1%5D%5Bbankname%5D=&b%5B1%5D%5Baccountname%5D=&b%5B1%5D%5Bcardnumber%5D=&b%5B1%5D%5Bmoney%5D=&b%5B2%5D%5Bbankname%5D=&b%5B2%5D%5Baccountname%5D=&b%5B2%5D%5Bcardnumber%5D=&b%5B2%5D%5Bmoney%5D=&b%5B3%5D%5Bbankname%5D=&b%5B3%5D%5Baccountname%5D=&b%5B3%5D%5Bcardnumber%5D=&b%5B3%5D%5Bmoney%5D=&b%5B4%5D%5Bbankname%5D=&b%5B4%5D%5Baccountname%5D=&b%5B4%5D%5Bcardnumber%5D=&b%5B4%5D%5Bmoney%5D=&b%5B5%5D%5Bbankname%5D=&b%5B5%5D%5Baccountname%5D=&b%5B5%5D%5Bcardnumber%5D=&b%5B5%5D%5Bmoney%5D=&b%5B6%5D%5Bbankname%5D=&b%5B6%5D%5Baccountname%5D=&b%5B6%5D%5Bcardnumber%5D=&b%5B6%5D%5Bmoney%5D=&b%5B7%5D%5Bbankname%5D=&b%5B7%5D%5Baccountname%5D=&b%5B7%5D%5Bcardnumber%5D=&b%5B7%5D%5Bmoney%5D=&b%5B8%5D%5Bbankname%5D=&b%5B8%5D%5Baccountname%5D=&b%5B8%5D%5Bcardnumber%5D=&b%5B8%5D%5Bmoney%5D=&b%5B9%5D%5Bbankname%5D=&b%5B9%5D%5Baccountname%5D=&b%5B9%5D%5Bcardnumber%5D=&b%5B9%5D%5Bmoney%5D=&auth_type=0&password=123456&__hash__=dadb5e7cc842d5152177ac07345c74f5_0a0984eaa538a754e6a80fe4f3f6af6b
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000450s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000482s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000037s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.005716s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2020-06-16T20:15:49+08:00 ] 111.231.134.42 /agent_Withdrawal_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000449s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 136 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 136 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 136 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000332s ]
+
+[ 2020-06-16T20:15:52+08:00 ] 111.231.134.42 /agent_Withdrawal_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000451s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000489s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 136 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 136 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 136 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant check_status - assumed 'check_status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 122 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 126 行.
+NOTIC: [8] Use of undefined constant check_time - assumed 'check_time' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 132 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 135 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/web/Runtime/Cache/User/234197cf6c6a9a5cec1173db0d38ebbc.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2020-06-16T20:16:23+08:00 ] 111.231.134.42 /agent_Withdrawal_payment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000455s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000488s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+

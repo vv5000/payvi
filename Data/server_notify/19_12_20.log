@@ -1,0 +1,35 @@
+【2019-12-20 20:04:51】
+订单号：20191220200229539952
+通知地址：http://pay.1youbox.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191209910&orderid=2019122020021901788&transaction_id=20191220200229539952&amount=100.0000&datetime=20191220200450&returncode=00&sign=510C4A1FA1031D1BEEAB663EF4D3D093&attach=
+HTTP状态：
+返回：OK
+
+【2019-12-20 20:05:03】
+订单号：20191220200229539952
+通知地址：http://pay.1youbox.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191209910&orderid=2019122020021901788&transaction_id=20191220200229539952&amount=100.0000&datetime=20191220200503&returncode=00&sign=5801E47A7BAB9696C9DEF7BA14CDD11D&attach=
+HTTP状态：
+返回：
+
+【2019-12-20 20:05:04】
+订单号：20191220200229539952
+通知地址：http://pay.1youbox.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191209910&orderid=2019122020021901788&transaction_id=20191220200229539952&amount=100.0000&datetime=20191220200504&returncode=00&sign=66EEC5D2895B2527881DCC131F5369D7&attach=
+HTTP状态：
+返回：
+
+【2019-12-20 20:05:06】
+订单号：20191220200229539952
+通知地址：http://pay.1youbox.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191209910&orderid=2019122020021901788&transaction_id=20191220200229539952&amount=100.0000&datetime=20191220200506&returncode=00&sign=E1ABD8EA764D9F06FC31B13683412E1F&attach=
+HTTP状态：
+返回：
+
+【2019-12-20 20:05:08】
+订单号：20191220200229539952
+通知地址：http://pay.1youbox.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191209910&orderid=2019122020021901788&transaction_id=20191220200229539952&amount=100.0000&datetime=20191220200508&returncode=00&sign=D1BC46861507F02320E330FF65EB1A89&attach=
+HTTP状态：
+返回：
+

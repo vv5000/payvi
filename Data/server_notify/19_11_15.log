@@ -1,0 +1,266 @@
+【2019-11-15 00:01:22】
+订单号：20191114235905579949
+通知地址：http://bspay.7171r.com/Notify/Async/apiToken/D41BD23595D3EF7D3806D4F43D705ADE
+通知报文：memberid=191165591&orderid=C2191956280631025022&transaction_id=20191114235905579949&amount=100.0000&datetime=20191115000121&returncode=00&sign=04CA476225B388B578017153FF50F20E&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-15 00:06:12】
+订单号：20191115000435515298
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11150004354530&transaction_id=20191115000435515298&amount=101.0000&datetime=20191115000611&returncode=00&sign=537740F12050A3D52492180FFFE22651&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-15 12:46:46】
+订单号：20191115124506505210
+通知地址：http://bspay.7171r.com/Notify/Async/apiToken/D41BD23595D3EF7D3806D4F43D705ADE
+通知报文：memberid=191165591&orderid=C2191930328722863100&transaction_id=20191115124506505210&amount=100.0000&datetime=20191115124645&returncode=00&sign=96D2F969A6A03ED6F7B6E7F6B3DF4F55&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-15 12:48:29】
+订单号：20191115124635989757
+通知地址：http://bspay.7171r.com/Notify/Async/apiToken/D41BD23595D3EF7D3806D4F43D705ADE
+通知报文：memberid=191165591&orderid=C2191939097265222402&transaction_id=20191115124635989757&amount=100.0000&datetime=20191115124829&returncode=00&sign=27952CF35236D287FF074AB6E798A99F&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-15 12:59:09】
+订单号：20191115125717100565
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911151257173535671&transaction_id=20191115125717100565&amount=100.0000&datetime=20191115125908&returncode=00&sign=EFB0B7C3D44EC597D0FA0452543EA22B&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-15 13:06:44】
+订单号：20191115130516995397
+通知地址：http://bspay.7171r.com/Notify/Async/apiToken/D41BD23595D3EF7D3806D4F43D705ADE
+通知报文：memberid=191165591&orderid=C2191912304521764811&transaction_id=20191115130516995397&amount=500.0000&datetime=20191115130644&returncode=00&sign=60326F5863EBD63F3BE3EBFF5271F50D&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-15 13:23:17】
+订单号：20191115132150101555
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911151321508706869&transaction_id=20191115132150101555&amount=100.0000&datetime=20191115132317&returncode=00&sign=CDF2DF99D37C8D08C9F70C5C44F11C63&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-15 13:57:23】
+订单号：20191115135020995455
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911151350203954766&transaction_id=20191115135020995455&amount=200.0000&datetime=20191115135723&returncode=00&sign=3106093890DD310ED2394CEED009FA87&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-15 13:59:05】
+订单号：20191115135020995455
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911151350203954766&transaction_id=20191115135020995455&amount=200.0000&datetime=20191115135904&returncode=00&sign=28F19A007831D74B3FF61D7E6F830622&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-15 14:16:38】
+订单号：20191115140742101100
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911151407439204876&transaction_id=20191115140742101100&amount=100.0000&datetime=20191115141636&returncode=00&sign=67A351208B4AB8A5829E9D884F1786FF&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-15 14:23:06】
+订单号：20191115142107515798
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911151421081409383&transaction_id=20191115142107515798&amount=100.0000&datetime=20191115142306&returncode=00&sign=58BE784DB5533E4D148099340D6E2DEF&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-15 14:36:13】
+订单号：20191115143450975752
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911151434501917283&transaction_id=20191115143450975752&amount=100.0000&datetime=20191115143613&returncode=00&sign=4E6747EC712E7E9E49B405B87AC6EDF3&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-15 14:40:20】
+订单号：20191115143841499798
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911151438429046251&transaction_id=20191115143841499798&amount=104.0000&datetime=20191115144020&returncode=00&sign=90E576996FC141CE200592A520034887&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-15 14:47:51】
+订单号：20191115144432485110
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911151444317159316&transaction_id=20191115144432485110&amount=100.0000&datetime=20191115144750&returncode=00&sign=A3637F7A416089DC73D2B2A866E3F237&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-15 14:52:06】
+订单号：20191115145022101541
+通知地址：http://awseb-e-q-awsebloa-p0jtqe3naeml-278855201.ap-northeast-1.elb.amazonaws.com/pay/notify/152/520
+通知报文：memberid=191209912&orderid=1036584920191115145033687&transaction_id=20191115145022101541&amount=100.0000&datetime=20191115145206&returncode=00&sign=BE41A7100ABF263DB7CD54E043E19946&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-15 14:56:07】
+订单号：20191115145453100100
+通知地址：http://awseb-e-q-awsebloa-p0jtqe3naeml-278855201.ap-northeast-1.elb.amazonaws.com/pay/notify/152/521
+通知报文：memberid=191209912&orderid=1036584920191115145504875&transaction_id=20191115145453100100&amount=100.0000&datetime=20191115145606&returncode=00&sign=B309FD151E3893D0EB6784D7850E5133&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-15 15:02:39】
+订单号：20191115145959102505
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911151459597678832&transaction_id=20191115145959102505&amount=106.0000&datetime=20191115150239&returncode=00&sign=39AE1492E36A197F629D14C311115756&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-15 15:30:16】
+订单号：20191115152748525753
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911151527484900125&transaction_id=20191115152748525753&amount=100.0000&datetime=20191115153015&returncode=00&sign=0CD1420F19BCD4B7715250B3F52D56E6&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-15 15:45:10】
+订单号：20191115152914979710
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911151529138479448&transaction_id=20191115152914979710&amount=200.0000&datetime=20191115154509&returncode=00&sign=FF22E0BB4CFFD90E7713B3E518288533&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-15 16:12:21】
+订单号：20191115155714975510
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911151557140460235&transaction_id=20191115155714975510&amount=100.0000&datetime=20191115161220&returncode=00&sign=3EDE840985F39E316360E443DBB219D4&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-15 16:34:21】
+订单号：20191115163215102101
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911151632167976432&transaction_id=20191115163215102101&amount=100.0000&datetime=20191115163420&returncode=00&sign=199F2B2CA1E339211669001973B90F59&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-15 16:37:50】
+订单号：20191113192221100565
+通知地址：https://a.818-158.com/Public.server.do
+通知报文：memberid=191095866&orderid=I1911131921560126&transaction_id=20191113192221100565&amount=500.0000&datetime=20191115163749&returncode=00&sign=B402D0324697192C81F0A9C0A55EFE27&attach=581,https://a.818-158.com/Account.jhrecharge.do
+HTTP状态：
+返回：OK
+
+【2019-11-15 16:48:13】
+订单号：20191115164707981024
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911151647035687578&transaction_id=20191115164707981024&amount=100.0000&datetime=20191115164813&returncode=00&sign=F5F041EB03C848CBF241721C625A4F7B&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-15 16:56:43】
+订单号：20191115165501531019
+通知地址：http://150.109.59.33/tools/notify-1bcf_821736_b9b1_287d3dc_6ea8
+通知报文：memberid=191189793&orderid=WX191115165502826746&transaction_id=20191115165501531019&amount=200.1100&datetime=20191115165643&returncode=00&sign=E1D4C5715710706B4A03A0EBC3079FFB&attach=
+HTTP状态：
+返回：ok
+
+【2019-11-15 18:43:51】
+订单号：20191115184237100565
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911151842343931&transaction_id=20191115184237100565&amount=100.0000&datetime=20191115184348&returncode=00&sign=EA7C75BD83D00CF63EC76E94B4521750&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-15 18:43:58】
+订单号：20191115184237100565
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911151842343931&transaction_id=20191115184237100565&amount=100.0000&datetime=20191115184358&returncode=00&sign=53D1CA362F88ABAB8FA2B333EBBBFD99&attach=
+HTTP状态：
+返回：已处理过过的订单
+
+【2019-11-15 19:00:53】
+订单号：20191115185440489753
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911151854404029164&transaction_id=20191115185440489753&amount=100.0000&datetime=20191115190053&returncode=00&sign=1177E7255C443C78B4F04BB9A81966E4&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-15 19:47:09】
+订单号：20191115194530974810
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911151945288749&transaction_id=20191115194530974810&amount=100.0000&datetime=20191115194708&returncode=00&sign=8E24EF127DD21DC735BAC242DB7298AF&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-15 20:46:02】
+订单号：20191115204456565099
+通知地址：http://a.3nwl.cn/Public.server.do
+通知报文：memberid=191095866&orderid=L1911152044493629&transaction_id=20191115204456565099&amount=500.0000&datetime=20191115204602&returncode=00&sign=FFFB6CB51DEDD5A093D81080081FC757&attach=673,http://a.3nwl.cn/Account.jhrecharge.do
+HTTP状态：
+返回：OK
+
+【2019-11-15 20:56:35】
+订单号：20191115205355515798
+通知地址：https://payback3.lebopay.net/jfbscpay/scallback.php
+通知报文：memberid=191209913&orderid=2019111508535012194783&transaction_id=20191115205355515798&amount=100.0000&datetime=20191115205633&returncode=00&sign=4EAE2BAF407BB65271D9B4745B5079E9&attach=41535-d2dc27e0aa7781f6689819f496f80718
+HTTP状态：
+返回：OK
+
+【2019-11-15 21:13:21】
+订单号：20191115211102545399
+通知地址：http://150.109.59.33/tools/notify-1bcf_821736_b9b1_287db87_6ed1
+通知报文：memberid=191189793&orderid=WX191115211102409967&transaction_id=20191115211102545399&amount=200.1100&datetime=20191115211321&returncode=00&sign=E51662F29B682B9769D4415ED45E7E09&attach=
+HTTP状态：
+返回：ok
+
+【2019-11-15 21:41:08】
+订单号：20191115213736481015
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911152137327966&transaction_id=20191115213736481015&amount=100.0000&datetime=20191115214107&returncode=00&sign=F1953FCC1A303B4F12BD4B55C2C2F42F&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-15 22:09:02】
+订单号：20191115220703554856
+通知地址：http://150.109.59.33/tools/notify-1bcf_821736_b9b1_287dd7e_6edb
+通知报文：memberid=191189793&orderid=WX191115220659117460&transaction_id=20191115220703554856&amount=200.1100&datetime=20191115220902&returncode=00&sign=E2E825D9F32811030DF090CAD5B1FD09&attach=
+HTTP状态：
+返回：ok
+
+【2019-11-15 22:24:53】
+订单号：20191115222105495156
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911152221037482&transaction_id=20191115222105495156&amount=100.0000&datetime=20191115222452&returncode=00&sign=4E0D1D26F61C47C634EBEE8BF487C331&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-15 22:35:35】
+订单号：20191115223429535057
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911152234293440646&transaction_id=20191115223429535057&amount=300.0000&datetime=20191115223534&returncode=00&sign=AD6C6E69295AC9D85FF179A84320012E&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-15 23:05:15】
+订单号：20191115225520564852
+通知地址：https://payback3.lebopay.net/jfbscpay/scallback.php
+通知报文：memberid=191209913&orderid=2019111510551647004783&transaction_id=20191115225520564852&amount=500.0000&datetime=20191115230513&returncode=00&sign=DB8A8EF3AFBC65B37B816F5E6E788FA1&attach=41535-7980ac2113e605f3149746af9cf26086
+HTTP状态：
+返回：OK
+
+【2019-11-15 23:12:25】
+订单号：20191115230941535154
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911152309371118&transaction_id=20191115230941535154&amount=100.0000&datetime=20191115231224&returncode=00&sign=43B7A93A5E88A7F36E57236D3BD23E2D&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-15 23:24:51】
+订单号：20191115232247551001
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911152322438344&transaction_id=20191115232247551001&amount=100.0000&datetime=20191115232449&returncode=00&sign=3FF942DAE68FB6A5D04E855B19129CBC&attach=
+HTTP状态：
+返回：OK
+

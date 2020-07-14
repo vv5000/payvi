@@ -1,0 +1,113 @@
+<include file="Public/header"/>
+<div class="row">
+    <div class="col-md-12">
+        <div class="ibox float-e-margins">
+            <!--条件查询-->
+            <div class="ibox-title">
+                <h5>自助充值加款</h5>
+                <div class="ibox-tools">
+                    <i class="layui-icon" onclick="location.replace(location.href);" title="刷新"
+                       style="cursor:pointer;">ဂ</i>
+                </div>
+            </div>
+            <!--条件查询-->
+            <div class="ibox-content">
+                <form class="layui-form" action="" method="get" autocomplete="off" id="recharge">
+                    <input type="hidden" class="layui-input" name="contentstr" readonly value="<{$username}>">
+                    <div class="layui-form-item">
+
+                            <div class="layui-inline">
+                                <label class="layui-form-label">充值汇率：</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" class="layui-input" name="rechargerule" id="rechargerule"  readonly value="<{$rechargerule}>">
+                                </div>
+                            </div>
+                           <div class="layui-inline">
+                                <label class="layui-form-label">充值金额：</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" class="layui-input" name="money" id="money" placeholder="请输入金额" value="">
+                                </div>
+                                <label class="layui-form-label">手续费：</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" class="layui-input" name="sxmoney"  readonly  id="sxmoney" placeholder="" value="">
+                                </div>
+                               <label class="layui-form-label">实际到账：</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" class="layui-input" name="realmoney"  readonly  id="realmoney" placeholder="" value="">
+                                </div>
+                            </div>
+                        </div>
+                          
+                          
+
+                        <div class="layui-form-item" >
+                            <button type="submit" class="layui-btn" id="file-submit" class="layui-btn" lay-submit lay-filter="wtsave">提交</button>
+                        </div>
+                           
+
+                            
+                
+                            
+                            
+                    <div class="layui-inline">
+                        
+                    </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public/footer"/>
+<script>
+    layui.use(['laydate', 'laypage', 'layer', 'table', 'form'], function() {
+        var laydate = layui.laydate //日期
+            , laypage = layui.laypage //分页
+            ,layer = layui.layer //弹层
+            ,form = layui.form //表单
+            , table = layui.table; //表格
+
+        //监听提交
+        form.on('submit(wtsave)', function (data) {
+            $.ajax({
+                url: "<{:U('User/Account/Recharge')}>",
+                type: "post",
+                data: $('#recharge').serialize(),
+                success: function (res) {
+                    if (res.status) {
+                        layer.alert("提交成功", {icon: 6}, function () {
+                            window.location.href='<{:U("Account/changeRecord")}>';
+                        });
+                    } else {
+                        layer.msg(res.msg ? res.msg : "操作失败!", {icon: 5}, function () {
+
+                        });
+                        return false;
+                    }
+                }
+            });
+            return false;
+        });
+
+        $("#money").blur(function(){
+           var rechargeRule=Number($("#rechargerule").val());
+           var money = Number($("#money").val());
+           var sxmoney = (rechargeRule * money).toFixed(2);
+           var realmoney = (money-sxmoney).toFixed(2);
+            $("#sxmoney").val(sxmoney);
+            $("#realmoney").val(realmoney);
+
+        });
+
+
+
+    });  
+
+
+
+
+
+</script>
+</body>
+</html>

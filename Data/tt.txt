@@ -1,0 +1,194 @@
+wx【2019-08-04 18:01:33】notifyurl提交1结果：190804-187631207350000--CODE_SUCCESS
+
+wx【2019-08-04 18:01:33】notifyurl提交2结果：190804-187631207350000--CODE_SUCCESS
+
+wx【2019-08-04 19:06:50】notifyurl提交1结果：190804-654585037810000--CODE_SUCCESS
+
+wx【2019-08-04 19:06:50】notifyurl提交2结果：190804-654585037810000--CODE_SUCCESS
+
+wx【2019-08-04 20:01:06】notifyurl提交1结果：190804-632689951591887--CODE_SUCCESS
+
+wx【2019-08-04 20:01:06】notifyurl提交2结果：190804-632689951591887--CODE_SUCCESS
+
+wx【2019-08-04 20:16:30】notifyurl提交1结果：190804-186098320070000--CODE_SUCCESS
+
+wx【2019-08-04 20:16:30】notifyurl提交2结果：190804-186098320070000--CODE_SUCCESS
+
+wx【2019-08-05 14:56:39】notifyurl提交1结果：1564988188--CODE_SUCCESS
+
+wx【2019-08-05 14:56:39】notifyurl提交2结果：1564988188--CODE_SUCCESS
+
+wx【2019-08-05 15:55:53】notifyurl提交1结果：1564988188--CODE_SUCCESS
+
+wx【2019-08-05 15:55:53】notifyurl提交2结果：1564988188--CODE_SUCCESS
+
+wx【2019-08-05 15:59:20】notifyurl提交1结果：20190805155909100495--CODE_SUCCESS
+
+wx【2019-08-05 15:59:20】notifyurl提交2结果：20190805155909100495--CODE_SUCCESS
+
+wx【2019-08-05 16:03:11】notifyurl提交1结果：20190805155909100495--CODE_SUCCESS
+
+wx【2019-08-05 16:03:11】notifyurl提交2结果：20190805155909100495--CODE_SUCCESS
+
+zfb【2019-08-05 16:05:24】notifyurl提交1结果：20190805160512569954--CODE_SUCCESS
+
+zfb【2019-08-05 16:05:25】notifyurl提交2结果：20190805160512569954--CODE_SUCCESS
+
+zfb【2019-08-05 16:06:38】notifyurl提交1结果：20190805160512569954--CODE_SUCCESS
+
+zfb【2019-08-05 16:06:38】notifyurl提交3结果：20190805160512569954--CODE_SUCCESS
+
+zfb【2019-08-05 16:07:17】notifyurl提交1结果：20190805160512569954--CODE_SUCCESS
+
+zfb【2019-08-05 16:07:17】notifyurl提交3结果：20190805160512569954--CODE_SUCCESS
+
+wx【2019-08-05 20:21:56】notifyurl提交1结果：20190805202143555610--CODE_SUCCESS
+
+wx【2019-08-05 20:21:56】notifyurl提交2结果：20190805202143555610--CODE_SUCCESS
+
+wx【2019-08-06 23:38:24】notifyurl提交1结果：--
+
+wx【2019-08-06 23:38:25】notifyurl提交1结果：--
+
+wx【2019-08-06 23:38:25】notifyurl提交1结果：--
+
+wx【2019-08-06 23:38:25】notifyurl提交1结果：--
+
+wx【2019-08-06 23:39:24】notifyurl提交1结果：--
+
+wx【2019-08-06 23:39:26】notifyurl提交1结果：--
+
+wx【2019-08-07 11:44:45】notifyurl提交1结果：--
+
+wx【2019-08-07 16:46:37】notifyurl提交1结果：array (
+  'callbacks' => 'CODE_SUCCESS',
+  'type' => 'wechat',
+  'total' => '6.00',
+  'api_order_sn' => '20190807164625495210',
+  'order_sn' => '190807-097629307970000',
+  'sign' => '8B85E72CB4278FDD6BC0A158478C65FD',
+)
+
+wx【2019-08-07 16:46:37】notifyurl提交2结果：20190807164625495210--CODE_SUCCESS
+
+wx【2019-08-07 17:30:51】notifyurl提交1结果：array (
+  'callbacks' => 'CODE_SUCCESS',
+  'type' => 'wechat',
+  'total' => '6.00',
+  'api_order_sn' => '20190807173041494810',
+  'order_sn' => '190807-135887913810763',
+  'sign' => 'CE0E3E1D42846EC26BD37A721F841FAE',
+)
+
+wx【2019-08-07 17:30:51】notifyurl提交2结果：20190807173041494810--CODE_SUCCESS
+
+zfb【2019-08-07 17:35:09】notifyurl提交1结果：array (
+  'callbacks' => 'CODE_SUCCESS',
+  'type' => 'alipay',
+  'total' => '6.00',
+  'api_order_sn' => '20190807173443519750',
+  'order_sn' => '190807-167265239933062',
+  'sign' => '5F4E628B7492DC49B4286B942B178A16',
+)
+
+zfb【2019-08-07 17:35:10】notifyurl提交2结果：20190807173443519750--CODE_SUCCESS
+
+wx【2019-08-08 13:19:18】notifyurl提交1结果：array (
+  'callbacks' => 'CODE_SUCCESS',
+  'type' => 'wechat',
+  'total' => '6.00',
+  'api_order_sn' => '20190808131906975551',
+  'order_sn' => '190808-462403011234013',
+  'sign' => 'AEC3988CA10B9C64563816AE36E35468',
+)
+
+wx【2019-08-08 13:19:18】notifyurl提交2结果：20190808131906975551--CODE_SUCCESS
+
+zfb【2019-08-08 13:23:50】notifyurl提交1结果：array (
+  'callbacks' => 'CODE_SUCCESS',
+  'type' => 'alipay',
+  'total' => '6.00',
+  'api_order_sn' => '20190808132337579898',
+  'order_sn' => '190808-656548168913505',
+  'sign' => 'D175C180675D3C76F3A46F389A9B73F5',
+)
+
+zfb【2019-08-08 13:23:50】notifyurl提交2结果：20190808132337579898--CODE_SUCCESS
+
+zfb【2019-08-13 22:13:47】notifyurl提交1结果：array (
+  'callbacks' => 'CODE_SUCCESS',
+  'type' => 'alipay',
+  'total' => '100.00',
+  'api_order_sn' => '20190813221315985449',
+  'order_sn' => '190813-099501671111279',
+  'sign' => '5BC57489EE4A5F26F4057F28498B0675',
+)
+
+zfb【2019-08-13 22:13:48】notifyurl提交2结果：20190813221315985449--CODE_SUCCESS
+
+zfb【2019-08-13 23:57:36】notifyurl提交1结果：array (
+  'callbacks' => 'CODE_SUCCESS',
+  'type' => 'alipay',
+  'total' => '300.00',
+  'api_order_sn' => '20190813235723515549',
+  'order_sn' => '190813-406231614631584',
+  'sign' => '3FE68F3B0A0DA9C79DDA22D640F41277',
+)
+
+zfb【2019-08-13 23:57:36】notifyurl提交1结果：array (
+  'callbacks' => 'CODE_SUCCESS',
+  'type' => 'alipay',
+  'total' => '300.00',
+  'api_order_sn' => '20190813235723515549',
+  'order_sn' => '190813-406231614631584',
+  'sign' => '3FE68F3B0A0DA9C79DDA22D640F41277',
+)
+
+zfb【2019-08-13 23:57:36】notifyurl提交3结果：20190813235723515549--CODE_SUCCESS
+
+zfb【2019-08-13 23:57:37】notifyurl提交2结果：20190813235723515549--CODE_SUCCESS
+
+zfb【2019-08-14 00:12:46】notifyurl提交1结果：array (
+  'callbacks' => 'CODE_SUCCESS',
+  'type' => 'alipay',
+  'total' => '300.00',
+  'api_order_sn' => '20190814001235511015',
+  'order_sn' => '190814-215647519550421',
+  'sign' => '56E1496FA5DC7818FB04736993308051',
+)
+
+zfb【2019-08-14 00:12:46】notifyurl提交2结果：20190814001235511015--CODE_SUCCESS
+
+zfb【2019-08-14 00:13:20】notifyurl提交1结果：array (
+  'callbacks' => 'CODE_SUCCESS',
+  'type' => 'alipay',
+  'total' => '300.00',
+  'api_order_sn' => '20190814001307515098',
+  'order_sn' => '190814-289745142713474',
+  'sign' => '7941226D7DA394FEBD23239E099BFDB6',
+)
+
+zfb【2019-08-14 00:13:20】notifyurl提交1结果：array (
+  'callbacks' => 'CODE_SUCCESS',
+  'type' => 'alipay',
+  'total' => '300.00',
+  'api_order_sn' => '20190814001307515098',
+  'order_sn' => '190814-289745142713474',
+  'sign' => '7941226D7DA394FEBD23239E099BFDB6',
+)
+
+zfb【2019-08-14 00:13:20】notifyurl提交3结果：20190814001307515098--CODE_SUCCESS
+
+zfb【2019-08-14 00:13:20】notifyurl提交2结果：20190814001307515098--CODE_SUCCESS
+
+zfb【2019-08-17 22:14:12】notifyurl提交1结果：array (
+  'callbacks' => 'CODE_SUCCESS',
+  'type' => 'alipay',
+  'total' => '5.00',
+  'api_order_sn' => '20190817221358545051',
+  'order_sn' => '190817-047608955971060',
+  'sign' => '65249BEFAA8339C2F41962C004E8B9CE',
+)
+
+zfb【2019-08-17 22:14:12】notifyurl提交2结果：20190817221358545051--CODE_SUCCESS
+

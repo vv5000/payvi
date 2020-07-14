@@ -1,0 +1,134 @@
+<include file="Public/header"/>
+<div class="row">
+    <div class="col-md-12">
+        <div class="ibox float-e-margins">
+            <!--条件查询-->
+            <div class="ibox-title">
+                <h5>提款管理</h5>
+                <div class="ibox-tools">
+                    <i class="layui-icon" onclick="location.replace(location.href);" title="刷新"
+                       style="cursor:pointer;">ဂ</i>
+                </div>
+            </div>
+            <!--条件查询-->
+            <div class="ibox-content">
+                <form class="layui-form" action="" method="get" autocomplete="off" id="withdrawalform">
+
+                    <php>for($i=0; $i<10; $i++){
+                     echo '<div class="layui-form-item">
+                            <div class="layui-inline">
+                                <div class="layui-input-inline">
+                                    <select name="b['.$i.'][bankname]">
+                                        <option value="">选择开户行</option> 
+                                        <option value="农业银行">农业银行</option> 
+                                        <option value="工商银行">工商银行</option>     
+                                        <option value="建设银行">建设银行</option>
+                                        <option value="中国银行">中国银行</option>
+                                        <option value="兴业银行">兴业银行</option>
+                                        <option value="平安银行">平安银行</option>
+                                        <option value="交通银行">交通银行</option>
+                                        <option value="招商银行">招商银行</option>
+                                        <option value="农村信用社">农村信用社</option>  
+                                        <option value="邮政储蓄">邮政储蓄</option>
+                                        <option value="北京银行">北京银行</option>
+                                        <option value="浙商银行">浙商银行</option>
+                                        <option value="广发银行">广发银行</option>
+                                        <option value="民生银行">民生银行</option>
+                                        <option value="东亚银行">东亚银行</option>
+                                        
+                                        <option value="上海银行">上海银行</option>
+                                        <option value="光大银行">光大银行</option>
+                                        <option value="浦东发展银行">浦东发展银行</option>
+                                        <option value="深圳发展银行">深圳发展银行</option>
+                                        <option value="华夏银行">华夏银行</option>
+                                        <option value="南京银行">南京银行</option>
+                                        <option value="宁波银行">宁波银行</option>
+                                        <option value="中信银行">中信银行</option>
+                                        <option value="广西北部湾银行">广西北部湾银行</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <div class="layui-input-inline">
+                                    <input type="text" name="b['.$i.'][accountname]" autocomplete="off" placeholder="请输入开户名" class="layui-input" value="">
+                                </div>
+                                <div class="layui-input-inline">
+                                    <input type="text" class="layui-input" name="b['.$i.'][cardnumber]" placeholder="请输入银行卡号" value="">
+                                </div>
+                                <div class="layui-input-inline">
+                                    <input type="text" class="layui-input" name="b['.$i.'][money]" placeholder="请输入金额" value="">
+                                </div>
+                            </div>
+                        </div>';
+                  }
+                    </php>
+                                  
+                          
+                          
+                              <if condition="$verifyGoogle and $verifysms">
+                        <div class="layui-form-item" id="df_auto_check">
+                            <label class="layui-form-label">验证方式：</label>
+                            <div class="layui-input-block">
+                                <input type="radio" name="auth_type" lay-filter="auth_type" value="1" title="谷歌安全码" checked>
+                                <input type="radio" name="auth_type" lay-filter="auth_type" value="0" title="短信验证码">
+                            </div>
+                        </div>
+                        <else />
+                        <input type="hidden" name="auth_type" value="<{$auth_type}>">
+                    </if>
+                    <eq name="verifyGoogle" value="1">
+                        <div class="layui-form-item" id="auth_google">
+                            <label class="layui-form-label">谷歌密码：</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="google_code" autocomplete="off"
+                                       placeholder="请输入谷歌安全码" class="layui-input" value="">
+                            </div>
+                            
+                        </div>
+                       
+                    </eq>
+                    <eq name="verifysms" value="1">
+                        <div id="auth_sms" <if condition="$verifyGoogle and $verifysms">style="display: none"</if>>
+                            <include file="Public/send"/>
+                        </div>
+                    </eq>
+                        <div class="layui-form-item" >
+                            <label class="layui-form-label">支付密码：</label>
+                            <div class="layui-input-inline">
+                                <input type="password" id="password"
+                                       placeholder="支付密码" class="layui-input" value="" name="password">
+                            </div>
+                            <button type="submit" class="layui-btn" id="file-submit" class="layui-btn" lay-submit lay-filter="demo1">提交</button>
+                        </div>
+                           
+
+                            
+                
+                            
+                            
+                    <div class="layui-inline">
+                        
+                    </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public/footer"/>
+<script>
+    layui.use(['laydate', 'laypage', 'layer', 'table', 'form'], function() {
+        var laydate = layui.laydate //日期
+            , laypage = layui.laypage //分页
+            ,layer = layui.layer //弹层
+            ,form = layui.form //表单
+            , table = layui.table; //表格       
+    });  
+
+    $('#pageList').change(function(){
+        $('#pageForm').submit();
+    });
+</script>
+</body>
+</html>

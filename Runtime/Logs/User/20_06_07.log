@@ -1,0 +1,437 @@
+[ 2020-06-07T11:29:51+08:00 ] 117.24.35.73 /agent_Index_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000542s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000571s ]
+NOTIC: [2] ksort() expects parameter 1 to be array, null given /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 12 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 13 行.
+NOTIC: [8] Undefined index: session_random /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 36 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 45 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 45 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 45 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Application/User/Controller/UserController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 7 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 7 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 8 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 8 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 9 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 9 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 10 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 10 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 37 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 37 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 38 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 38 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 39 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 39 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 40 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 72 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 72 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 118 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 118 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 119 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 119 行.
+NOTIC: [8] Use of undefined constant df_api - assumed 'df_api' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 131 行.
+NOTIC: [8] Undefined index: df_api /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 131 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 134 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 134 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 140 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 140 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 154 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 154 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 168 行.
+NOTIC: [8] Undefined index: groupid /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2020-06-07T11:29:52+08:00 ] 117.24.35.73 /agent_Login_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000440s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000469s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+NOTIC: [8] Undefined variable: verifycode /www/wwwroot/web/Runtime/Cache/User/cd7f950d5de11f03979102b93709231a.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000283s ]
+
+[ 2020-06-07T11:42:55+08:00 ] 42.236.10.78 /agent_Login_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000432s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000461s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
+NOTIC: [8] Undefined variable: verifycode /www/wwwroot/web/Runtime/Cache/User/cd7f950d5de11f03979102b93709231a.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000288s ]
+
+[ 2020-06-07T11:43:11+08:00 ] 42.236.10.78 /agent_Login_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000446s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000474s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+NOTIC: [8] Undefined variable: verifycode /www/wwwroot/web/Runtime/Cache/User/cd7f950d5de11f03979102b93709231a.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000318s ]
+
+[ 2020-06-07T17:09:22+08:00 ] 123.138.113.187 /user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000442s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000471s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 7 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 8 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 9 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 10 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 37 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 38 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 39 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 72 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant open_charge - assumed 'open_charge' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 118 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 119 行.
+NOTIC: [8] Use of undefined constant df_api - assumed 'df_api' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 131 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 134 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 140 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 154 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000273s ]
+
+[ 2020-06-07T17:09:23+08:00 ] 123.138.113.187 /agent_Index_main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000440s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000468s ]
+NOTIC: [8] Undefined variable: category /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: dataone /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: datatwo /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: ipItem /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 100 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+NOTIC: [2] Illegal string offset 'loginip' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 31 行.
+NOTIC: [8] Uninitialized string offset: 0 /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 31 行.
+NOTIC: [2] Illegal string offset 'loginaddress' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 31 行.
+NOTIC: [8] Uninitialized string offset: 0 /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 31 行.
+NOTIC: [2] Illegal string offset 'logindatetime' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 31 行.
+NOTIC: [8] Uninitialized string offset: 0 /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 31 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000224s ]
+
+[ 2020-06-07T17:09:26+08:00 ] 123.138.113.187 /agent_Index_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000457s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000485s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 7 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 8 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 9 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 10 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 37 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 38 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 39 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 72 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant open_charge - assumed 'open_charge' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 118 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 119 行.
+NOTIC: [8] Use of undefined constant df_api - assumed 'df_api' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 131 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 134 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 140 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 154 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000288s ]
+
+[ 2020-06-07T17:09:26+08:00 ] 123.138.113.187 /agent_Index_main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000443s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000472s ]
+NOTIC: [8] Undefined variable: category /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: dataone /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: datatwo /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: ipItem /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 100 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+NOTIC: [2] Illegal string offset 'loginip' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 31 行.
+NOTIC: [8] Uninitialized string offset: 0 /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 31 行.
+NOTIC: [2] Illegal string offset 'loginaddress' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 31 行.
+NOTIC: [8] Uninitialized string offset: 0 /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 31 行.
+NOTIC: [2] Illegal string offset 'logindatetime' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 31 行.
+NOTIC: [8] Uninitialized string offset: 0 /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 31 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000199s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000217s ]
+
+[ 2020-06-07T17:09:28+08:00 ] 123.138.113.187 /agent_Account_link.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000442s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000043s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000214s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000232s ]
+
+[ 2020-06-07T17:12:44+08:00 ] 123.138.113.187 /user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000435s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000463s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 7 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 8 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 9 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 10 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 37 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 38 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 39 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 72 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant open_charge - assumed 'open_charge' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 82 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 118 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 119 行.
+NOTIC: [8] Use of undefined constant df_api - assumed 'df_api' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 131 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 134 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 140 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 154 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/d7a7632f153cf12d0db44c934c28bcfe.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000274s ]
+
+[ 2020-06-07T17:12:44+08:00 ] 123.138.113.187 /agent_Index_main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000437s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000464s ]
+NOTIC: [8] Undefined variable: category /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: dataone /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: datatwo /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: ipItem /www/wwwroot/web/Application/User/Controller/IndexController.class.php 第 100 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 40 行.
+NOTIC: [8] Use of undefined constant groupid - assumed 'groupid' /www/wwwroot/web/Runtime/Cache/User/0a2302724c4cbc626c8639028f086c96.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000213s ]
+
+[ 2020-06-07T17:12:47+08:00 ] 123.138.113.187 /agent_Account_link.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000462s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000235s ]
+

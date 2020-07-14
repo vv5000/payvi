@@ -1,0 +1,672 @@
+【2019-11-18 00:05:27】
+订单号：20191118000317535256
+通知地址：http://pay.vip6081.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191155102&orderid=2019111800030400004&transaction_id=20191118000317535256&amount=100.0000&datetime=20191118000526&returncode=00&sign=B6B4F824D661F553C9AF5334B6CE2B2C&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 00:20:15】
+订单号：20191118001904565010
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11180019052986&transaction_id=20191118001904565010&amount=101.0000&datetime=20191118002013&returncode=00&sign=8891AFE81CF4CB77697E88FADD55697D&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 00:32:05】
+订单号：20191118003051989957
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11180030537034&transaction_id=20191118003051989957&amount=200.0000&datetime=20191118003203&returncode=00&sign=858921EE998F9B74BC99EFF6A2917EE5&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 00:50:55】
+订单号：20191118004922505553
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11180049221560&transaction_id=20191118004922505553&amount=200.0000&datetime=20191118005053&returncode=00&sign=1B987EFB3B8CAB3C1EA4B3D2C0A3AF7F&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 11:51:13】
+订单号：20191118114804525251
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911181148034801&transaction_id=20191118114804525251&amount=100.0000&datetime=20191118115113&returncode=00&sign=6456090B7E1CE54ECF8D4AF71D732D35&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 12:09:59】
+订单号：20191118120808565353
+通知地址：http://pay.vip6081.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191155102&orderid=2019111812080900559&transaction_id=20191118120808565353&amount=140.0000&datetime=20191118120958&returncode=00&sign=AE2A3107391A0EB2CB9A9A932B770EB8&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 12:34:28】
+订单号：20191118123254545310
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911181232528226&transaction_id=20191118123254545310&amount=100.0000&datetime=20191118123428&returncode=00&sign=5D9451CE17E21B4AD21DA703EFD5000F&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 12:39:24】
+订单号：20191118123759551004
+通知地址：http://150.109.59.33/tools/notify-1bcf_88cb60_b9b1_288c299_7236
+通知报文：memberid=191189793&orderid=WX191118123756349173&transaction_id=20191118123759551004&amount=200.1100&datetime=20191118123924&returncode=00&sign=27A7EADCBDDD98760B543656C19790BD&attach=
+HTTP状态：
+返回：ok
+
+【2019-11-18 12:50:36】
+订单号：20191118124925535048
+通知地址：http://pay.ffc585.com/JiuFuBaoZhiFuReturn/Index
+通知报文：memberid=191205418&orderid=RK470758793454637026&transaction_id=20191118124925535048&amount=1000.0000&datetime=20191118125036&returncode=00&sign=82A28262030A17D631A18013C6CC151A&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 12:51:26】
+订单号：20191118124852521015
+通知地址：http://pay.ffc585.com/JiuFuBaoZhiFuReturn/Index
+通知报文：memberid=191205418&orderid=RK470997168457905657&transaction_id=20191118124852521015&amount=300.0000&datetime=20191118125125&returncode=00&sign=4492E88E9E1168A7E62CDEA00D50425C&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 12:55:45】
+订单号：20191118125351102485
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911181253502815&transaction_id=20191118125351102485&amount=500.0000&datetime=20191118125544&returncode=00&sign=A21731851FE9A5A0634BDCEC0E7D068A&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 13:31:43】
+订单号：20191118133027514856
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911181330281049&transaction_id=20191118133027514856&amount=100.0000&datetime=20191118133143&returncode=00&sign=4D8863CD679E85ECA5B4F0CF17991FE8&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 13:38:47】
+订单号：20191118133732995348
+通知地址：http://834raw.top.cxmyjd.com/pay/jsp/jiufubaopay/res.jsp
+通知报文：memberid=191156325&orderid=191118013720907430121&transaction_id=20191118133732995348&amount=600.0000&datetime=20191118133846&returncode=00&sign=E7694FB15BA685D0A9A1F9C8F2E3FCD1&attach=en0668DF62A619A8_84911301_113552
+HTTP状态：
+返回：OK
+
+【2019-11-18 13:39:19】
+订单号：20191118133032561004
+通知地址：http://pay.vip6081.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191155102&orderid=2019111813303400789&transaction_id=20191118133032561004&amount=300.0000&datetime=20191118133919&returncode=00&sign=23C18BC1373483FA374BB5A0FD3B6689&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 13:40:22】
+订单号：20191118133032561004
+通知地址：http://pay.vip6081.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191155102&orderid=2019111813303400789&transaction_id=20191118133032561004&amount=300.0000&datetime=20191118134019&returncode=00&sign=C8E45BABD93714EFD3F4EA496B0F057C&attach=
+HTTP状态：
+返回：
+
+【2019-11-18 13:42:05】
+订单号：20191118133303102554
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911181333047775&transaction_id=20191118133303102554&amount=100.0000&datetime=20191118134204&returncode=00&sign=86A8EFC1BD712D348566201B71685BA9&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 13:42:15】
+订单号：20191118133303102554
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911181333047775&transaction_id=20191118133303102554&amount=100.0000&datetime=20191118134214&returncode=00&sign=A6A549F9BEE9568ECD5B59C70249BFA0&attach=
+HTTP状态：
+返回：已处理过过的订单
+
+【2019-11-18 13:45:30】
+订单号：20191118134219989756
+通知地址：http://pay.vip6081.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191155102&orderid=2019111813422000818&transaction_id=20191118134219989756&amount=902.0000&datetime=20191118134530&returncode=00&sign=6BED9CFCA7D8EDDEAE0EF3A9FE147E4F&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 13:56:17】
+订单号：20191118135329575056
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11181353312322&transaction_id=20191118135329575056&amount=200.0000&datetime=20191118135615&returncode=00&sign=30BD1464477A45419B008DC8AC01B308&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 13:58:07】
+订单号：20191118135611985250
+通知地址：http://pay.768qppay1.com:5222/pay/api/callback/JIUFUBAOZF/1171
+通知报文：memberid=191169232&orderid=20191118135611277VfY&transaction_id=20191118135611985250&amount=100.0000&datetime=20191118135807&returncode=00&sign=344AC15EF72AAF5BD9E8C85DC0EDB5E4&attach=
+HTTP状态：
+返回：{"status":-1,"msg":"网络维护中，稍后再试.","data":null}
+
+【2019-11-18 13:58:20】
+订单号：20191118135611985250
+通知地址：http://pay.768qppay1.com:5222/pay/api/callback/JIUFUBAOZF/1171
+通知报文：memberid=191169232&orderid=20191118135611277VfY&transaction_id=20191118135611985250&amount=100.0000&datetime=20191118135820&returncode=00&sign=15B88ACC4EB25369B3A54929E4715EA4&attach=
+HTTP状态：
+返回：{"status":-1,"msg":"网络维护中，稍后再试.","data":null}
+
+【2019-11-18 14:01:23】
+订单号：20191118135848561011
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11181358514159&transaction_id=20191118135848561011&amount=200.0000&datetime=20191118140122&returncode=00&sign=31E11B69A9AA36301AB0EA04B3B73EE7&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 14:03:42】
+订单号：20191118140207102529
+通知地址：http://e019cdb2webapi.miapp66dom.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11181402084073&transaction_id=20191118140207102529&amount=302.2000&datetime=20191118140341&returncode=00&sign=B1993916C5628E5B04271F8FA4E43919&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 14:08:54】
+订单号：20191118140749535797
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11181407516487&transaction_id=20191118140749535797&amount=101.0000&datetime=20191118140852&returncode=00&sign=5153952917D37D11A3D21F18E15E4514&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 14:39:14】
+订单号：20191118143126101491
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911181431256890&transaction_id=20191118143126101491&amount=100.0000&datetime=20191118143912&returncode=00&sign=F9E5637A05DDC5C53AAAEB41EBFC0EB7&attach=
+HTTP状态：
+返回：已处理过过的订单
+
+【2019-11-18 14:39:32】
+订单号：20191118143126101491
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911181431256890&transaction_id=20191118143126101491&amount=100.0000&datetime=20191118143931&returncode=00&sign=A811835554D6169B47215A79F59D5397&attach=
+HTTP状态：
+返回：已处理过过的订单
+
+【2019-11-18 14:40:32】
+订单号：20191118143126101491
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911181431256890&transaction_id=20191118143126101491&amount=100.0000&datetime=20191118144031&returncode=00&sign=7D779DFD58C46C0DEFE0BF3DAD043CE7&attach=
+HTTP状态：
+返回：已处理过过的订单
+
+【2019-11-18 15:27:17】
+订单号：20191118152525531004
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11181525284116&transaction_id=20191118152525531004&amount=300.0000&datetime=20191118152715&returncode=00&sign=8612281014704F7FA48BB0E114D13E04&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 15:30:42】
+订单号：20191118152934101545
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11181529365477&transaction_id=20191118152934101545&amount=200.0000&datetime=20191118153041&returncode=00&sign=5EDD599C6A9A31C4AF1C5C86955F7003&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 15:36:39】
+订单号：20191118153459515097
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911181534547922&transaction_id=20191118153459515097&amount=100.0000&datetime=20191118153639&returncode=00&sign=D0E82192A831A980C2201B9CC1D619E3&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 15:50:12】
+订单号：20191118154844999710
+通知地址：http://pay.ffc585.com/JiuFuBaoZhiFuReturn/Index
+通知报文：memberid=191205418&orderid=RK470964674232955890&transaction_id=20191118154844999710&amount=500.0000&datetime=20191118155012&returncode=00&sign=6D28505474A16D3B369F9873D615F231&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 16:01:37】
+订单号：20191118155707514898
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911181557082930&transaction_id=20191118155707514898&amount=100.0000&datetime=20191118160136&returncode=00&sign=6634220BC8B636388940CAB0C2469939&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 16:02:05】
+订单号：20191118160059985655
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11181601016027&transaction_id=20191118160059985655&amount=200.0000&datetime=20191118160203&returncode=00&sign=A060FA2D16751833B1F7243207A33069&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 16:02:38】
+订单号：20191118155634501015
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911181556377153599&transaction_id=20191118155634501015&amount=100.0000&datetime=20191118160238&returncode=00&sign=C81A071CDA139CAB3E96BA1E099790A1&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-18 16:08:04】
+订单号：20191118160652995051
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911181606522124&transaction_id=20191118160652995051&amount=100.0000&datetime=20191118160803&returncode=00&sign=5F9595FA66B7AF60CD71129925312EB8&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 16:12:04】
+订单号：20191118160818504857
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911181608208831005&transaction_id=20191118160818504857&amount=103.0000&datetime=20191118161204&returncode=00&sign=356BC5DE84AFAC920338B4485791497A&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-18 16:22:54】
+订单号：20191118162126549848
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911181621274696&transaction_id=20191118162126549848&amount=100.0000&datetime=20191118162254&returncode=00&sign=B46C546532E8D3D96B5734EFA3D9EB54&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 16:28:02】
+订单号：20191118162654101555
+通知地址：http://pay.ffc585.com/JiuFuBaoZhiFuReturn/Index
+通知报文：memberid=191205418&orderid=RK470794039654666816&transaction_id=20191118162654101555&amount=200.0000&datetime=20191118162802&returncode=00&sign=F031438776E3F9120D684037961BE83A&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 16:45:07】
+订单号：20191118164224489810
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911181642271524644&transaction_id=20191118164224489810&amount=100.0000&datetime=20191118164507&returncode=00&sign=7BB9E5929F09444048D93209A1A9DAD3&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-18 17:00:10】
+订单号：20191118165902545451
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911181659049889708&transaction_id=20191118165902545451&amount=100.0000&datetime=20191118170009&returncode=00&sign=1F8A4DB7E6467D0524AEDD3A6C0FC3B6&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-18 17:19:07】
+订单号：20191118171143102485
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911181711416987&transaction_id=20191118171143102485&amount=100.0000&datetime=20191118171906&returncode=00&sign=4100BE1B76F14607C87045CE2B4AAEBB&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 17:22:59】
+订单号：20191118172138504810
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11181721401137&transaction_id=20191118172138504810&amount=200.0000&datetime=20191118172257&returncode=00&sign=56B759948997A30B29D3F160CC13B033&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 17:23:25】
+订单号：20191118162654101555
+通知地址：http://pay.ffc585.com/JiuFuBaoZhiFuReturn/Index
+通知报文：memberid=191205418&orderid=RK470794039654666816&transaction_id=20191118162654101555&amount=200.0000&datetime=20191118172325&returncode=00&sign=224A41AC14A60F15097034B2FF19E15A&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 17:32:33】
+订单号：20191118173058501024
+通知地址：http://pay.ffc585.com/JiuFuBaoZhiFuReturn/Index
+通知报文：memberid=191205418&orderid=RK470942069942894124&transaction_id=20191118173058501024&amount=4000.0000&datetime=20191118173233&returncode=00&sign=0CE09C784D573353746DDD625784E239&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 17:32:35】
+订单号：20191118173058501024
+通知地址：http://pay.ffc585.com/JiuFuBaoZhiFuReturn/Index
+通知报文：memberid=191205418&orderid=RK470942069942894124&transaction_id=20191118173058501024&amount=4000.0000&datetime=20191118173235&returncode=00&sign=4121CA62D39286C61C59F93A381CEC07&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 17:32:37】
+订单号：20191118173058501024
+通知地址：http://pay.ffc585.com/JiuFuBaoZhiFuReturn/Index
+通知报文：memberid=191205418&orderid=RK470942069942894124&transaction_id=20191118173058501024&amount=4000.0000&datetime=20191118173237&returncode=00&sign=4D48E623627B307EF9FABBF7AD8860AE&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 18:37:58】
+订单号：20191118183326545254
+通知地址：http://150.109.59.33/tools/notify-1bcf_8577bb_b9b1_287f528_72ae
+通知报文：memberid=191189793&orderid=WX191118183326639174&transaction_id=20191118183326545254&amount=200.1100&datetime=20191118183758&returncode=00&sign=C55447CB21B3653ADEB85571C5ED9361&attach=
+HTTP状态：
+返回：ok
+
+【2019-11-18 18:47:18】
+订单号：20191118184530974910
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11181845326172&transaction_id=20191118184530974910&amount=200.0000&datetime=20191118184717&returncode=00&sign=C9C047E2280824E931FD11EEE4C7F277&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 19:02:07】
+订单号：20191118190025574997
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911181900272544129&transaction_id=20191118190025574997&amount=100.0000&datetime=20191118190207&returncode=00&sign=82C8F461683AEB7289B0F8F35BEB9693&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-18 19:03:38】
+订单号：20191118185841495057
+通知地址：http://pay.ffc585.com/JiuFuBaoZhiFuReturn/Index
+通知报文：memberid=191205418&orderid=RK471078434519441276&transaction_id=20191118185841495057&amount=200.0000&datetime=20191118190337&returncode=00&sign=42BD77ABFF8376E14C0E232612B1A5E5&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 19:17:49】
+订单号：20191118191620525753
+通知地址：http://834raw.top.cxmyjd.com/pay/jsp/jiufubaopay/res.jsp
+通知报文：memberid=191156325&orderid=191118071620407342288&transaction_id=20191118191620525753&amount=200.0000&datetime=20191118191749&returncode=00&sign=49728E6A7FF4440B1774BA6C2B019D61&attach=en066F800C4101A3_84980763_113552
+HTTP状态：
+返回：OK
+
+【2019-11-18 19:33:47】
+订单号：20191118193205535249
+通知地址：http://834raw.top.cxmyjd.com/pay/jsp/jiufubaopay/res.jsp
+通知报文：memberid=191156325&orderid=191118073220907445651&transaction_id=20191118193205535249&amount=200.0000&datetime=20191118193346&returncode=00&sign=B1AD5C09A5CC71361A59B30794A85FE6&attach=en0660D2400F95E6_85013235_113552
+HTTP状态：
+返回：OK
+
+【2019-11-18 19:38:05】
+订单号：20191118193653535548
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11181936566470&transaction_id=20191118193653535548&amount=200.0000&datetime=20191118193802&returncode=00&sign=DF8297479C9F27140174AFA2861F5A1A&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 19:39:11】
+订单号：20191118193749100511
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911181937512808989&transaction_id=20191118193749100511&amount=100.0000&datetime=20191118193910&returncode=00&sign=A3AF914C6B5A6F88FD3D48CE4AABEF18&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-18 19:39:21】
+订单号：20191118193727559852
+通知地址：http://pay.ffc585.com/JiuFuBaoZhiFuReturn/Index
+通知报文：memberid=191205418&orderid=RK470743684515830246&transaction_id=20191118193727559852&amount=200.0000&datetime=20191118193921&returncode=00&sign=A4ADD63E078579C5DA3A82E5B172EDBC&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 19:42:10】
+订单号：20191118194050509856
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11181940526291&transaction_id=20191118194050509856&amount=300.0000&datetime=20191118194209&returncode=00&sign=0532CF25679278D22A40625BEB15EE5D&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 19:43:39】
+订单号：20191118194144561025
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11181941478144&transaction_id=20191118194144561025&amount=200.0000&datetime=20191118194337&returncode=00&sign=03E5791161290E20C7FE15356064F3A6&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 19:47:21】
+订单号：20191118194526541014
+通知地址：http://pay.ffc585.com/JiuFuBaoZhiFuReturn/Index
+通知报文：memberid=191205418&orderid=RK470776489530880533&transaction_id=20191118194526541014&amount=1000.0000&datetime=20191118194721&returncode=00&sign=9D202F1C637DA186C9B0B57B03D325B3&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 19:52:12】
+订单号：20191118195037100485
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911181950378198&transaction_id=20191118195037100485&amount=200.0000&datetime=20191118195212&returncode=00&sign=7085DA655E352614F8BF4713D58A7754&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 19:52:55】
+订单号：20191118195051989710
+通知地址：http://pay.vip6081.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191155102&orderid=2019111819505301872&transaction_id=20191118195051989710&amount=200.0000&datetime=20191118195255&returncode=00&sign=C252BD203F8820A2ED3073209AF79A69&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 19:54:16】
+订单号：20191118195303102505
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911181953053169634&transaction_id=20191118195303102505&amount=100.0000&datetime=20191118195416&returncode=00&sign=0416C28A88B8826DF487466884F18EAD&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-18 19:54:42】
+订单号：20191118195321495556
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911181953246599625&transaction_id=20191118195321495556&amount=200.0000&datetime=20191118195442&returncode=00&sign=F3096F9C785E4D7685BEE877E04F5616&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-18 20:21:00】
+订单号：20191118201822101101
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911182018238975&transaction_id=20191118201822101101&amount=100.0000&datetime=20191118202100&returncode=00&sign=6BB640E686F1AADAF49338F757E9E108&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 20:37:54】
+订单号：20191118201935555499
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911182019329917&transaction_id=20191118201935555499&amount=100.0000&datetime=20191118203753&returncode=00&sign=AA35A4170F3D9BFCBE37158814E03429&attach=
+HTTP状态：
+返回：已处理过过的订单
+
+【2019-11-18 20:38:28】
+订单号：20191118201935555499
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911182019329917&transaction_id=20191118201935555499&amount=100.0000&datetime=20191118203827&returncode=00&sign=E4DFC4DB4564ABD60B8F0B18E4ED3E7E&attach=
+HTTP状态：
+返回：已处理过过的订单
+
+【2019-11-18 20:39:54】
+订单号：20191118202012994956
+通知地址：http://pay.vip6081.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191155102&orderid=2019111820201401960&transaction_id=20191118202012994956&amount=200.0000&datetime=20191118203954&returncode=00&sign=5BE78A01A17F11F39FB8AAC7686CA3FB&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 20:42:12】
+订单号：20191118201935555499
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911182019329917&transaction_id=20191118201935555499&amount=100.0000&datetime=20191118204210&returncode=00&sign=840E5BDD214AB2A177CE562F1D587A26&attach=
+HTTP状态：
+返回：已处理过过的订单
+
+【2019-11-18 20:48:10】
+订单号：20191118204654101504
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911182046566731847&transaction_id=20191118204654101504&amount=1000.0000&datetime=20191118204809&returncode=00&sign=2C8614148D4649368902F792BBB311FE&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-18 21:09:58】
+订单号：20191118210808561004
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911182108119681&transaction_id=20191118210808561004&amount=200.0000&datetime=20191118210958&returncode=00&sign=C92B4D90CB390024C0F5CEE99F530CD1&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 21:17:08】
+订单号：20191118211554979756
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911182115575723386&transaction_id=20191118211554979756&amount=100.0000&datetime=20191118211707&returncode=00&sign=75E8E026AE76EE7CBABE7D5568B5576C&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-18 21:17:55】
+订单号：20191118211535559897
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911182115377195&transaction_id=20191118211535559897&amount=500.0000&datetime=20191118211755&returncode=00&sign=C85A31573068A9ED364FEE8F6DB7FBB0&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 21:18:53】
+订单号：20191118211749100501
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11182117516426&transaction_id=20191118211749100501&amount=101.0000&datetime=20191118211851&returncode=00&sign=6823C32A6996AB7FD050E51827C6F6D2&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 21:43:47】
+订单号：20191118214224485449
+通知地址：http://pay.vip6081.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191155102&orderid=2019111821422602191&transaction_id=20191118214224485449&amount=200.0000&datetime=20191118214346&returncode=00&sign=C6CE75C722A24D37F27367D8FF8992A3&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 21:45:08】
+订单号：20191118214059985548
+通知地址：http://pay.ffc585.com/JiuFuBaoZhiFuReturn/Index
+通知报文：memberid=191205418&orderid=RK470510419538355413&transaction_id=20191118214059985548&amount=600.0000&datetime=20191118214508&returncode=00&sign=2DD6C1331F0C6280B6EFF1EACCF41FDB&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 21:51:06】
+订单号：20191118214925531001
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11182149249544&transaction_id=20191118214925531001&amount=101.0000&datetime=20191118215104&returncode=00&sign=2DDA6989437444BF65DFE20FB0AC1B11&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 21:53:46】
+订单号：20191118215242975110
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911182152459024671&transaction_id=20191118215242975110&amount=160.0000&datetime=20191118215345&returncode=00&sign=482F658FBCA473DB68AD4410C0FAEBEE&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-18 21:56:02】
+订单号：20191118215356529756
+通知地址：http://pay.vip6081.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191155102&orderid=2019111821535702228&transaction_id=20191118215356529756&amount=100.0000&datetime=20191118215602&returncode=00&sign=1369195F19EC115A75E56EBDF4E32CC5&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 21:56:19】
+订单号：20191118215510101515
+通知地址：http://pay.vip6081.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191155102&orderid=2019111821551102229&transaction_id=20191118215510101515&amount=101.0000&datetime=20191118215618&returncode=00&sign=2DA22F260D3308E505365F40455DDE79&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 21:57:32】
+订单号：20191118215555989848
+通知地址：http://pay.vip6081.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191155102&orderid=2019111821555602232&transaction_id=20191118215555989848&amount=101.0000&datetime=20191118215731&returncode=00&sign=3AF6E5BA540788291702E6C5DD658074&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 22:04:38】
+订单号：20191118220318545253
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911182203197101248&transaction_id=20191118220318545253&amount=100.0000&datetime=20191118220438&returncode=00&sign=0799841431849C2C3919C495C4E1038A&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-18 22:06:49】
+订单号：20191118220446101535
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911182204458041&transaction_id=20191118220446101535&amount=200.0000&datetime=20191118220649&returncode=00&sign=8C31871EE929F1405E89F8DCF89804AD&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 22:18:42】
+订单号：20191118221649495610
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911182216519860514&transaction_id=20191118221649495610&amount=100.0000&datetime=20191118221842&returncode=00&sign=D4B979986D04EFF06BF72412F68F64EA&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-18 22:26:49】
+订单号：20191118222531985010
+通知地址：https://91876543.com/api/lottery/pay/notify/jfb/11706
+通知报文：memberid=191141219&orderid=P1911182225348666400&transaction_id=20191118222531985010&amount=500.0000&datetime=20191118222649&returncode=00&sign=ADA4AD34E525F8D61A632469E91CB588&attach=1234|456
+HTTP状态：
+返回：OK
+
+【2019-11-18 22:28:53】
+订单号：20191118222747511005
+通知地址：http://pay.vip6081.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191155102&orderid=2019111822275002328&transaction_id=20191118222747511005&amount=200.0000&datetime=20191118222851&returncode=00&sign=53C79402788D7EF053DBED1F38C87F3D&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 22:31:42】
+订单号：20191118223022101489
+通知地址：http://e019cdb2webapi.miapp66dom.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11182230224398&transaction_id=20191118223022101489&amount=398.8800&datetime=20191118223141&returncode=00&sign=31C3B64F5945BE34C9B6B818200E330E&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 22:52:32】
+订单号：20191118225122975751
+通知地址：http://pay.vip6081.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191155102&orderid=2019111822512502422&transaction_id=20191118225122975751&amount=200.0000&datetime=20191118225232&returncode=00&sign=030464DBEBAB8C7E7D50933FB3914136&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 22:59:46】
+订单号：20191118225818974950
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11182258167250&transaction_id=20191118225818974950&amount=101.0000&datetime=20191118225945&returncode=00&sign=A7C8BC6DC341416B7203E1D2FCFFD20D&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 23:01:01】
+订单号：20191118225843514957
+通知地址：http://pay.1youbox.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191209910&orderid=2019111822584503509&transaction_id=20191118225843514957&amount=3000.0000&datetime=20191118230059&returncode=00&sign=2F950013345884616825021179B183B4&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 23:01:20】
+订单号：20191118225737499849
+通知地址：http://pay.vip6081.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191155102&orderid=2019111822573902445&transaction_id=20191118225737499849&amount=250.0000&datetime=20191118230120&returncode=00&sign=B6BBB55669797B9034E30B16C7886B13&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 23:05:15】
+订单号：20191118230336565748
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11182303391133&transaction_id=20191118230336565748&amount=150.0000&datetime=20191118230512&returncode=00&sign=15CAEC4001599BB15BC930CA4D9AD809&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 23:08:34】
+订单号：20191118225857495457
+通知地址：http://pay.vip6081.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191155102&orderid=2019111822590002451&transaction_id=20191118225857495457&amount=100.0000&datetime=20191118230834&returncode=00&sign=1241052A72B690A30538A97DE9B026D4&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 23:19:16】
+订单号：20191118231308525010
+通知地址：http://834raw.top.cxmyjd.com/pay/jsp/jiufubaopay/res.jsp
+通知报文：memberid=191156325&orderid=191118111320907459610&transaction_id=20191118231308525010&amount=100.0000&datetime=20191118231915&returncode=00&sign=ECEDE4686754AE1FD626F990FB4152DC&attach=en063F3B5276CB9C_85059820_113552
+HTTP状态：
+返回：OK
+
+【2019-11-18 23:26:44】
+订单号：20191118232437539756
+通知地址：http://e019cdb2app.miapp88api.com/Api/Home/payCallBack/jiufubao
+通知报文：memberid=191121442&orderid=11182324393344&transaction_id=20191118232437539756&amount=101.0000&datetime=20191118232642&returncode=00&sign=1F57B067DC12FD595AC1C3F3F46A52D5&attach=
+HTTP状态：
+返回：查询订单失败查询订单订单状态为未支付ok
+
+【2019-11-18 23:29:44】
+订单号：20191118225444525710
+通知地址：http://pay.vip6081.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191155102&orderid=2019111822544602431&transaction_id=20191118225444525710&amount=200.0000&datetime=20191118232943&returncode=00&sign=A560ECF8DBB8B05BF9EB720CB4BE5BC7&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 23:33:57】
+订单号：20191118233148525656
+通知地址：http://pay1.dr5151.com/apis/pay_gateway/jiufujinzhifu/notice
+通知报文：memberid=191209911&orderid=F201911182331508789&transaction_id=20191118233148525656&amount=300.0000&datetime=20191118233356&returncode=00&sign=D9B6DC8B7A6FCCC79F7203066D353C3F&attach=
+HTTP状态：
+返回：OK
+
+【2019-11-18 23:48:26】
+订单号：20191118234556524954
+通知地址：http://pay.vip6081.com/onlinepay/jiufubaov2/notify.do
+通知报文：memberid=191155102&orderid=2019111823455702578&transaction_id=20191118234556524954&amount=200.0000&datetime=20191118234825&returncode=00&sign=4D0CA1E7ABC950C67D763BBD7F49170F&attach=
+HTTP状态：
+返回：OK
+
