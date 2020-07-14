@@ -2708,6 +2708,12 @@ class WithdrawalController extends UserController
                     }
                     //计算手续费
                     $sxfmoney = $tkConfig['tktype'] ? $tkConfig['sxffixed'] : bcdiv(bcmul($withdraw['money'], $tkConfig['sxfrate'], 4), 100, 4);
+                    //额外的手续费
+                    $extra_sxmoney = getRank($withdraw['money']);
+                    $sxfmoney += $extra_sxmoney;
+                    //增加额外的手续费
+
+
                     if($tkConfig['tk_charge_type']) {
                         //实际提现的金额
                         $money = $withdraw['money'];
@@ -3062,6 +3068,12 @@ class WithdrawalController extends UserController
                     }
                     //计算手续费
                     $sxfmoney = $tkConfig['tktype'] ? $tkConfig['sxffixed'] : bcdiv(bcmul($withdraw['money'], $tkConfig['sxfrate'], 4), 100, 4);
+
+                    //额外的手续费
+                    $extra_sxmoney = getRank($withdraw['money']);
+                    $sxfmoney += $extra_sxmoney;
+                    //增加额外的手续费
+
                     if($tkConfig['tk_charge_type']) {
                         //实际提现的金额
                         $money = $withdraw['money'];
