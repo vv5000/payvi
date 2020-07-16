@@ -437,3 +437,4 @@ function get_column($array,$type=1,$fid=0,$level=0)
 
     return $column;
 }
+

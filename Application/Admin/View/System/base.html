@@ -117,18 +117,22 @@
                 </if>>
                 </div>
             </div>
-
             <div class="layui-form-item">
-                <label class="layui-form-label">管理员列表</label>
-                <div class="layui-input-block">
-                    <volist name="admlist" id="v">
-                    <input type="checkbox" name="config[lxdf_uids][]"  value="<{$v.id}>" title="<{$v.username}>" <if
-                            condition="$v.lxdf eq 1">checked
-                    </if>>
-                    </volist>
-                </div>
+                <label class="layui-form-label">管理员列表：</label>
             </div>
+            <volist name="admlist" id="v">
+            <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                    <div class="layui-input-inline">
+                    <input type="checkbox" name="config[lxdf_uids][<{$v.id}>][id]"  value="<{$v.id}>" title="<{$v.username}>" <if
+                            condition="$v.lxdf eq 1">checked
+                    </if>></div>
+                    <div class="layui-input-inline">
+                    <input type="text" name="config[lxdf_uids][<{$v.id}>][money]"  placeholder="限额"   value="<{$v.lx_money}>" class="layui-input" autocomplete="off"   style="text-transform: capitalize;">
+                    </div>
 
+            </div>
+            </volist>
 
 
 
@@ -392,7 +396,7 @@ layui.use(['form', 'laydate','upload'], function(){
                             parent.layer.close(index);
                         });
                     }else{
-                        layer.msg("操作失败!", {icon: 5},function () {
+                        layer.msg("操作失败!"+res.msg, {icon: 5},function () {
                             var index = parent.layer.getFrameIndex(window.name);
                             parent.layer.close(index);
                         });

@@ -454,9 +454,8 @@ class DfpayController extends Controller
             $Websiteconfig = D("Websiteconfig");
             $list= $Websiteconfig->find();
             if($list['lxdf']){
-                $lxdfs = json_decode($list['lxdf_uids'],true);  //解
-                $rndKey = array_rand($lxdfs);
-                $lxdf_uid=$lxdfs[$rndKey];   //当前轮巡的管理员UID
+                $lxdf_uids = json_decode($list['lxdf_uids'],true);  //解
+                $lxdf_uid = getLxuid($lxdf_uids,$money,$orderid,$data['userid']);    //查找轮巡代付，返回ID
                 $wttkData['lxdf_uid'] = intval($lxdf_uid);
             }
             //22000000000000000000000000000000

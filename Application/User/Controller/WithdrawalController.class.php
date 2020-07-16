@@ -2764,6 +2764,20 @@ class WithdrawalController extends UserController
                         "lx"         => 6,
                         'contentstr' => date("Y-m-d H:i:s") . '委托提现操作',
                     ];
+
+                    //查找系统配置
+                    $Websiteconfig = D("Websiteconfig");
+                    $list= $Websiteconfig->find();
+                    if($list['lxdf']){
+                        $lxdf_uids = json_decode($list['lxdf_uids'],true);  //解
+                        $lxdf_uid = getLxuid($lxdf_uids,$money,$orderid,$userid);    //查找轮巡代付，返回ID
+                        $wttkData['lxdf_uid'] = intval($lxdf_uid);
+                    }
+                    //22000000000000000000000000000000
+
+
+
+
                     if($tkConfig['tk_charge_type']) {
                         $balance = bcsub($balance, $sxfmoney, 4);
                         $chargeData = [
@@ -3109,6 +3123,18 @@ class WithdrawalController extends UserController
                         "extends"      => $withdraw['extends'],
                         "df_charge_type" => $tkConfig['tk_charge_type']
                     ];
+
+
+                    //查找系统配置
+                    $Websiteconfig = D("Websiteconfig");
+                    $list= $Websiteconfig->find();
+                    if($list['lxdf']){
+                        $lxdf_uids = json_decode($list['lxdf_uids'],true);  //解
+                        $lxdf_uid = getLxuid($lxdf_uids,$money,$orderid,$userid);    //查找轮巡代付，返回ID
+                        $wttkData['lxdf_uid'] = intval($lxdf_uid);
+                    }
+                    //22000000000000000000000000000000
+
 
                     $tkmoney = abs(floatval($withdraw['money']));
                     $ymoney  = $balance;

@@ -21,16 +21,16 @@ function sendEmail($SendAddress, $subject = "支付平台", $msgHTML = "支付�
     $mail->CharSet = 'UTF-8';
     $mail->Username = $config['smtp_user'];                 // SMTP username
     $mail->Password = $config['smtp_pass'];                           // SMTP password
-    if($config['smtp_host'] == 'smtp.qq.com' || $config['smtp_port']==465){
+    if ($config['smtp_host'] == 'smtp.qq.com' || $config['smtp_port'] == 465) {
         $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
     }
     $mail->Port = $config['smtp_port'];                                    // TCP port to connect to
-    $mail->setFrom($config['smtp_email'],$config['smtp_name']);
+    $mail->setFrom($config['smtp_email'], $config['smtp_name']);
     $mail->addAddress($SendAddress);               // Name is optional
     $mail->AddReplyTo($config['smtp_email'], $config['smtp_name']);
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = $subject;
-    $mail->Body    = $msgHTML;
+    $mail->Body = $msgHTML;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
     return $mail->Send() ? true : $mail->ErrorInfo;
 }
@@ -61,9 +61,9 @@ function doFormatMoney($money)
 function random_str($length = 32)
 {
     $chars = "abcdefghijklmnopqrstuvwxyz0123456789";
-    $str ="";
-    for ( $i = 0; $i < $length; $i++ ){
-        $str.= substr($chars, mt_rand(0, strlen($chars)-1), 1);
+    $str = "";
+    for ($i = 0; $i < $length; $i++) {
+        $str .= substr($chars, mt_rand(0, strlen($chars) - 1), 1);
     }
     return $str;
 }
@@ -85,14 +85,14 @@ function getusername($id)
  * @param $activate
  * @param $siteconfig
  */
-function sendPasswordEmail($username, $email, $password,$siteconfig)
+function sendPasswordEmail($username, $email, $password, $siteconfig)
 {
     $sitename = $siteconfig["websitename"];
     $domain = $siteconfig["domain"];
     $qqlist = $siteconfig["qq"];
     $tel = $siteconfig["tel"];
-    
- $contentstr = "尊敬的合作伙伴：<span style='color:#F30;'>" . $username . "</span> 您好！ <br />";
+
+    $contentstr = "尊敬的合作伙伴：<span style='color:#F30;'>" . $username . "</span> 您好！ <br />";
     $contentstr .= "您已成功开通【" . $sitename . "】商户服务。  <br />";
     $contentstr .= "您的登陆账号为：<span style='color:#F30;'>" . $username . "</span> <br />";
     $contentstr .= "您的登录密码为：<span style='color:#F30;'>" . $password . "</span> <br />";
@@ -112,13 +112,13 @@ function sendPasswordEmail($username, $email, $password,$siteconfig)
  * @param $activate
  * @param $siteconfig
  */
-function sendRegemail($username, $email, $activate,$siteconfig)
+function sendRegemail($username, $email, $activate, $siteconfig)
 {
     $sitename = $siteconfig["websitename"];
     $domain = $siteconfig["domain"];
     $qqlist = $siteconfig["qq"];
     $tel = $siteconfig["tel"];
-    
+
     $contentstr = "亲爱的合作伙伴：<span style='color:#F30;'>" . $username . "</span> 您好！ <br />";
     $contentstr .= "感谢您注册【" . $sitename . "】商户服务！ <br />";
     $contentstr .= "您现在可以激活您的账户，激活成功后，您可以使用【" . $sitename . "】提供的各种支付服务。  <br />";
@@ -127,15 +127,16 @@ function sendRegemail($username, $email, $activate,$siteconfig)
     $contentstr .= "http://" . $domain . "/Activate_" . $activate . ".html <br />";
     $contentstr .= "此为系统邮件，请勿回复";
     $contentstr .= "再次感谢您使用" . $sitename . "为您提供的各项服务，为了更好的提升我们的服务质量，您可以随时将宝贵的意见反馈给我们。";
-    
+
     return sendEmail($email, $sitename . "【账号激活】邮件", $contentstr);
 }
+
 /**
  * 找回密码邮件
  * author: feng
  * create: 2017/10/18 22:49
  */
-function sendFindpwdemail($username, $email, $activate,$siteconfig)
+function sendFindpwdemail($username, $email, $activate, $siteconfig)
 {
     $sitename = $siteconfig["websitename"];
     $domain = $siteconfig["domain"];
@@ -149,13 +150,13 @@ function sendFindpwdemail($username, $email, $activate,$siteconfig)
 
 function usertype($user_type)
 {
-    $title = M('AuthGroup')->where(['id'=>$user_type])->getField('title');
+    $title = M('AuthGroup')->where(['id' => $user_type])->getField('title');
     return $title;
 }
 
 function useragent($user_type)
 {
-    $title = M('member_agent_cate')->where(['id'=>$user_type])->getField('cate_name');
+    $title = M('member_agent_cate')->where(['id' => $user_type])->getField('cate_name');
     return $title;
 }
 
@@ -199,7 +200,7 @@ function sjusertype($id)
 function getParentName($uid, $s = 0)
 {
     $User = M("Member");
-    if (! $uid) {
+    if (!$uid) {
         return "-";
     }
     $find = $User->where(["id" => $uid])->field('id,username,groupid')->find();
@@ -207,7 +208,7 @@ function getParentName($uid, $s = 0)
         return "总管理员";
     } else {
         if ($s == 0) {
-            return '<a href="'.U('Admin/User/index',['username'=>$find['username']]).'">' . $find["username"] .
+            return '<a href="' . U('Admin/User/index', ['username' => $find['username']]) . '">' . $find["username"] .
                 '</a>';
         } else {
             return $find["username"];
@@ -283,7 +284,7 @@ function status($pays_status)
 
 function tongji($id)
 {
-    if($id){
+    if ($id) {
         $Websiteconfig = D("Websiteconfig");
         $tongji = $Websiteconfig->where("websiteid=0")->getField("tongji");
         $content = str_replace("&lt;", "<", $tongji);
@@ -293,7 +294,7 @@ function tongji($id)
         $content = str_replace("&amp;", "&", $content);
 
         return '<div style="display:none;">' . $content . '</div>';
-    }else{
+    } else {
         return '<div style="display:none;"></div>';
     }
 
@@ -301,11 +302,11 @@ function tongji($id)
 
 function HTMLHTML($content)
 {
-     $content = str_replace("&lt;","<",$content);
-     $content = str_replace("&gt;",">",$content);
-     $content = str_replace("%22","",$content);
-     $content = str_replace("&quot;",'"',$content);
-     $content=str_replace( "&amp;","&",$content);
+    $content = str_replace("&lt;", "<", $content);
+    $content = str_replace("&gt;", ">", $content);
+    $content = str_replace("%22", "", $content);
+    $content = str_replace("&quot;", '"', $content);
+    $content = str_replace("&amp;", "&", $content);
     return $content;
 }
 
@@ -313,19 +314,19 @@ function browserecord($articleid)
 {
     $Browserecord = M("Browserecord");
 
-    $count = $Browserecord->where(array('articleid'=>$articleid,'userid'=>session("userid")))->count();
+    $count = $Browserecord->where(array('articleid' => $articleid, 'userid' => session("userid")))->count();
     $str = "";
     if ($count <= 0) {
         $str = $str . '<img src="/Public/images/new.gif">';
     }
-    
+
     $Article = M("Article");
 
-    $count = $Article->where(array('id'=>$articleid,'jieshouuserlist'=>array('like','%" . session("userid") . "|%')))->count();
+    $count = $Article->where(array('id' => $articleid, 'jieshouuserlist' => array('like', '%" . session("userid") . "|%')))->count();
     if ($count <= 0) {
         $str = $str . ' <img src="/Public/images/shi.png">';
     }
-    
+
     return $str;
 }
 
@@ -386,7 +387,7 @@ function bdje($money)
 function getProduct($id)
 {
     $Payapi = M("Product");
-    $name = $Payapi->where(array('id'=>$id))->getField("name");
+    $name = $Payapi->where(array('id' => $id))->getField("name");
     return $name;
 }
 
@@ -395,13 +396,15 @@ function getProduct($id)
  * @param $id
  * @return mixed
  */
-function getPaytype($id){
+function getPaytype($id)
+{
     $paytyps = C('PAYTYPES');
-    foreach ($paytyps as $item){
-        $return[$item['id']]= $item;
+    foreach ($paytyps as $item) {
+        $return[$item['id']] = $item;
     }
     return $return[$id]['name'] ? $return[$id]['name'] : '----';
 }
+
 /**
  * 资金变动记录
  * @param $ArrayField
@@ -433,74 +436,78 @@ function del0($s)
     return $s;
 }
 
-function huoquddlx($transid){
+function huoquddlx($transid)
+{
     $Order = M("Order");
     $ddlx = $Order->where(["pays_orderid" => $transid])->getField("ddlx");
-    $ddlx==0?$lxname="<spans style='color:#060;'>充值订单</span>":$lxname="收款订单";
+    $ddlx == 0 ? $lxname = "<spans style='color:#060;'>充值订单</span>" : $lxname = "收款订单";
     return $lxname;
 }
 
 
-function randpw($len=8,$format='ALL'){
+function randpw($len = 8, $format = 'ALL')
+{
     $is_abc = $is_numer = 0;
-    $password = $tmp ='';
-    switch($format){
+    $password = $tmp = '';
+    switch ($format) {
         case 'ALL':
-            $chars='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            $chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
             break;
         case 'CHAR':
-            $chars='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+            $chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
             break;
         case 'NUMBER':
-            $chars='0123456789';
+            $chars = '0123456789';
             break;
         default :
-            $chars='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            $chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
             break;
     }
-    mt_srand((double)microtime()*1000000*getmypid());
+    mt_srand((double)microtime() * 1000000 * getmypid());
 
-    while(strlen($password)<$len){
+    while (strlen($password) < $len) {
 
-        $tmp =substr($chars,(mt_rand()%strlen($chars)),1);
-        if(($is_numer <> 1 && is_numeric($tmp) && $tmp > 0 )|| $format == 'CHAR'){
+        $tmp = substr($chars, (mt_rand() % strlen($chars)), 1);
+        if (($is_numer <> 1 && is_numeric($tmp) && $tmp > 0) || $format == 'CHAR') {
             $is_numer = 1;
         }
-        if(($is_abc <> 1 && preg_match('/[a-zA-Z]/',$tmp)) || $format == 'NUMBER'){
+        if (($is_abc <> 1 && preg_match('/[a-zA-Z]/', $tmp)) || $format == 'NUMBER') {
             $is_abc = 1;
         }
-        $password.= $tmp;
+        $password .= $tmp;
     }
-    if($is_numer <> 1 || $is_abc <> 1 || empty($password) ){
-        $password = randpw($len,$format);
+    if ($is_numer <> 1 || $is_abc <> 1 || empty($password)) {
+        $password = randpw($len, $format);
     }
     return $password;
 }
+
 /*
  * HTTP、HTTPS判断
  */
-function is_https(){
-    if ( ! empty($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) !== 'off') {
+function is_https()
+{
+    if (!empty($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) !== 'off') {
         return TRUE;
     } elseif (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
         return TRUE;
-    } elseif ( ! empty($_SERVER['HTTP_FRONT_END_HTTPS']) && strtolower($_SERVER['HTTP_FRONT_END_HTTPS']) !== 'off') {
+    } elseif (!empty($_SERVER['HTTP_FRONT_END_HTTPS']) && strtolower($_SERVER['HTTP_FRONT_END_HTTPS']) !== 'off') {
         return TRUE;
     }
     return FALSE;
 }
+
 function arrayToXml($arr)
 {
     $xml = '<?xml version="1.0" encoding="UTF-8"?><xml>';
-    foreach ($arr as $key=>$val)
-    {
-        if (is_numeric($val)){
-            $xml.="<".$key.">".$val."</".$key.">";
-        }else{
-            $xml.="<".$key."><![CDATA[".$val."]]></".$key.">";
+    foreach ($arr as $key => $val) {
+        if (is_numeric($val)) {
+            $xml .= "<" . $key . ">" . $val . "</" . $key . ">";
+        } else {
+            $xml .= "<" . $key . "><![CDATA[" . $val . "]]></" . $key . ">";
         }
     }
-    $xml.="</xml>";
+    $xml .= "</xml>";
     return $xml;
 }
 
@@ -516,7 +523,7 @@ function xmlToArray($xml)
 //获取订货号
 function get_requestord()
 {
-    return date('YmdHis').substr(implode(NULL, array_map('ord', str_split(substr(uniqid('',true), 7, 17), 1))), 0, 6);
+    return date('YmdHis') . substr(implode(NULL, array_map('ord', str_split(substr(uniqid('', true), 7, 17), 1))), 0, 6);
 }
 
 /**
@@ -527,12 +534,13 @@ function get_requestord()
  * @param string $memo
  * @return bool
  */
-function acetion_log($orderid,$params,$memo=""){
+function acetion_log($orderid, $params, $memo = "")
+{
     $rows = [
-        'remote_addr'=>$_SERVER['REMOTE_ADDR'],
-        'http_refferer'=>$_SERVER['HTTP_REFERER'],
-        'http_user_agent'=>$_SERVER['HTTP_USER_AGENT'],
-        'params'=> $params,
+        'remote_addr' => $_SERVER['REMOTE_ADDR'],
+        'http_refferer' => $_SERVER['HTTP_REFERER'],
+        'http_user_agent' => $_SERVER['HTTP_USER_AGENT'],
+        'params' => $params,
         'orderid' => $orderid,
         'memo' => $memo,
     ];
@@ -541,74 +549,76 @@ function acetion_log($orderid,$params,$memo=""){
 }
 
 //判断是否是手机端还是电脑端
-function isMobile() {
+function isMobile()
+{
     $_SERVER['ALL_HTTP'] = isset($_SERVER['ALL_HTTP']) ? $_SERVER['ALL_HTTP'] : '';
     $mobile_browser = '0';
-    if(preg_match('/(up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|iphone|ipad|ipod|android|xoom)/i', strtolower($_SERVER['HTTP_USER_AGENT'])))
+    if (preg_match('/(up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|iphone|ipad|ipod|android|xoom)/i', strtolower($_SERVER['HTTP_USER_AGENT'])))
         $mobile_browser++;
-    if((isset($_SERVER['HTTP_ACCEPT'])) and (strpos(strtolower($_SERVER['HTTP_ACCEPT']),'application/vnd.wap.xhtml+xml') !== false))
+    if ((isset($_SERVER['HTTP_ACCEPT'])) and (strpos(strtolower($_SERVER['HTTP_ACCEPT']), 'application/vnd.wap.xhtml+xml') !== false))
         $mobile_browser++;
-    if(isset($_SERVER['HTTP_X_WAP_PROFILE']))
+    if (isset($_SERVER['HTTP_X_WAP_PROFILE']))
         $mobile_browser++;
-    if(isset($_SERVER['HTTP_PROFILE']))
+    if (isset($_SERVER['HTTP_PROFILE']))
         $mobile_browser++;
-    $mobile_ua = strtolower(substr($_SERVER['HTTP_USER_AGENT'],0,4));
+    $mobile_ua = strtolower(substr($_SERVER['HTTP_USER_AGENT'], 0, 4));
     $mobile_agents = array(
-        'w3c ','acs-','alav','alca','amoi','audi','avan','benq','bird','blac',
-        'blaz','brew','cell','cldc','cmd-','dang','doco','eric','hipt','inno',
-        'ipaq','java','jigs','kddi','keji','leno','lg-c','lg-d','lg-g','lge-',
-        'maui','maxo','midp','mits','mmef','mobi','mot-','moto','mwbp','nec-',
-        'newt','noki','oper','palm','pana','pant','phil','play','port','prox',
-        'qwap','sage','sams','sany','sch-','sec-','send','seri','sgh-','shar',
-        'sie-','siem','smal','smar','sony','sph-','symb','t-mo','teli','tim-',
-        'tosh','tsm-','upg1','upsi','vk-v','voda','wap-','wapa','wapi','wapp',
-        'wapr','webc','winw','winw','xda','xda-'
+        'w3c ', 'acs-', 'alav', 'alca', 'amoi', 'audi', 'avan', 'benq', 'bird', 'blac',
+        'blaz', 'brew', 'cell', 'cldc', 'cmd-', 'dang', 'doco', 'eric', 'hipt', 'inno',
+        'ipaq', 'java', 'jigs', 'kddi', 'keji', 'leno', 'lg-c', 'lg-d', 'lg-g', 'lge-',
+        'maui', 'maxo', 'midp', 'mits', 'mmef', 'mobi', 'mot-', 'moto', 'mwbp', 'nec-',
+        'newt', 'noki', 'oper', 'palm', 'pana', 'pant', 'phil', 'play', 'port', 'prox',
+        'qwap', 'sage', 'sams', 'sany', 'sch-', 'sec-', 'send', 'seri', 'sgh-', 'shar',
+        'sie-', 'siem', 'smal', 'smar', 'sony', 'sph-', 'symb', 't-mo', 'teli', 'tim-',
+        'tosh', 'tsm-', 'upg1', 'upsi', 'vk-v', 'voda', 'wap-', 'wapa', 'wapi', 'wapp',
+        'wapr', 'webc', 'winw', 'winw', 'xda', 'xda-'
     );
-    if(in_array($mobile_ua, $mobile_agents))
+    if (in_array($mobile_ua, $mobile_agents))
         $mobile_browser++;
-    if(strpos(strtolower($_SERVER['ALL_HTTP']), 'operamini') !== false)
+    if (strpos(strtolower($_SERVER['ALL_HTTP']), 'operamini') !== false)
         $mobile_browser++;
     // Pre-final check to reset everything if the user is on Windows
-    if(strpos(strtolower($_SERVER['HTTP_USER_AGENT']), 'windows') !== false)
-        $mobile_browser=0;
+    if (strpos(strtolower($_SERVER['HTTP_USER_AGENT']), 'windows') !== false)
+        $mobile_browser = 0;
     // But WP7 is also Windows, with a slightly different characteristic
-    if(strpos(strtolower($_SERVER['HTTP_USER_AGENT']), 'windows phone') !== false)
+    if (strpos(strtolower($_SERVER['HTTP_USER_AGENT']), 'windows phone') !== false)
         $mobile_browser++;
-    if($mobile_browser>0)
+    if ($mobile_browser > 0)
         return true;
     else
         return false;
 }
 
 //导出CSV
-function exportCsv($list,$title){
-    $file_name="CSV".date("mdHis",time()).".csv";
-    header ( 'Content-Type: application/vnd.ms-excel' );
-    header ( 'Content-Disposition: attachment;filename='.$file_name );
+function exportCsv($list, $title)
+{
+    $file_name = "CSV" . date("mdHis", time()) . ".csv";
+    header('Content-Type: application/vnd.ms-excel');
+    header('Content-Disposition: attachment;filename=' . $file_name);
     header('Cache-Control:must-revalidate,post-check=0,pre-check=0');
     header('Expires:0');
     header('Pragma:public');
-    $file = fopen('php://output',"a");
-    $limit=10000;
-    $calc=0;
+    $file = fopen('php://output', "a");
+    $limit = 10000;
+    $calc = 0;
     //列名
-    foreach ($title as $v){
-        $tit[]=iconv('UTF-8', 'GB2312//IGNORE',$v);
+    foreach ($title as $v) {
+        $tit[] = iconv('UTF-8', 'GB2312//IGNORE', $v);
     }
     //将数据通过fputcsv写到文件句柄
-    fputcsv($file,$tit);
+    fputcsv($file, $tit);
 
-    foreach ($list as $v){
+    foreach ($list as $v) {
         $calc++;
-        if($limit==$calc){
+        if ($limit == $calc) {
             ob_flush();
             flush();
-            $calc=0;
+            $calc = 0;
         }
-        foreach ($v as $t){
-            $tarr[]=iconv('UTF-8', 'GB2312//IGNORE',$t."\t");
+        foreach ($v as $t) {
+            $tarr[] = iconv('UTF-8', 'GB2312//IGNORE', $t . "\t");
         }
-        fputcsv($file,$tarr);
+        fputcsv($file, $tarr);
         unset($tarr);
     }
     unset($list);
@@ -619,11 +629,12 @@ function exportCsv($list,$title){
 /**
  *
  */
-function sendForm($url,$data,$referer){
+function sendForm($url, $data, $referer)
+{
     $headers['Content-Type'] = "application/x-www-form-urlencoded; charset=utf-8";
     $headerArr = array();
-    foreach( $headers as $n => $v ) {
-        $headerArr[] = $n .':' . $v;
+    foreach ($headers as $n => $v) {
+        $headerArr[] = $n . ':' . $v;
     }
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_TIMEOUT, 30);
@@ -634,7 +645,7 @@ function sendForm($url,$data,$referer){
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
     curl_setopt($ch, CURLOPT_HTTPHEADER, $headerArr);
-    curl_setopt($ch, CURLOPT_REFERER, "http://".$referer."/");
+    curl_setopt($ch, CURLOPT_REFERER, "http://" . $referer . "/");
     $data = curl_exec($ch);
     curl_close($ch);
     return $data;
@@ -645,12 +656,13 @@ function sendForm($url,$data,$referer){
  * 注意：服务器需要开通fopen配置
  * @param $word 要写入日志里的文本内容 默认值：空值
  */
-function logResult($word = '') {
-    $fp = fopen ( "log.txt", "a" );
-    flock ( $fp, LOCK_EX );
-    fwrite ( $fp, "执行日期：" . strftime ( "%Y%m%d%H%M%S", time () ) . "\n" . $word . "\n" );
-    flock ( $fp, LOCK_UN );
-    fclose ( $fp );
+function logResult($word = '')
+{
+    $fp = fopen("log.txt", "a");
+    flock($fp, LOCK_EX);
+    fwrite($fp, "执行日期：" . strftime("%Y%m%d%H%M%S", time()) . "\n" . $word . "\n");
+    flock($fp, LOCK_UN);
+    fclose($fp);
 }
 
 /**
@@ -658,7 +670,8 @@ function logResult($word = '') {
  * @param $array
  * @return array
  */
-function getWeight($proArr) {
+function getWeight($proArr)
+{
     $result = array();
     foreach ($proArr as $key => $val) {
         $arr[$key] = $val['weight'];
@@ -678,23 +691,25 @@ function getWeight($proArr) {
     }
     return $result;
 }
+
 /**
  * 时间戳格式化
  * @param int $time
  * @return string 完整的时间显示
  * @author huajie <banhuajie@163.com>
  */
-function time_format($time = NULL,$format='Y-m-d H:i'){
+function time_format($time = NULL, $format = 'Y-m-d H:i')
+{
     $time = $time === NULL ? NOW_TIME : intval($time);
     return date($format, $time);
 }
 
-function sendSMS($mobile,$templateCode,$templeContent)
+function sendSMS($mobile, $templateCode, $templeContent)
 {
-    $config =  M('sms')->find();
-    if(!$config['is_open'])
+    $config = M('sms')->find();
+    if (!$config['is_open'])
         return;
-    if(!isset($config['sms_channel']) || !$config['sms_channel']) {
+    if (!isset($config['sms_channel']) || !$config['sms_channel']) {
         $config['sms_channel'] = 'aliyun';
     }
     switch ($config['sms_channel']) {
@@ -706,12 +721,12 @@ function sendSMS($mobile,$templateCode,$templeContent)
                 $templateCode, // 短信模板编号
                 $mobile, // 短信接收者
                 $templeContent
-            );        	
+            );
             return $response->Code == 'OK' ? true : $response->Message;
             break;
         case 'smsbao'://短信宝
             $sms = new \Org\Util\SmsBao($config['smsbao_user'], $config['smsbao_pass']);
-            $content  = "【".$config['sign_name']."】您的验证码为：{$templeContent['code']}，该验证码5分钟内有效，请勿泄露他人。";
+            $content = "【" . $config['sign_name'] . "】您的验证码为：{$templeContent['code']}，该验证码5分钟内有效，请勿泄露他人。";
             $response = $sms->sendSms($mobile, $content);
             return $response->Code == '0' ? true : $response->Message;
             break;
@@ -721,13 +736,14 @@ function sendSMS($mobile,$templateCode,$templeContent)
 
 
 }
+
 //    /**
 //     * 旧阿里大于发送短信
 //     * @param $mobile  手机号码
 //     * @param $code    验证码
 //     * @return bool    短信发送成功返回true失败返回false
 //     */
-function sendSMS1($mobile,$templateCode,$templeContent)
+function sendSMS1($mobile, $templateCode, $templeContent)
 {
     //时区设置：亚洲/上海
     date_default_timezone_set('Asia/Shanghai');
@@ -743,14 +759,14 @@ function sendSMS1($mobile,$templateCode,$templeContent)
     vendor('Alidayu.AlibabaAliqinFcSmsNumSendRequest');
 
     $c = new \TopClient;
-    $config =  M('sms')->find();
-    if(!$config['is_open'])
+    $config = M('sms')->find();
+    if (!$config['is_open'])
         return;
 
     //App Key的值 这个在开发者控制台的应用管理点击你添加过的应用就有了
     $c->appkey = $config['app_key'];
     //App Secret的值也是在哪里一起的 你点击查看就有了
-    $c->secretKey =$config['app_secret'];
+    $c->secretKey = $config['app_secret'];
     //这个是用户名记录那个用户操作
     $req = new \AlibabaAliqinFcSmsNumSendRequest;
     //代理人编号 可选
@@ -768,7 +784,7 @@ function sendSMS1($mobile,$templateCode,$templeContent)
     //短信模板ID，传入的模板必须是在阿里大鱼“管理中心-短信模板管理”中的可用模板。
     $req->setSmsTemplateCode($templateCode); // templateCode
 
-    $c->format='json';
+    $c->format = 'json';
     //发送短信
     $resp = $c->execute($req);
 
@@ -777,18 +793,16 @@ function sendSMS1($mobile,$templateCode,$templeContent)
     if ($resp && $resp->result)   // if($resp->result->success == true)
     {
         return true;
-    }
-    else
-    {
+    } else {
         return false;
     }
 }
 
 /**
  * 生成用户数据
- * @param  array $user       
- * @param  array $siteconfig 网站设置
- * @return 
+ * @param array $user
+ * @param array $siteconfig 网站设置
+ * @return
  */
 function generateUser($user, $siteconfig = null)
 {
@@ -799,7 +813,7 @@ function generateUser($user, $siteconfig = null)
     $password = $user['password'] ?: random_str(6);
 
     //激活码
-    $activatecode = md5(md5($user['username']) . md5($password) . md5($user['email']).C('DATA_AUTH_KEY'));
+    $activatecode = md5(md5($user['username']) . md5($password) . md5($user['email']) . C('DATA_AUTH_KEY'));
 
 
     //是否需要认证
@@ -808,8 +822,8 @@ function generateUser($user, $siteconfig = null)
     //是否需要激活
     $register_need_activate = $siteconfig['register_need_activate'] ? 0 : 1;
 
-    $salt = rand(1000,9999);
-    if($user['verifycode']['fmusernameid'] && !$user['verifycode']['is_admin']) {
+    $salt = rand(1000, 9999);
+    if ($user['verifycode']['fmusernameid'] && !$user['verifycode']['is_admin']) {
         $parentid = $user['verifycode']['fmusernameid'];
     } else {
         $parentid = 1;
@@ -818,27 +832,28 @@ function generateUser($user, $siteconfig = null)
     //写入
     $userdata = array(
         'origin_password' => $password,
-        'username'=>$user['username'],
-        'password'=>md5($password.$salt),
-        'paypassword'=>md5($password),
-        'parentid'=>$parentid ,
-        'email'=>$user['email'],
-        'groupid'=> $user['verifycode']['regtype'] ? $user['verifycode']['regtype'] :4,
-        'regdatetime'=>time(),
-        'activate'=>$activatecode,
-        'authorized'=>$authorized,
-        'apikey'=>random_str(),
-        'salt'=>$salt,
-        'status'=>$register_need_activate,
-        'df_domain'=>'',
-        'df_ip'=>''
+        'username' => $user['username'],
+        'password' => md5($password . $salt),
+        'paypassword' => md5($password),
+        'parentid' => $parentid,
+        'email' => $user['email'],
+        'groupid' => $user['verifycode']['regtype'] ? $user['verifycode']['regtype'] : 4,
+        'regdatetime' => time(),
+        'activate' => $activatecode,
+        'authorized' => $authorized,
+        'apikey' => random_str(),
+        'salt' => $salt,
+        'status' => $register_need_activate,
+        'df_domain' => '',
+        'df_ip' => ''
     );
-    if($siteconfig['random_mchno'] == 1) {
+    if ($siteconfig['random_mchno'] == 1) {
         $mchno = generateMchNo();
         $userdata['id'] = $mchno;
     }
     return array_merge($user, $userdata);
 }
+
 /**
  * 查询短信id
  * @param  [type] $callIndex 短信调用代码
@@ -849,33 +864,38 @@ function getSmsTemplateCode($callIndex)
     $res = M('sms_template')->where(['call_index' => $callIndex])->find();
     return $res;
 }
+
 /**
  * 检查是否需要发送短信
  */
 function smsStatus()
 {
-    $config =  M('sms')->find();
+    $config = M('sms')->find();
 
-    if(!$config['is_open'])
+    if (!$config['is_open'])
         return 0;
 
     return 1;
 }
+
 /**
  * 判断是否微信浏览器
  */
-function is_weixin() { 
-    if (strpos($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger') !== false) { 
-        return true; 
-    } return false; 
+function is_weixin()
+{
+    if (strpos($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger') !== false) {
+        return true;
+    }
+    return false;
 }
 
 /**
  * 获取来路域名
  */
-function getHttpReferer() {
+function getHttpReferer()
+{
 
-    if(!isset($_SERVER["HTTP_REFERER"])) {
+    if (!isset($_SERVER["HTTP_REFERER"])) {
         return '';
     }
     $url = $_SERVER["HTTP_REFERER"];
@@ -887,17 +907,18 @@ function getHttpReferer() {
  * @param type $domain 域名
  * @return string 返回根域名
  */
-function getBaseDomain($url=''){
-    if(!$url){
+function getBaseDomain($url = '')
+{
+    if (!$url) {
         return $url;
     }
     #列举域名中固定元素
     $state_domain = array(
-        'al','dz','af','ar','ae','aw','om','az','eg','et','ie','ee','ad','ao','ai','ag','at','au','mo','bb','pg','bs','pk','py','ps','bh','pa','br','by','bm','bg','mp','bj','be','is','pr','ba','pl','bo','bz','bw','bt','bf','bi','bv','kp','gq','dk','de','tl','tp','tg','dm','do','ru','ec','er','fr','fo','pf','gf','tf','va','ph','fj','fi','cv','fk','gm','cg','cd','co','cr','gg','gd','gl','ge','cu','gp','gu','gy','kz','ht','kr','nl','an','hm','hn','ki','dj','kg','gn','gw','ca','gh','ga','kh','cz','zw','cm','qa','ky','km','ci','kw','cc','hr','ke','ck','lv','ls','la','lb','lt','lr','ly','li','re','lu','rw','ro','mg','im','mv','mt','mw','my','ml','mk','mh','mq','yt','mu','mr','us','um','as','vi','mn','ms','bd','pe','fm','mm','md','ma','mc','mz','mx','nr','np','ni','ne','ng','nu','no','nf','na','za','aq','gs','eu','pw','pn','pt','jp','se','ch','sv','ws','yu','sl','sn','cy','sc','sa','cx','st','sh','kn','lc','sm','pm','vc','lk','sk','si','sj','sz','sd','sr','sb','so','tj','tw','th','tz','to','tc','tt','tn','tv','tr','tm','tk','wf','vu','gt','ve','bn','ug','ua','uy','uz','es','eh','gr','hk','sg','nc','nz','hu','sy','jm','am','ac','ye','iq','ir','il','it','in','id','uk','vg','io','jo','vn','zm','je','td','gi','cl','cf','cn','yr','com','arpa','edu','gov','int','mil','net','org','biz','info','pro','name','museum','coop','aero','xxx','idv','me','mobi','asia','ax','bl','bq','cat','cw','gb','jobs','mf','rs','su','sx','tel','travel'
+        'al', 'dz', 'af', 'ar', 'ae', 'aw', 'om', 'az', 'eg', 'et', 'ie', 'ee', 'ad', 'ao', 'ai', 'ag', 'at', 'au', 'mo', 'bb', 'pg', 'bs', 'pk', 'py', 'ps', 'bh', 'pa', 'br', 'by', 'bm', 'bg', 'mp', 'bj', 'be', 'is', 'pr', 'ba', 'pl', 'bo', 'bz', 'bw', 'bt', 'bf', 'bi', 'bv', 'kp', 'gq', 'dk', 'de', 'tl', 'tp', 'tg', 'dm', 'do', 'ru', 'ec', 'er', 'fr', 'fo', 'pf', 'gf', 'tf', 'va', 'ph', 'fj', 'fi', 'cv', 'fk', 'gm', 'cg', 'cd', 'co', 'cr', 'gg', 'gd', 'gl', 'ge', 'cu', 'gp', 'gu', 'gy', 'kz', 'ht', 'kr', 'nl', 'an', 'hm', 'hn', 'ki', 'dj', 'kg', 'gn', 'gw', 'ca', 'gh', 'ga', 'kh', 'cz', 'zw', 'cm', 'qa', 'ky', 'km', 'ci', 'kw', 'cc', 'hr', 'ke', 'ck', 'lv', 'ls', 'la', 'lb', 'lt', 'lr', 'ly', 'li', 're', 'lu', 'rw', 'ro', 'mg', 'im', 'mv', 'mt', 'mw', 'my', 'ml', 'mk', 'mh', 'mq', 'yt', 'mu', 'mr', 'us', 'um', 'as', 'vi', 'mn', 'ms', 'bd', 'pe', 'fm', 'mm', 'md', 'ma', 'mc', 'mz', 'mx', 'nr', 'np', 'ni', 'ne', 'ng', 'nu', 'no', 'nf', 'na', 'za', 'aq', 'gs', 'eu', 'pw', 'pn', 'pt', 'jp', 'se', 'ch', 'sv', 'ws', 'yu', 'sl', 'sn', 'cy', 'sc', 'sa', 'cx', 'st', 'sh', 'kn', 'lc', 'sm', 'pm', 'vc', 'lk', 'sk', 'si', 'sj', 'sz', 'sd', 'sr', 'sb', 'so', 'tj', 'tw', 'th', 'tz', 'to', 'tc', 'tt', 'tn', 'tv', 'tr', 'tm', 'tk', 'wf', 'vu', 'gt', 've', 'bn', 'ug', 'ua', 'uy', 'uz', 'es', 'eh', 'gr', 'hk', 'sg', 'nc', 'nz', 'hu', 'sy', 'jm', 'am', 'ac', 'ye', 'iq', 'ir', 'il', 'it', 'in', 'id', 'uk', 'vg', 'io', 'jo', 'vn', 'zm', 'je', 'td', 'gi', 'cl', 'cf', 'cn', 'yr', 'com', 'arpa', 'edu', 'gov', 'int', 'mil', 'net', 'org', 'biz', 'info', 'pro', 'name', 'museum', 'coop', 'aero', 'xxx', 'idv', 'me', 'mobi', 'asia', 'ax', 'bl', 'bq', 'cat', 'cw', 'gb', 'jobs', 'mf', 'rs', 'su', 'sx', 'tel', 'travel'
     );
 
-    if(!preg_match("/^http/is", $url)){
-        $url="http://".$url;
+    if (!preg_match("/^http/is", $url)) {
+        $url = "http://" . $url;
     }
 
     $res = null;
@@ -907,50 +928,52 @@ function getBaseDomain($url=''){
     $urlarr = explode(".", $url_parse['host']);
     $count = count($urlarr);
 
-    if($count <= 2){
+    if ($count <= 2) {
         #当域名直接根形式不存在host部分直接输出
         $res->domain = $url_parse['host'];
-    }elseif($count > 2){
+    } elseif ($count > 2) {
         $last = array_pop($urlarr);
         $last_1 = array_pop($urlarr);
         $last_2 = array_pop($urlarr);
 
-        $res->domain = $last_1.'.'.$last;
+        $res->domain = $last_1 . '.' . $last;
         $res->host = $last_2;
 
-        if(in_array($last, $state_domain)){
-            $res->domain=$last_1.'.'.$last;
-            $res->host=implode('.', $urlarr);
+        if (in_array($last, $state_domain)) {
+            $res->domain = $last_1 . '.' . $last;
+            $res->host = implode('.', $urlarr);
         }
 
-        if(in_array($last_1, $state_domain)){
-            $res->domain = $last_2.'.'.$last_1.'.'.$last;
+        if (in_array($last_1, $state_domain)) {
+            $res->domain = $last_2 . '.' . $last_1 . '.' . $last;
             $res->host = implode('.', $urlarr);
         }
     }
     return $res->domain;
 }
+
 /**
  * 检查代付提交域名是被已报备
  * @param string $referer 来源地址
  * @param string $domain_recorded 已报备域名
  * @return boolean
  */
-function checkDfDomain($referer, $domain_recorded) {
-    if(!$referer) {
+function checkDfDomain($referer, $domain_recorded)
+{
+    if (!$referer) {
         return false;
     }
     $domain = getBaseDomain($referer);
     $domain_arr = explode("\r\n", $domain_recorded);
-    if(empty($domain_arr)) {
+    if (empty($domain_arr)) {
         return false;
     }
     foreach ($domain_arr as $k => $v) {
-        if($v) {
+        if ($v) {
             $domain_arr[$k] = trim(getBaseDomain($v));
         }
     }
-    if(in_array($domain, $domain_arr)) {
+    if (in_array($domain, $domain_arr)) {
         return true;
     }
     return false;
@@ -962,29 +985,32 @@ function checkDfDomain($referer, $domain_recorded) {
  * @param string $domain_recorded 已报备域名
  * @return boolean
  */
-function checkDfIp($ip_recorded) {
+function checkDfIp($ip_recorded)
+{
     $ip = get_client_ip();
     $ip_arr = explode("\r\n", $ip_recorded);
-    if(empty($ip_arr)) {
+    if (empty($ip_arr)) {
         return false;
     }
     foreach ($ip_arr as $k => $v) {
-        if($v) {
+        if ($v) {
             $ip_arr[$k] = trim($v);
         }
     }
-    if(in_array($ip, $ip_arr)) {
+    if (in_array($ip, $ip_arr)) {
         return true;
     }
     return false;
 }
+
 /*
  * 生成商户号
  */
-function generateMchNo(){
-    $mchno = date('ym').mt_rand(10000,99999);
-    $count = M('Member')->where(['id'=>$mchno])->count();
-    if($count == 0) {
+function generateMchNo()
+{
+    $mchno = date('ym') . mt_rand(10000, 99999);
+    $count = M('Member')->where(['id' => $mchno])->count();
+    if ($count == 0) {
         return $mchno;
     } else {
         generateMchNo();
@@ -999,11 +1025,12 @@ function generateMchNo(){
  * $datas = ['a'=>'错误！'];
  * verifyData($datas)
  */
-function verifyData($datas){
-    if(is_array($datas)){
-        foreach($datas as $k => $v){
+function verifyData($datas)
+{
+    if (is_array($datas)) {
+        foreach ($datas as $k => $v) {
             $return[$k] = isset($_REQUEST[$k]) ? trim($_REQUEST[$k]) : '';
-            if($return[$k] === ''){
+            if ($return[$k] === '') {
                 showError($v);
             }
         }
@@ -1014,51 +1041,54 @@ function verifyData($datas){
 /**
  *[验证用户是否登录]
  */
-function isLogin(){
+function isLogin()
+{
     $user = session('admin_auth');
     !is_array($user) && showError('访问错误！');
     ksort($user); //排序
-    session('admin_auth_sign') != sha1( http_build_query($user) ) && showError('访问错误！');
+    session('admin_auth_sign') != sha1(http_build_query($user)) && showError('访问错误！');
 }
 
 /**
  *[返回错误信息]
- *@param string $msg [错误信息]
- *@param array  $fields [返回的错误数据]
+ * @param string $msg [错误信息]
+ * @param array $fields [返回的错误数据]
  *
  *例子：
  *showError('错误了');
  */
-function showError($msg='操作失败', $fields=array()){
+function showError($msg = '操作失败', $fields = array())
+{
     header('Content-Type:application/json; charset=utf-8');
-    $data = array('status'=>'error', 'msg'=>$msg, 'data'=>$fields);
-    echo json_encode($data,320);
+    $data = array('status' => 'error', 'msg' => $msg, 'data' => $fields);
+    echo json_encode($data, 320);
     exit;
 }
 
 /**
  *[返回成功信息]
- *@param string $msg [成功信息]
- *@param array  $fields [返回的成功数据]
+ * @param string $msg [成功信息]
+ * @param array $fields [返回的成功数据]
  *
  *例子：
  *showSuccess('ok');
  */
-function showSuccess($msg='操作成功',$fields=array()){
+function showSuccess($msg = '操作成功', $fields = array())
+{
     header('Content-Type:application/json; charset=utf-8');
-    $data = array('status'=>'success', 'msg'=>$msg, 'data'=>$fields);
-    echo json_encode($data,320);
+    $data = array('status' => 'success', 'msg' => $msg, 'data' => $fields);
+    echo json_encode($data, 320);
     exit;
 }
 
 
-function md5Sign($data, $key, $connect='',$is_md5 = true)
+function md5Sign($data, $key, $connect = '', $is_md5 = true)
 {
     ksort($data);
     $string = '';
-    foreach( $data as $k => $vo ){
-        if($vo !== '')
-            $string .=  $k . '=' . $vo . '&' ;
+    foreach ($data as $k => $vo) {
+        if ($vo !== '')
+            $string .= $k . '=' . $vo . '&';
     }
     $string = rtrim($string, '&');
     $result = $string . $connect . $key;
@@ -1090,18 +1120,18 @@ function curlPost($url, $data = '', $headers = array(), $agent = '')
  * [rsaEncryptVerify description]
  * @param  [string] $string    [加密的数据]
  * @param  [string] $file_path [加密的证书路径或者证书的内容]
- * @param  string $sign      [验证的秘钥，没有默认为加密]
+ * @param string $sign [验证的秘钥，没有默认为加密]
  * @param  [type] $type      [description]
  * @return [type]            [description]
  */
-function rsaEncryptVerify($string, $file_path, $sign = '', $type= OPENSSL_PKCS1_PADDING)
+function rsaEncryptVerify($string, $file_path, $sign = '', $type = OPENSSL_PKCS1_PADDING)
 {
-    $content =is_file($file_path) ? file_get_contents($file_path) : $file_path;
-    if($sign ==''){
+    $content = is_file($file_path) ? file_get_contents($file_path) : $file_path;
+    if ($sign == '') {
         $key = openssl_get_privatekey($content);
-        openssl_sign($string, $result, $key , $type);
+        openssl_sign($string, $result, $key, $type);
         return base64_encode($result);
-    }else{
+    } else {
         $key = openssl_get_publickey($content);
         return (bool)openssl_verify($string, $sign, $key, $type);
     }
@@ -1111,14 +1141,13 @@ function nonceStr($length = 32)
 {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $randomString = '';
-    for ($i = 0; $i < $length; $i++)
-    {
+    for ($i = 0; $i < $length; $i++) {
         $randomString .= $characters[rand(0, strlen($characters) - 1)];
     }
     return $randomString;
 }
 
-function diffBetweenTwoDays ($day1, $day2)
+function diffBetweenTwoDays($day1, $day2)
 {
     $second1 = strtotime($day1);
     $second2 = strtotime($day2);
@@ -1136,8 +1165,8 @@ function diffBetweenTwoDays ($day1, $day2)
  */
 function adminMobileBind($id)
 {
-    $mobile =  M('Admin')->where(['id' => $id])->getField('mobile');
-    if(!$mobile) {
+    $mobile = M('Admin')->where(['id' => $id])->getField('mobile');
+    if (!$mobile) {
         return 0;
     }
     return 1;
@@ -1148,12 +1177,12 @@ function adminMobileBind($id)
  */
 function adminGoogleBind($id)
 {
-    $googleAuth   = M('Websiteconfig')->getField('google_auth');
-    if(!$googleAuth) {
+    $googleAuth = M('Websiteconfig')->getField('google_auth');
+    if (!$googleAuth) {
         return 0;
     }
-    $google_secret_key =  M('Admin')->where(['id' => $id])->getField('google_secret_key');
-    if(!$google_secret_key) {
+    $google_secret_key = M('Admin')->where(['id' => $id])->getField('google_secret_key');
+    if (!$google_secret_key) {
         return 0;
     }
     return 1;
@@ -1166,11 +1195,12 @@ function adminGoogleBind($id)
  * @param $numberField 数组字段
  * @param $filename 下载的文件名
  * @examlpe
-$stu = M ('User');
+ * $stu = M ('User');
  * $arr = $stu -> select();
  * exportexcel($arr,array('id','账户','密码','昵称'),'文件名!');
  */
-function exportexcel($data = array(), $title = array(), $numberField = [], $filename = 'report') {
+function exportexcel($data = array(), $title = array(), $numberField = [], $filename = 'report')
+{
 
     ini_set("memory_limit", "1024M"); // 设置php可使用内存
     set_time_limit(0);  # 设置执行时间最大值
@@ -1181,13 +1211,13 @@ function exportexcel($data = array(), $title = array(), $numberField = [], $file
     if (!\PHPExcel_Settings::setCacheStorageMethod($cacheMethod)) {
         die($cacheMethod . " 缓存方法不可用" . EOL);
     }
-    $cellName = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','AA','AB','AC','AD','AE','AF','AG','AH','AI','AJ','AK','AL','AM','AN','AO','AP','AQ','AR','AS','AT','AU','AV','AW','AX','AY','AZ');
+    $cellName = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'AA', 'AB', 'AC', 'AD', 'AE', 'AF', 'AG', 'AH', 'AI', 'AJ', 'AK', 'AL', 'AM', 'AN', 'AO', 'AP', 'AQ', 'AR', 'AS', 'AT', 'AU', 'AV', 'AW', 'AX', 'AY', 'AZ');
     $objPHPExcel->setActiveSheetIndex(0);
     if (!empty($title)) {
         foreach ($title as $k => $v) {
             $objPHPExcel->getActiveSheet()->getStyle($cellName[$k])->getNumberFormat()
                 ->setFormatCode(\PHPExcel_Style_NumberFormat::FORMAT_NUMBER);
-            $objPHPExcel->getActiveSheet()->setCellValue($cellName[$k].'1', $v);
+            $objPHPExcel->getActiveSheet()->setCellValue($cellName[$k] . '1', $v);
         }
     }
     if (!empty($data)) {
@@ -1195,11 +1225,13 @@ function exportexcel($data = array(), $title = array(), $numberField = [], $file
         foreach ($data as $key => $val) {
             $i = 0;
             foreach ($val as $ck => $cv) {
-                if(strpos($cv, '=') === 0){ $cv= "'".$cv;}
-                if(in_array($ck, $numberField)) {
-                    $objPHPExcel->getActiveSheet()->setCellValue($cellName[$i]. $Cellkey, $cv);
+                if (strpos($cv, '=') === 0) {
+                    $cv = "'" . $cv;
+                }
+                if (in_array($ck, $numberField)) {
+                    $objPHPExcel->getActiveSheet()->setCellValue($cellName[$i] . $Cellkey, $cv);
                 } else {
-                    $objPHPExcel->getActiveSheet()->setCellValueExplicit($cellName[$i]. $Cellkey, $cv, PHPExcel_Cell_DataType::TYPE_STRING);
+                    $objPHPExcel->getActiveSheet()->setCellValueExplicit($cellName[$i] . $Cellkey, $cv, PHPExcel_Cell_DataType::TYPE_STRING);
                 }
                 $i++;
             }
@@ -1208,7 +1240,7 @@ function exportexcel($data = array(), $title = array(), $numberField = [], $file
         $objPHPExcel->setActiveSheetIndex(0);
         //$objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
         $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
-        $filename = "EXCEL".date("mdHis",time());
+        $filename = "EXCEL" . date("mdHis", time());
         \ob_end_clean();
         header("Content-type:application/octet-stream");
         header("Accept-Ranges:bytes");
@@ -1221,12 +1253,14 @@ function exportexcel($data = array(), $title = array(), $numberField = [], $file
         die(" 暂无数据" . EOL);
     }
 }
-function getRoot($file){
 
-    $fileUrl=str_replace('\\','/',realpath(dirname($file).'/'))."/";
-    $genIndex=strpos($fileUrl,'/Application/');
-    if($genIndex>0){
-        $rootPath=substr($fileUrl,0,$genIndex).'/';
+function getRoot($file)
+{
+
+    $fileUrl = str_replace('\\', '/', realpath(dirname($file) . '/')) . "/";
+    $genIndex = strpos($fileUrl, '/Application/');
+    if ($genIndex > 0) {
+        $rootPath = substr($fileUrl, 0, $genIndex) . '/';
         return $rootPath;
     }
 }
@@ -1236,50 +1270,51 @@ function getRoot($file){
  * @param number $time 秒数
  * @return string
  */
-function sec2Time($time) {
-	if(is_numeric($time)){
-		$value = array(
-			"years" => 0, "days" => 0, "hours" => 0,
-			"minutes" => 0, "seconds" => 0,
-		);
-		if($time >= 31556926){
-			$value["years"] = floor($time/31556926);
-			$time = ($time%31556926);
-		}
-		if($time >= 86400){
-			$value["days"] = floor($time/86400);
-			$time = ($time%86400);
-		}
-		if($time >= 3600){
-			$value["hours"] = floor($time/3600);
-			$time = ($time%3600);
-		}
-		if($time >= 60){
-			$value["minutes"] = floor($time/60);
-			$time = ($time%60);
-		}
-		$value["seconds"] = floor($time);
-		$t = '';
-		if($value["years"]>0) {
-			$t .= $value["years"] ."年";
-		}
-		if($value["days"]>0) {
-			$t .= $value["days"] ."天";
-		}
-		if($value["hours"]>0) {
-			$t .= $value["hours"] ."小时";
-		}
-		if($value["minutes"]>0) {
-			$t .= $value["minutes"] ."分";
-		}
-		if($value["seconds"]>0) {
-			$t .= $value["seconds"] ."秒";
-		}
-		Return $t;
+function sec2Time($time)
+{
+    if (is_numeric($time)) {
+        $value = array(
+            "years" => 0, "days" => 0, "hours" => 0,
+            "minutes" => 0, "seconds" => 0,
+        );
+        if ($time >= 31556926) {
+            $value["years"] = floor($time / 31556926);
+            $time = ($time % 31556926);
+        }
+        if ($time >= 86400) {
+            $value["days"] = floor($time / 86400);
+            $time = ($time % 86400);
+        }
+        if ($time >= 3600) {
+            $value["hours"] = floor($time / 3600);
+            $time = ($time % 3600);
+        }
+        if ($time >= 60) {
+            $value["minutes"] = floor($time / 60);
+            $time = ($time % 60);
+        }
+        $value["seconds"] = floor($time);
+        $t = '';
+        if ($value["years"] > 0) {
+            $t .= $value["years"] . "年";
+        }
+        if ($value["days"] > 0) {
+            $t .= $value["days"] . "天";
+        }
+        if ($value["hours"] > 0) {
+            $t .= $value["hours"] . "小时";
+        }
+        if ($value["minutes"] > 0) {
+            $t .= $value["minutes"] . "分";
+        }
+        if ($value["seconds"] > 0) {
+            $t .= $value["seconds"] . "秒";
+        }
+        Return $t;
 
-	} else {
-		return (bool) FALSE;
-	}
+    } else {
+        return (bool)FALSE;
+    }
 }
 
 /**
@@ -1289,7 +1324,8 @@ function sec2Time($time) {
  * @return array
  */
 
-function check_auth_error($uid, $auth_type=0) {
+function check_auth_error($uid, $auth_type = 0)
+{
 
     $siteconfig = M("Websiteconfig")->find();
     $map['uid'] = $uid;
@@ -1297,18 +1333,18 @@ function check_auth_error($uid, $auth_type=0) {
     //最后错误时间
     $last_time = M('auth_error_log')->where($map)->order('id desc')->getField('ctime');
     //删除过期的记录
-    if($last_time) {
-        $expire = $last_time-$siteconfig['auth_error_ban_time']*60;
-        M('auth_error_log')->where(['uid' => $uid,'ctime'=>['elt', $expire]])->delete();
-        $map['ctime'] = ['gt',$expire];
+    if ($last_time) {
+        $expire = $last_time - $siteconfig['auth_error_ban_time'] * 60;
+        M('auth_error_log')->where(['uid' => $uid, 'ctime' => ['elt', $expire]])->delete();
+        $map['ctime'] = ['gt', $expire];
         $count = M('auth_error_log')->where($map)->count();
-        if($count >= $siteconfig['max_auth_error_times']) {
-            $time = $last_time + $siteconfig['auth_error_ban_time']*60 - time();
+        if ($count >= $siteconfig['max_auth_error_times']) {
+            $time = $last_time + $siteconfig['auth_error_ban_time'] * 60 - time();
             $time_str = sec2Time($time);
-            return ['status'=>0, 'msg' =>'输入错误次数过多，请于'.$time_str.'后再试!'];
+            return ['status' => 0, 'msg' => '输入错误次数过多，请于' . $time_str . '后再试!'];
         }
     }
-    return ['status'=>1];
+    return ['status' => 1];
 }
 
 /**
@@ -1317,7 +1353,8 @@ function check_auth_error($uid, $auth_type=0) {
  * @param string $auth_type 0：商户登录 1：后台登录 2：商户短信验证 3：后台短信验证 4：谷歌令牌验证 5：支付密码验证
  * @return null
  */
-function log_auth_error($uid, $auth_type=0) {
+function log_auth_error($uid, $auth_type = 0)
+{
 
     $log['auth_type'] = $auth_type;
     $log['uid'] = $uid;
@@ -1331,7 +1368,8 @@ function log_auth_error($uid, $auth_type=0) {
  * @param string $auth_type 0：商户登录 1：后台登录 2：商户短信验证 3：后台短信验证 4：谷歌令牌验证 5：支付密码验证
  * @return null
  */
-function clear_auth_error($uid, $auth_type=0) {
+function clear_auth_error($uid, $auth_type = 0)
+{
 
     $map['auth_type'] = $auth_type;
     $map['uid'] = $uid;
@@ -1352,14 +1390,15 @@ function mkdirs($dir, $mode = 0777)
 /**
  *记录向下游异步通知
  */
-function log_server_notify($orderid, $url, $notifystr, $httpCode, $return) {
+function log_server_notify($orderid, $url, $notifystr, $httpCode, $return)
+{
     $filePath = './Data/server_notify/';
-    if(mkdirs($filePath)) {
-        $destination = $filePath.date('y_m_d').'.log';
-        if(!file_exists($destination)) {
-            fopen($destination,   'wb ');
+    if (mkdirs($filePath)) {
+        $destination = $filePath . date('y_m_d') . '.log';
+        if (!file_exists($destination)) {
+            fopen($destination, 'wb ');
         }
-        file_put_contents($destination, "【".date('Y-m-d H:i:s')."】\r\n订单号：".$orderid."\r\n通知地址：".$url."\r\n通知报文：".$notifystr."\r\nHTTP状态：".$httpCode."\r\n返回：".$return."\r\n\r\n",FILE_APPEND);
+        file_put_contents($destination, "【" . date('Y-m-d H:i:s') . "】\r\n订单号：" . $orderid . "\r\n通知地址：" . $url . "\r\n通知报文：" . $notifystr . "\r\nHTTP状态：" . $httpCode . "\r\n返回：" . $return . "\r\n\r\n", FILE_APPEND);
         return true;
     }
     return false;
@@ -1372,8 +1411,8 @@ function log_server_notify($orderid, $url, $notifystr, $httpCode, $return) {
  */
 function getRank($money)
 {
-    $tikuan=M("Tikuanconfig")->order('id desc')->find();
-    $rank=[
+    $tikuan = M("Tikuanconfig")->order('id desc')->find();
+    $rank = [
         $tikuan['out5'] => $tikuan['out5_money'],
         $tikuan['out4'] => $tikuan['out4_money'],
         $tikuan['out3'] => $tikuan['out3_money'],
@@ -1381,15 +1420,67 @@ function getRank($money)
         $tikuan['out1'] => $tikuan['out1_money'],
     ];
     $rank_name = null;
-    foreach($rank as $check_rank_point=>$check_rank_name){
+    foreach ($rank as $check_rank_point => $check_rank_name) {
 
-        if(intval($money) >= intval($check_rank_point)){
+        if (intval($money) >= intval($check_rank_point)) {
             $rank_name = $check_rank_name;
             break;
-        }else{
+        } else {
             $rank_name = 0;
         };
     }
     return $rank_name;
 }
+
+/**
+ *@函数说明：
+ * @param $lxuids 系统设置的轮巡UIDS   Json串decode这后的值
+ * @param $money  当前金额
+ * @author: 秋枫红叶
+ * @date: Times
+ */
+function getLxuid($lxuids, $money, $orderid,$userid)
+{
+    $lxids_new = array_column($lxuids, 'id');
+    $rndKey = array_rand($lxids_new);
+    $lxdf_uid = $lxids_new[$rndKey];   //当前轮巡的管理员UID
+    $lxmoney = M('lxlog')->where(['uid' => $lxdf_uid, 'createdate' => date("Y-m-d")])->sum('money');
+    $lxmoney += $money;
+    //die();
+    if ($lxdf_uid) {   //查到轮巡ID
+
+        if($lxuids[$lxdf_uid]['money']==0){   //不限额直接运行
+            $lxlog = [
+                'uid' => $lxdf_uid,
+                'orderid' => $orderid,
+                'userid' => $userid,
+                'money' => $money,
+                'createtime' => date('Y-m-d H:i:s'),
+                'createdate' => date('Y-m-d'),
+            ];
+            $result = M('lxlog')->add($lxlog);
+            return $lxdf_uid;
+        }
+
+        if ($lxmoney > $lxuids[$lxdf_uid]['money']) {//超额
+            unset($lxuids[$lxdf_uid]);//销毁当前值
+            return getLxuid($lxuids, $money, $orderid,$userid);  //运行本身再次查找
+        } else {
+            //写入记录
+            $lxlog = [
+                'uid' => $lxdf_uid,
+                'orderid' => $orderid,
+                'userid' => $userid,
+                'money' => $money,
+                'createtime' => date('Y-m-d H:i:s'),
+                'createdate' => date('Y-m-d'),
+            ];
+            $result = M('lxlog')->add($lxlog);
+            return $lxdf_uid;
+        }
+    }else{
+        return 0;
+    }
+}
+
 ?>

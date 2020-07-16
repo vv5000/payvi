@@ -37,9 +37,7 @@ class SystemController extends BaseController
     //基本设置
     public function base()
     {
-    	
-    
-    	
+
         $uid               = session('admin_auth')['uid'];
         $user = M('admin')->where(['id'=>$uid])->find();
         $verifysms = 0;//是否可以短信验证
@@ -62,8 +60,9 @@ class SystemController extends BaseController
         $lxdfs = json_decode($list['lxdf_uids'],true);  //解
         $admlist=$data['list'];
         foreach ($admlist as $k=>$va){
-            if(in_array($va['id'],$lxdfs)){
+            if($va['id']==$lxdfs[$va['id']]['id']){
                 $va['lxdf'] = 1;
+                $va['lx_money'] = $lxdfs[$va['id']]['money'];
             }else{
                 $va['lxdf'] = 0;
             }
@@ -84,7 +83,20 @@ class SystemController extends BaseController
         if (IS_POST) {
             $id      = I('post.id', 0, 'intval');
             $configs = I('post.config');
-            $configs['lxdf_uids'] = json_encode($configs['lxdf_uids']);
+            $lxdf_uids = $configs['lxdf_uids'];
+
+          /* foreach ($lxdf_uids as $k=>$v){
+                if($v['id']){
+                  $lxdf_uids_new[]=['id'=>$v['id'],'money'=>$v['money']];
+                }
+            }
+          */
+
+            $str='{"510":{"money":""},"1009":{"id":"1009","money":"1000"},"1014":{"id":"1014","money":"0"},"1015":{"id":"1015","money":"100000"}}';
+            $lxids=json_decode($str,true);
+            $lxids_new=array_column($lxids,'id','id');
+
+            $configs['lxdf_uids'] = json_encode($lxdf_uids);
             $mconfig = M("Websiteconfig");
             $auth_type = I('request.auth_type',0,'intval');
             $uid               = session('admin_auth')['uid'];
