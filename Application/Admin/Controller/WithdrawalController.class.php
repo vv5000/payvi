@@ -430,10 +430,9 @@ class WithdrawalController extends BaseController
             ->order('id desc')
             ->select();
 
-        $admin_model = D('Admin');
-        $adata = $admin_model->getAdminList();
-        $admlist=array_column($adata['list'],'username','id');
-
+        $admin_model = M('Admin');
+        $adata = $admin_model->select();
+        $admlist=array_column($adata,'username','id');
         foreach ($list as $k => $v) {
             $v['lxdf_uid'] = $admlist[$v['lxdf_uid']];
             $list[$k] = $v;
