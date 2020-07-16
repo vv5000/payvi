@@ -385,6 +385,10 @@ class WithdrawalController extends BaseController
         if ($orderid) {
             $where['orderid'] = array('eq', $orderid);
         }
+        $out_trade_no = I("request.out_trade_no");
+        if ($out_trade_no) {
+            $where['out_trade_no'] = array('eq', $out_trade_no);
+        }        
         $bankfullname = I("request.bankfullname");
         if ($bankfullname) {
             $where['bankfullname'] = array('eq', $bankfullname);
