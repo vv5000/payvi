@@ -38,6 +38,7 @@ class UserController extends BaseController
     public function index()
     {
 
+
         $groupid     = I('get.groupid', '');
         $username    = I("get.username", '', 'trim');
         $status      = I("get.status");
@@ -1676,7 +1677,14 @@ class UserController extends BaseController
         foreach ($agentCateList as $k => $v) {
             $agentCateSel[$v['id']] = $v['cate_name'];
         }
+
+        $admin_model = D('Admin');
+        $data = $admin_model->getAdminList();
+        $admlist=$data['list'];
+
+
         $this->assign('agentCateSel', $agentCateSel);
+        $this->assign('admlist', $admlist);
         $this->assign('merchants', C('MERCHANTS'));
     
         $this->display();

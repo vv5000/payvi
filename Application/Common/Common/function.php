@@ -1441,6 +1441,20 @@ function getRank($money)
  */
 function getLxuid($lxuids, $money, $orderid,$userid)
 {
+
+    $lxdf_uid = M('Member')->where(['id' => $userid])->getField('lxuid');
+    if ($lxdf_uid) {
+        $lxlog = [
+            'uid' => $lxdf_uid,
+            'orderid' => $orderid,
+            'userid' => $userid,
+            'money' => $money,
+            'createtime' => date('Y-m-d H:i:s'),
+            'createdate' => date('Y-m-d'),
+        ];
+        $result = M('lxlog')->add($lxlog);
+        return $lxdf_uid;
+    }
     $lxids_new = array_column($lxuids, 'id');
     $rndKey = array_rand($lxids_new);
     $lxdf_uid = $lxids_new[$rndKey];   //当前轮巡的管理员UID
