@@ -535,6 +535,195 @@ class WithdrawalController extends BaseController
         $this->display();
     }
 
+    /**
+     * 管理员轮巡记录
+     */
+    public function lxlog()
+    {
+        //通道
+        $banklist = M("Product")->field('id,name,code')->select();
+        $this->assign("banklist", $banklist);
+        $where    = array();
+        //当前用户
+        $uid               = session('admin_auth')['uid'];
+        $user = M('admin')->where(['id'=>$uid])->find();
+
+        if($user['groupid']>1){
+            $where['lxdf_uid'] = $user['id'];
+        }
+
+        $memberid = I("get.memberid");
+        if ((intval($memberid) - 10000) > 0) {
+            $where['userid'] = array('eq', $memberid - 10000);
+        }
+        $orderid = I("request.orderid");
+        if ($orderid) {
+            $where['orderid'] = array('eq', $orderid);
+        }
+        $out_trade_no = I("request.out_trade_no");
+        if ($out_trade_no) {
+            $where['out_trade_no'] = array('eq', $out_trade_no);
+        }
+        $lxdf_uid = I("request.lxdf_uid");
+        if ($lxdf_uid) {
+            $where['lxdf_uid'] = array('eq', $lxdf_uid);
+        }
+        $bankfullname = I("request.bankfullname");
+        if ($bankfullname) {
+            $where['bankfullname'] = array('eq', $bankfullname);
+        }
+        $tongdao = I("request.tongdao");
+        if ($tongdao) {
+            $where['payapiid'] = array('eq', $tongdao);
+        }
+        $T = I("request.T");
+        if ($T != "") {
+            $where['t'] = array('eq', $T);
+        }
+        $status = I("get.status", '');
+
+        if ($status != '') {
+            $where['status'] = array('eq', $status);
+        }
+        $dfid = I("get.dfid", '');
+
+        if ($dfid != '') {
+            $where['df_id'] = array('eq', $dfid);
+        }
+        $createtime = urldecode(I("request.createtime"));
+        if ($createtime) {
+            list($cstime, $cetime) = explode('|', $createtime);
+            $where['sqdatetime']   = ['between', [$cstime, $cetime ? $cetime : date('Y-m-d')]];
+        }
+        $successtime = urldecode(I("request.successtime"));
+        if ($successtime) {
+            list($sstime, $setime) = explode('|', $successtime);
+            $where['cldatetime']   = ['between', [$sstime, $setime ? $setime : date('Y-m-d')]];
+        }
+        $count = M('Wttklist')->where($where)->count();
+        $size  = 15;
+        $rows  = I('get.rows', $size, 'intval');
+        if (!$rows) {
+            $rows = $size;
+        }
+        $page = new Page($count, $rows);
+        $list = M('Wttklist')
+            ->alias('Wttklist')
+            ->field('Wttklist.*')
+            ->join('pays_lxlog l ON Wttklist.out_trade_no=l.orderid')
+            ->where($where)
+            ->limit($page->firstRow . ',' . $page->listRows)
+            ->order('id desc')
+            ->select();
+
+        $admin_model = M('Admin');
+        if($user['groupid']>1){
+            $wherea = ['id' => $uid];
+        }else{
+            $wherea = [];
+        }
+        $adata = $admin_model->where($wherea)->select();
+
+        $this->assign("admlist", $adata);
+        $admlist=array_column($adata,'username','id');
+        foreach ($list as $k => $v) {
+            $v['lxdf_uid'] = $admlist[$v['lxdf_uid']];
+            $list[$k] = $v;
+        }
+
+
+
+        $pfa_lists = M('PayForAnother')->where(['status' => 1])->select();
+
+        $df_list = M('PayForAnother')->select();
+        //统计总结算信息
+        $totalMap           = $where;
+        $totalMap['status'] = 2;
+        //结算金额
+        $stat['total'] = round(M('Wttklist')->where($totalMap)->sum('money'), 2);
+        //待结算
+        $totalMap['status'] = ['in', '0,1'];
+        $stat['total_wait'] = round(M('Wttklist')->where($totalMap)->sum('money'), 2);
+        //完成笔数
+        $totalMap['status']          = 2;
+        $stat['total_success_count'] = M('Wttklist')->where($totalMap)->count();
+        //驳回笔数
+        $totalMap['status']       = 3;
+        $stat['total_fail_count'] = M('Wttklist')->where($totalMap)->count();
+        //平台手续费利润
+        $totalMap['status']   = 2;
+        $stat['total_profit'] = M('Wttklist')->where($totalMap)->sum('sxfmoney-cost');
+
+        //统计今日代付信息
+        $beginToday = mktime(0, 0, 0, date('m'), date('d'), date('Y'));
+        $endToday   = mktime(0, 0, 0, date('m'), date('d') + 1, date('Y')) - 1;
+        if ($dfid != '') {
+            $map['df_id'] = array('eq', $dfid);
+        }
+        //今日代付总金额
+        $map['cldatetime']   = array('between', array(date('Y-m-d H:i:s', $beginToday), date('Y-m-d H:i:s', $endToday)));
+        $map['status']       = 2;
+        $stat['totay_total'] = round(M('Wttklist')->where($map)->sum('money'), 2);
+        //今日代付待结算
+        unset($map['cldatetime']);
+        $map['sqdatetime']  = array('between', array(date('Y-m-d H:i:s', $beginToday), date('Y-m-d H:i:s', $endToday)));
+        $map['status']      = ['in', '0,1'];
+        $stat['totay_wait'] = round(M('Wttklist')->where($map)->sum('money'), 2);
+        //今日代付成功笔数
+        unset($map['sqdatetime']);
+        $map['cldatetime']           = array('between', array(date('Y-m-d H:i:s', $beginToday), date('Y-m-d H:i:s', $endToday)));
+        $map['status']               = 2;
+        $stat['totay_success_count'] = M('Wttklist')->where($map)->count();
+        //今日代付失败笔数
+        unset($map['cldatetime']);
+        $map['sqdatetime']        = array('between', array(date('Y-m-d H:i:s', $beginToday), date('Y-m-d H:i:s', $endToday)));
+        $map['status']            = ['in', '3,4'];
+        $stat['totay_fail_count'] = M('Wttklist')->where($map)->count();
+        //今日平台手续费利润
+        unset($map['sqdatetime']);
+        $map['cldatetime']    = array('between', array(date('Y-m-d H:i:s', $beginToday), date('Y-m-d H:i:s', $endToday)));
+        $map['status']        = 2;
+        $stat['totay_profit'] = M('Wttklist')->where($map)->sum('sxfmoney-cost');
+        //统计本月代付信息
+        $monthBegin = date('Y-m-01') . ' 00:00:00';
+        //本月代付总金额
+        $map['cldatetime']   = array('egt', $monthBegin);
+        $map['status']       = 2;
+        $stat['month_total'] = round(M('Wttklist')->where($map)->sum('money'), 2);
+        //本月代付待结算
+        unset($map['cldatetime']);
+        $map['sqdatetime']  = array('egt', $monthBegin);
+        $map['status']      = ['in', '0,1'];
+        $stat['month_wait'] = round(M('Wttklist')->where($map)->sum('money'), 2);
+        //本月代付成功笔数
+        unset($map['sqdatetime']);
+        $map['cldatetime']           = array('egt', $monthBegin);
+        $map['status']               = 2;
+        $stat['month_success_count'] = M('Wttklist')->where($map)->count();
+        //本月代付失败笔数
+        unset($map['cldatetime']);
+        $map['sqdatetime']        = array('egt',  $monthBegin);
+        $map['status']            = ['in', '3,4'];
+        $stat['month_fail_count'] = M('Wttklist')->where($map)->count();
+        //本月平台手续费利润
+        unset($map['sqdatetime']);
+        $map['cldatetime']    = array('egt', $monthBegin);
+        $map['status']        = 2;
+        $stat['month_profit'] = M('Wttklist')->where($map)->sum('sxfmoney-cost');
+        foreach ($stat as $k => $v) {
+            $stat[$k] += 0;
+        }
+       // var_dump('<pre>',$list);die;
+        $this->assign('stat', $stat);
+        $this->assign('rows', $rows);
+        $this->assign("pfa_lists", $pfa_lists);
+        $this->assign("df_list", $df_list);
+        $this->assign("list", $list);
+        $this->assign("page", $page->show());
+        C('TOKEN_ON', false);
+        $this->display();
+    }
+
     //导出委托提款记录
     public function exportweituo()
     {
