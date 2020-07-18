@@ -925,6 +925,28 @@ class UserController extends BaseController
             if (!$id) {
                 $this->ajaxReturn(['status' => 0, 'msg' => '操作失败']);
             }
+
+            $uid         = session('admin_auth')['uid'];
+            $google_secret_key = M('Admin')->where(['id' => $uid])->getField('google_secret_key');
+
+            if (!$google_secret_key) {
+                $this->ajaxReturn(['status' => 0, 'msg' => "您未绑定谷歌身份验证器！"]);
+            }
+
+            $google_code   = I('post.googlecode');
+            if(!$google_code) {
+                $this->ajaxReturn(['status' => 0, 'msg' => '谷歌安全码不能为空']);
+            } else {
+                $ga = new \Org\Util\GoogleAuthenticator();
+                $oneCode = $ga->getCode($google_secret_key);
+                if ($google_code !== $oneCode) {
+                    $this->ajaxReturn(['status' => 0, 'msg' => "谷歌安全码错误！"]);
+                }
+            }
+
+
+
+
             //开启事务
             M()->startTrans();
             $Moneychange  = M("Moneychange");
@@ -1074,6 +1096,7 @@ class UserController extends BaseController
         }
         //是否可以谷歌安全码验证
         $verifyGoogle = adminGoogleBind($uid);
+        $verifyGoogle = 1;  //强制开启
         if (IS_POST) {
             //开启事物
             M()->startTrans();
