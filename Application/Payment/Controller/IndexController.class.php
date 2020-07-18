@@ -102,6 +102,10 @@ class IndexController extends PaymentController{
                                 'rate_type' => $pfa_list['rate_type'],
                             ];
                             $this->handle($v['id'], $result['status'], $data);
+
+                            if($result['status']==2){  //推送上游
+                                $this->push_notify($v);
+                            }
                         }
                     }
                     if ($opt == 'Exec') {

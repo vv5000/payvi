@@ -81,4 +81,46 @@ class PaymentController extends Controller
    
 	}
 
+
+    protected function push_notify($info)
+    {
+        $apiid = $info['df_api_id'];
+        $useridd = $info['userid'];
+        $Order = M("df_api_order");
+        $ma = M("member");
+        $apikey = $ma->where(['id' => $useridd])->getField("apikey");
+        $notifyurl = $Order->where(['id' => $apiid])->getField("notifyurl");
+
+        if($notifyurl){
+            $out_trade_no = $Order->where(['id' => $apiid])->getField("out_trade_no");
+            $trade_no = $Order->where(['id' => $apiid])->getField("trade_no");
+            $money = $Order->where(['id' => $apiid])->getField("money");
+            $arr['out_trade_no'] =  $out_trade_no;
+            $arr['amount'] =  $money;
+            $arr['transaction_id'] =  $trade_no;
+            $arr['status'] =  'success';
+            $arr['msg'] =  'success';
+            ksort($arr);
+            $md5str = "";
+            foreach ($arr as $key => $val) {
+                $md5str = $md5str . $key . "=" . $val . "&";
+            }
+
+            $sign = strtoupper(md5($md5str . "key=" . $apikey));
+            $arr["pay_md5sign"] = $sign;
+            $postData = http_build_query($arr);
+            $curl = curl_init();
+            curl_setopt($curl, CURLOPT_URL, $notifyurl);
+            curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false); // stop verifying certificate
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($curl, CURLOPT_POST, true);
+            curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form-urlencoded'));
+            curl_setopt($curl, CURLOPT_POSTFIELDS, $postData);
+            curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
+            $res = curl_exec($curl);
+            file_put_contents('easy.txt','回调数据:'.$postData.',返回结果：'.$res.PHP_EOL, FILE_APPEND);
+            curl_close($curl);
+        }
+    }
+
 }
