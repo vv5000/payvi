@@ -24,7 +24,7 @@ class IndexController extends PaymentController{
 
     public function index(){
 
-        file_put_contents('easy.txt', 'CCC：' . PHP_EOL, FILE_APPEND);
+        file_put_contents('easy.txt', 'CCC：' .json_encode($this->verify_data_). PHP_EOL, FILE_APPEND);
         //判断是否登录
         isLogin();
         //验证传来的数据

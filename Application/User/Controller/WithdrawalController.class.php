@@ -206,13 +206,12 @@ class WithdrawalController extends UserController
                     } else {
                         M()->commit();
                     }
-                    echo '<p class="bg-success" style="padding:10px 0px 10px 30px">代付申请成功！单号：'.$data['trade_no'].'</p>';
-
-
-
-                    // echo json_encode($data);
+                    $success='<p class="bg-success" style="padding:10px 0px 10px 30px">代付申请成功！单号：'.$data['trade_no'].'。收款人：'.$data['accountname'].',金额：'.$data['money'].'</p>';
+                    echo $success;
+             // echo json_encode($data);
                 } else {
-                    $dfpay->showmessage('系统错误');
+                    $failing='<p class="bg-success" style="padding:10px 0px 10px 30px">错误！收款人：'.$data['accountname'].',金额：'.$data['money'].'</p>';
+                    $dfpay->showmessage($failing);
                 }
             }
             exit("操作成功");
