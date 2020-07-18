@@ -638,7 +638,12 @@ class AccountController extends UserController
             ->limit($page->firstRow . ',' . $page->listRows)
             ->order('id desc')
             ->select();
+
+        $sxmongy = M('Moneychange')->where($where)->sum('sxmoney');
+        $mongy = M('Moneychange')->where($where)->sum('money');
         $this->assign('rows', $rows);
+        $this->assign('sxmongy', $sxmongy);
+        $this->assign('mongy', $mongy);
         $this->assign('list', $list);
         $this->assign('page', $page->show());
         C('TOKEN_ON', false);

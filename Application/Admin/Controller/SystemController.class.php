@@ -528,6 +528,11 @@ EOD;
         if(IS_POST) {
             $data = I('post.');
             $type_ids = $data['type'];
+
+
+
+
+
             if(empty($type_ids)){
                 $this->ajaxReturn(['status'=>0,'msg'=>'请选择需清除的数据类型']);
             }
@@ -537,11 +542,16 @@ EOD;
                 $startTime = strtotime($cstime);
                 $endTime = strtotime($cetime);
                 if(!$startTime || !$endTime || ($startTime >= $endTime)) {
-                    $this->ajaxReturn(array('status' => 0, "时间范围错误"));
+                    $this->ajaxReturn(array('status' => 0, 'msg' =>"时间范围错误"));
                 }
             } else {
-                $this->ajaxReturn(array('status' => 0, "请选择删除时间范围"));
+                $this->ajaxReturn(array('status' => 0, 'msg' =>"请选择删除时间范围"));
             }
+
+           // $res2 = M('wttklist')->where(['sqdatetime'=>['between', [date('Y-m-d H:i:s',$startTime), date('Y-m-d H:i:s',$endTime)]]])->select();
+
+
+
             $auth_type = I('request.auth_type',0,'intval');
             if($verifyGoogle && $verifysms) {
                 if(!in_array($auth_type,[0,1])) {
@@ -586,15 +596,21 @@ EOD;
             }
             //开启事物
             M()->startTrans();
+
+
+          //  $this->ajaxReturn(array('status' => 0, 'msg' =>json_encode($type_ids)));
+
+
             //执行清除数据
             foreach($type_ids as $v) {
                 if($v == 1) { //入金记录
                     $res1 = M('order')->where(['pays_applydate'=>['between', [$startTime, $endTime]]])->delete();
                 } elseif($v == 2) {//出金记录
-                    $res2 = M('wttklist')->where(['sqdatetime'=>['between', [$startTime, $endTime]]])->delete();
-                    $res3 = M('tklist')->where(['sqdatetime'=>['between', [$startTime, $endTime]]])->delete();
+                    $res2 = M('wttklist')->where(['sqdatetime'=>['between', [date('Y-m-d H:i:s',$startTime), date('Y-m-d H:i:s',$endTime)]]])->delete();
+                    $res3 = M('tklist')->where(['sqdatetime'=>['between', [date('Y-m-d H:i:s',$startTime), date('Y-m-d H:i:s',$endTime)]]])->delete();
+
                 } elseif($v == 3) {//登录记录
-                    $res4 = M('loginrecord')->where(['logindatetime'=>['between', [$startTime, $endTime]]])->delete();
+                    $res4 = M('loginrecord')->where(['logindatetime'=>['between', [date('Y-m-d H:i:s',$startTime), date('Y-m-d H:i:s',$endTime)]]])->delete();
                 } elseif($v == 4) {//冻结记录
                     $res5 = M('blockedlog')->where(['createtime'=>['between', [date('Y-m-d H:i:s',$startTime), date('Y-m-d H:i:s',$endTime)]]])->delete();
                     $res6 = M('complaints_deposit')->where(['create_at'=>['between', [$startTime, $endTime]]])->delete();

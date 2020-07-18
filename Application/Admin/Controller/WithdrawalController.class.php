@@ -524,8 +524,8 @@ class WithdrawalController extends BaseController
         foreach ($stat as $k => $v) {
             $stat[$k] += 0;
         }
-       // var_dump('<pre>',$list);die;
         $this->assign('stat', $stat);
+        $this->assign('admin', $user);
         $this->assign('rows', $rows);
         $this->assign("pfa_lists", $pfa_lists);
         $this->assign("df_list", $df_list);

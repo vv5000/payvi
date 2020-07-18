@@ -24,6 +24,10 @@
                                        class="layui-input" value="<{$_GET['orderid']}>">
                             </div>
                             <div class="layui-input-inline">
+                                <input type="text" name="out_trade_no" autocomplete="off" placeholder="请输入商户订单号"
+                                       class="layui-input" value="<{$_GET['out_trade_no']}>">
+                            </div>                            
+                            <div class="layui-input-inline">
                                 <input type="text" name="bankfullname" autocomplete="off" placeholder="请输入开户名"
                                        class="layui-input" value="<{$_GET['bankfullname']}>">
                             </div>
@@ -41,6 +45,7 @@
                                        placeholder="打款起始时间" value="<{$_GET['successtime']}>">
                             </div>
                         </div>
+                        
                         <div class="layui-inline">
                             <div class="layui-input-inline">
                                 <select name="dfid">
@@ -101,25 +106,27 @@
                         <!--th lay-data="{field:'check' , width:60}"> </th-->
                        <!-- <th lay-data="{field:'key', width:80}"></th>-->
                         <!--th lay-data="{field:'t', width:60}">类型</th-->
-                        <th lay-data="{field:'orderid', width:165}">系统订单号</th>
-                         <th lay-data="{field:'out_trade_no', width:190}">商户订单号</th>
+                        <th lay-data="{field:'orderid', width:160}">系统订单号</th>
+                         <th lay-data="{field:'out_trade_no', width:175}">商户订单号</th>
                         <th lay-data="{field:'userid', width:105,style:'color:#060;'}">商户编号</th>
-                        <th lay-data="{field:'op', width:190,style:'color:#060;'}">操作</th>
-                      <!--th lay-data="{field:'code', width:100}">代付渠道</th>
-                      <<th lay-data="{field:'channel_mch_id', width:150,style:'color:#060;'}">通道商户号</th>-->
-                        <th lay-data="{field:'tkmoney', width:110}">结算金额</th>
+                        <th lay-data="{field:'op', width:185,style:'color:#060;'}">操作</th>
+                        <if condition="$admin['lxdf'] eq '1'">
+                             <th lay-data="{field:'code', width:90}">渠道</th>
+                        </if>
+                      <!--<th lay-data="{field:'channel_mch_id', width:150,style:'color:#060;'}">通道商户号</th>-->
+                        <th lay-data="{field:'tkmoney', width:110}">结算(元)</th>
 
                         <!--th lay-data="{field:'money', width:110}">到账金额</th-->
                         <th lay-data="{field:'bankname', width:88,style:'color:#C00;'}">银行名称</th>
-                        <th lay-data="{field:'bankfullname', width:80}">开户名</th>                          
-                        <th lay-data="{field:'banknumber', width:180}">银行卡号</th>
+                        <th lay-data="{field:'bankfullname', width:75}">开户名</th>                          
+                        <th lay-data="{field:'banknumber', width:178}">银行卡号</th>
                       
                         <!--th lay-data="{field:'bankzhiname', width:120}">支行名称</th-->
 
                         <!--th lay-data="{field:'sheng', width:80}">所属省</th>
                         <th lay-data="{field:'shi', width:80}">所属市</th-->
                          <th lay-data="{field:'status', width:75}">状态</th>     
-                        <th lay-data="{field:'sxfmoney', width:65,style:'color:#060;'}">手续</th>                         
+                        <th lay-data="{field:'sxfmoney', width:65,style:'color:#060;'}">手续</th>
                         <th lay-data="{field:'sqdatetime', width:160}">申请时间</th>
                         <th lay-data="{field:'cldatetime', width:50}">处理时间</th>
 
@@ -142,15 +149,22 @@
                                 <if condition="$vo['status'] lt 2 || $vo['status'] eq 4">
                                     <a class="layui-btn layui-btn-danger layui-btn-mini" onclick="set_wtop('结算商户编号:<{$vo.userid}>','<{:U('Admin/Withdrawal/editwtStatus',['id'=>$vo[id]])}>',510,280)">【设置状态】</a>
                                 </if>
+                                   <if condition="$admin['lxdf'] eq '1'">
+
                                 <if condition="$vo['status'] eq 0">
                                     <a class="layui-btn layui-btn-danger layui-btn-mini" onclick="submitPayment(this, '<{$vo[id]}>','exec')" >提交代付</a>
                                 </if>
-
                                 <if condition="$vo['status'] eq 1 or $vo['status'] eq 4">
                                     <a class="layui-btn layui-btn-warnning layui-btn-mini" onclick="submitPayment(this, '<{$vo[id]}>','query')">代付查询</a>
                                 </if>
-                            </td>
-                             <!--td >
+                                   </if>
+
+
+
+                               </td>
+                            <if condition="$admin['lxdf'] eq '1'">
+                             <td >
+
                                 <if condition="$vo['status'] eq 0">
                                     <select lay-ignore=''  style="height: 25px;">
                                         <option>请选择</option>
@@ -165,8 +179,10 @@
                                 <if condition="$vo['status'] eq 2">
                                     <a>通知成功</a>
                                 </if>
-                            </td-->
-                            <td><{$vo["tkmoney"]}> 元</td>
+
+                            </td>
+                            </if>
+                            <td><{$vo["tkmoney"]}></td>
 
                             <!--td><{$vo["money"]}> 元</td-->
                             <td><{$vo.bankname}></td>

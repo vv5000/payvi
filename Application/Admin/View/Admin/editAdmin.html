@@ -33,7 +33,17 @@
           <input type="password" name="ereppassword"  placeholder="不修改留空" autocomplete="off"  class="layui-input">
         </div>
       </div>
-
+            <div class="layui-form-item">
+                <label class="layui-form-label">显示代付通道：</label>
+                <div class="layui-input-block">
+                    <input type="radio" name="lxdf" value="1" title="开启" <if
+                        condition="$admin_info['lxdf'] eq 1">checked
+                </if>>
+                    <input type="radio" name="lxdf" value="0" title="关闭" <if
+                        condition="$admin_info['lxdf'] eq 0">checked
+                </if>>
+                </div>
+            </div>
       <div class="layui-form-item">
         <div class="layui-input-block">
           <button class="layui-btn" lay-submit lay-filter="user">立即提交</button>

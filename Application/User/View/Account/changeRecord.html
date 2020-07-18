@@ -44,10 +44,11 @@
                                     <option <if condition="$bank eq 1">selected</if> value="1">付款</option>
                                     <option <if condition="$bank eq 3">selected</if> value="3">手动增加</option>
                                     <option <if condition="$bank eq 4">selected</if> value="4">手动减少</option>
-                                    <option <if condition="$bank eq 6">selected</if> value="6">结算</option>
+                                    <option <if condition="$bank eq 6">selected</if> value="6">支出</option>
                                     <option <if condition="$bank eq 7">selected</if> value="7">冻结</option>
                                     <option <if condition="$bank eq 8">selected</if> value="8">解冻</option>
                                     <option <if condition="$bank eq 9">selected</if> value="9">提成</option>
+                                    <option <if condition="$bank eq 12">selected</if> value="12">代付驳回</option>                                    
                                     <option <if condition="$bank eq 13">selected</if> value="13">商户加款已通过</option>
                                     <option <if condition="$bank eq 23">selected</if> value="23">商户加款待审核</option>
                                     <option <if condition="$bank eq 33">selected</if> value="33">商户加款已拒绝</option>
@@ -62,6 +63,12 @@
                             </button>
                             <a href="javascript:;" id="export" class="layui-btn layui-btn-danger"><span class="glyphicon glyphicon-export"></span> 导出数据</a>
                         </div>
+                        <div class="layui-inline layui-btn">
+                            手续费：<{$sxmongy}>
+                        </div>
+                        <div class="layui-inline layui-btn">
+                            变动金额：<{$mongy}>
+                        </div>
                     </div>
                 </form>
 
@@ -69,15 +76,16 @@
                 <table class="layui-table" lay-data="{width:'100%',limit:<{$rows}>,id:'userData'}">
                     <thead>
                     <tr>
-                        <th lay-data="{field:'key',width:60}">序号</th>
-                        <th lay-data="{field:'transid', width:220}">订单号</th>
+                        <th lay-data="{field:'key',width:70}">序号</th>
+                        <th lay-data="{field:'transid', width:200}">订单号</th>
                         <th lay-data="{field:'userid', width:100,style:'color:#060;'}">商户名</th>
                         <th lay-data="{field:'lx', width:180}">类型</th>
-                        <th lay-data="{field:'tcuserid', width:100,style:'color:#060;'}">下级商户</th>
-                        <th lay-data="{field:'tcdengji', width:90}">提成级别</th>
-                      <th lay-data="{field:'ymoney', width:100}">原金额</th>
-                        <th lay-data="{field:'money', width:100}">变动金额</th>
-                        <th lay-data="{field:'gmoney', width:100}">变动后金额</th>
+                      <!--  <th lay-data="{field:'tcuserid', width:100,style:'color:#060;'}">下级商户</th>-->
+                        
+                      <th lay-data="{field:'ymoney', width:120}">原金额</th>
+                        <th lay-data="{field:'money', width:120}">变动金额</th>
+                        <th lay-data="{field:'gmoney', width:120}">变动后金额</th>
+                        <th lay-data="{field:'tcdengji', width:90}">银行入款</th>
                         <th lay-data="{field:'sxmoney', width:100}">手续费</th>
                         <th lay-data="{field:'datetime', width:180}">变动时间</th>
                         <th lay-data="{field:'tongdao', width:120}">通道</th>
@@ -97,20 +105,22 @@
                                     <case value="1">付款</case>
                                     <case value="3">手动增加</case>
                                     <case value="4">手动减少</case>
-                                    <case value="6">结算</case>
+                                    <case value="6">代付提交</case>
                                     <case value="7">冻结</case>
                                     <case value="8">解冻</case>
                                     <case value="9">提成</case>
-                                    <case value="13">商户加款已通过</case>
-                                    <case value="23">商户加款待审核</case>
+                                    <case value="14">代付手续费</case>                                    
+                                    
+                                    <case value="13">商户加款<font color="red">已通过</font></case>
+                                    <case value="23">商户加款<font color="Blue">未审核</font></case>
                                     <case value="33">商户加款已拒绝</case>
                                     <default />未知
                                 </switch>
                             </td>
-                            <td style="text-align:center; color:#060">
+                          <!--  <td style="text-align:center; color:#060">
                                 <{$vo["tcuserid"]|getParentName=###,1}>
                             </td>
-                            <td style="color:#666"><{$vo.tcdengji}>&nbsp;</td>
+                            <td style="color:#666"><{$vo.tcdengji}>&nbsp;</td>-->
                             <td style="text-align:center;"><{$vo.ymoney}></td>
                             <td style="text-align:center;">
                                 <if condition="$vo[ymoney] gt $vo[gmoney]">
@@ -121,7 +131,8 @@
                                 <{$vo.money}>
                                 </span>
                             </td>
-                                  <td style="text-align:center;"><{$vo.gmoney}></td>
+                            <td style="text-align:center;"><{$vo.gmoney}></td>
+                            <td style="text-align:center;"><font color="red"><{$vo["sxmoney"]+$vo["money"]}></font>元</td>                           
                             <td style="text-align:center;"><{$vo.sxmoney}></td>
                             <td style="text-align:center;"><{$vo.datetime}></td>
                             <td style="text-align:center;"><{$vo["tongdao"]|getProduct}></td>
