@@ -18,24 +18,24 @@
                      echo '<div class="layui-form-item">
                             <div class="layui-inline">
                                 <div class="layui-input-inline">
-                                    <select name="b['.$i.'][bankname]">
-                                        <option value="">选择开户行</option> 
-                                        <option value="农业银行">农业银行</option> 
-                                        <option value="工商银行">工商银行</option>     
+                                    <input type="text" list="saleslist"  name="b['.$i.'][bankname]" placeholder="请选择或输入银行" class="layui-input" value=""/>
+                                    <datalist id="saleslist" style="display: none;">
+                                        <option value="">选择开户行</option>
+                                        <option value="农业银行">农业银行</option>
+                                        <option value="工商银行">工商银行</option>
                                         <option value="建设银行">建设银行</option>
                                         <option value="中国银行">中国银行</option>
                                         <option value="兴业银行">兴业银行</option>
                                         <option value="平安银行">平安银行</option>
                                         <option value="交通银行">交通银行</option>
                                         <option value="招商银行">招商银行</option>
-                                        <option value="农村信用社">农村信用社</option>  
+                                        <option value="农村信用社">农村信用社</option>
                                         <option value="邮政储蓄">邮政储蓄</option>
                                         <option value="北京银行">北京银行</option>
                                         <option value="浙商银行">浙商银行</option>
                                         <option value="广发银行">广发银行</option>
                                         <option value="民生银行">民生银行</option>
                                         <option value="东亚银行">东亚银行</option>
-                                        
                                         <option value="上海银行">上海银行</option>
                                         <option value="光大银行">光大银行</option>
                                         <option value="浦东发展银行">浦东发展银行</option>
@@ -45,7 +45,7 @@
                                         <option value="宁波银行">宁波银行</option>
                                         <option value="中信银行">中信银行</option>
                                         <option value="广西北部湾银行">广西北部湾银行</option>
-                                    </select>
+                                    </datalist>
                                 </div>
                             </div>
                             <div class="layui-inline">

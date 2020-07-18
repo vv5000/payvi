@@ -45,6 +45,10 @@ class DfpayController extends Controller
             $this->showmessage('商户ID不能为空！');
         }
         $user_id =  $mchid - 10000;
+
+        $fans = M('Member')->where(['id'=>$user_id])->field('`id` as uid, `username`, `password`, `groupid`, `parentid`,`salt`,`balance`, `blockedbalance`, `email`, `realname`, `authorized`, `apidomain`, `apikey`, `status`, `mobile`, `receiver`, `agent_cate`,`df_api`,`login_ip`,`open_charge`,`google_secret_key`,`session_random`,`regdatetime`')->find();
+
+
         //用户信息
         $this->merchants = D('Member')->where(array('id'=>$user_id))->find();
         if(empty($this->merchants)) {
@@ -188,15 +192,17 @@ class DfpayController extends Controller
             //添加订单
             $res = $Order->add($data);
             if ($res) {
-               
+                if($fans['df_auto_check']) {
                     $result = $this->dfPass($data, $res);
-                    if($result['status'] == 0) {
+                    if ($result['status'] == 0) {
                         M()->rollback();
                         $this->showmessage($result['msg']);
                     } else {
                         M()->commit();
                     }
-                
+                }else{
+                    M()->commit();
+                }
                 header('Content-Type:application/json; charset=utf-8');
                 $data = array('status' => 'success', 'msg' => '代付申请成功', 'transaction_id'=>$data['trade_no']);
                 echo json_encode($data);
