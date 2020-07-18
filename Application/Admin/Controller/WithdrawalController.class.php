@@ -397,6 +397,11 @@ class WithdrawalController extends BaseController
         if ($tongdao) {
             $where['payapiid'] = array('eq', $tongdao);
         }
+
+        $lxdf_uid = I("request.lxdf_uid");
+        if ($lxdf_uid) {
+            $where['lxdf_uid'] = array('eq', $lxdf_uid);
+        }
         $T = I("request.T");
         if ($T != "") {
             $where['t'] = array('eq', $T);
@@ -434,14 +439,23 @@ class WithdrawalController extends BaseController
             ->order('id desc')
             ->select();
 
+
+
+
         $admin_model = M('Admin');
-        $adata = $admin_model->select();
+        if($user['groupid']>1){
+            $wherea = ['id' => $uid];
+        }else{
+            $wherea = [];
+        }
+        $adata = $admin_model->where($wherea)->select();
+        $this->assign("admlist", $adata);
+
         $admlist=array_column($adata,'username','id');
         foreach ($list as $k => $v) {
             $v['lxdf_uid'] = $admlist[$v['lxdf_uid']];
             $list[$k] = $v;
         }
-
 
 
         $pfa_lists = M('PayForAnother')->where(['status' => 1])->select();

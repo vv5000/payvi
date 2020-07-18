@@ -59,6 +59,17 @@
                         </div>
                         <div class="layui-inline">
                             <div class="layui-input-inline">
+                                <select name="lxdf_uid">
+                                    <option value="">全部管理员</option>
+                                    <volist name="admlist" id="vo">
+                                        <option <if condition="$_GET[lxdf_uid] eq $vo[id]">selected</if>
+                                        value="<{$vo.id}>"><{$vo.username}></option>
+                                    </volist>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <div class="layui-input-inline">
                                 <select name="status">
                                     <option value="">全部状态</option>
                                     <option <if condition="$_GET['status'] neq '' && $_GET['status'] eq 0">selected
