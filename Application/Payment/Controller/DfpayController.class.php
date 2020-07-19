@@ -46,7 +46,7 @@ class DfpayController extends Controller
         }
         $user_id =  $mchid - 10000;
 
-        $fans = M('Member')->where(['id'=>$user_id])->field('`id` as uid, `username`, `password`, `groupid`, `parentid`,`salt`,`balance`, `blockedbalance`, `email`, `realname`, `authorized`, `apidomain`, `apikey`, `status`, `mobile`, `receiver`, `agent_cate`,`df_api`,`login_ip`,`open_charge`,`google_secret_key`,`session_random`,`regdatetime`')->find();
+        $fans = M('Member')->where(['id'=>$user_id])->find();
 
 
         //用户信息

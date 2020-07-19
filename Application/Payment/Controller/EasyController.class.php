@@ -198,7 +198,7 @@ class EasyController extends PaymentController
                     }
 
                     $sign = strtoupper(md5($md5str . "key=" . $apikey));
-                    $arr["pay_md5sign"] = $sign;
+                    $arr["pays_md5sign"] = $sign;
                     $postData = http_build_query($arr);
                     $curl = curl_init();
                     curl_setopt($curl, CURLOPT_URL, $notifyurl);
