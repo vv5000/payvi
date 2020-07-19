@@ -1,12 +1,13 @@
-﻿<?php
+<?php
 error_reporting(0);
 header("Content-type: text/html; charset=utf-8");	
-$mchid = "20002";  //商户后台API管理获取
-$Md5key = "t4ig5acnpx4fet4zapshjacjd9o4bhbi";//商户后台API管理获取
+$mchid = "200802525";  //商户后台API管理获取
+$Md5key = "woh23g043gmhvl4g0x3c8rf5c4ifb9hq";//商户后台API管理获取
 $out_trade_no = date("YmdHis").mt_rand(1000,9999);    //订单号
 $_POST['out_trade_no'] = $out_trade_no;
 $money =  $_POST["money"];    //交易金额
 $_POST['mchid'] = $mchid;
+$_POST['paypassword'] = md5($_POST['paypassword']);
 if(empty($mchid)||empty($_POST['money'])||empty($_POST['bankname']) 
 	|| empty($_POST['subbranch']) || empty($_POST['accountname']) 
 	|| empty($_POST['cardnumber']) || empty($_POST['province']) 
@@ -21,7 +22,7 @@ if($_POST['extends']) {
 }
 $_POST['notifyurl'] = $_POST['notifyurl'];
 
-$tjurl = "https://www.taoy168.com/Payment_Dfpay_add.html";   //提交地址
+$tjurl = "https://www.hzcy56.cn/Payment_Dfpay_add.html";   //提交地址
 ksort($_POST);
 //var_dump($_POST);die;
 $md5str = "";

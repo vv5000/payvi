@@ -58,7 +58,7 @@
 				</li>
 				<li>
 					<label>回调地址</label>
-					<input type="text" name="notifyurl" value="https://www.alipay.com"  />
+					<input type="text" name="notifyurl" value="https://pay.365cpb.com/df/d.php"  />
 				</li>
 				<li style="margin-top: 50px">
 					<label></label>
