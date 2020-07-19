@@ -912,8 +912,18 @@ class UserController extends BaseController
 //商户提交充值审核
     public function editRechargeStatus()
     {
-        
-       
+
+        $uid         = session('admin_auth')['uid'];
+        $verifysms   = 0; //是否可以短信验证
+        $sms_is_open = smsStatus();
+        if ($sms_is_open) {
+            $adminMobileBind = adminMobileBind($uid);
+            if ($adminMobileBind) {
+                $verifysms = 1;
+            }
+        }
+        //是否可以谷歌安全码验证
+        $verifyGoogle = adminGoogleBind($uid);
         
         
         $id = I("request.id", 0, 'intval');
@@ -921,30 +931,58 @@ class UserController extends BaseController
         if (IS_POST) {
             $lx  = I("post.lx", 0, 'intval');
             $id  = I("post.id", 0, 'intval');
+            $auth_type  = I('post.auth_type', 0, 'intval');
             $memo = I('post.memo');
             if (!$id) {
                 $this->ajaxReturn(['status' => 0, 'msg' => '操作失败']);
             }
 
-            $uid         = session('admin_auth')['uid'];
-            $google_secret_key = M('Admin')->where(['id' => $uid])->getField('google_secret_key');
 
-            if (!$google_secret_key) {
-                $this->ajaxReturn(['status' => 0, 'msg' => "您未绑定谷歌身份验证器！"]);
-            }
-
-            $google_code   = I('post.googlecode');
-            if(!$google_code) {
-                $this->ajaxReturn(['status' => 0, 'msg' => '谷歌安全码不能为空']);
-            } else {
-                $ga = new \Org\Util\GoogleAuthenticator();
-                $oneCode = $ga->getCode($google_secret_key);
-                if ($google_code !== $oneCode) {
-                    $this->ajaxReturn(['status' => 0, 'msg' => "谷歌安全码错误！"]);
+            if($verifyGoogle && $verifysms) {
+                if(!in_array($auth_type,[0,1])) {
+                    $this->ajaxReturn(['status' => 0, 'msg' => "参数错误！"]);
+                }
+            } elseif($verifyGoogle && !$verifysms) {
+                if($auth_type != 1) {
+                    $this->ajaxReturn(['status' => 0, 'msg' => "参数错误！"]);
+                }
+            } elseif(!$verifyGoogle && $verifysms) {
+                if($auth_type != 0) {
+                    $this->ajaxReturn(['status' => 0, 'msg' => "参数错误！"]);
                 }
             }
 
 
+
+            if ($verifyGoogle && $auth_type == 1) {
+                //谷歌安全码验证
+                $google_code = I('request.google_code');
+                if (!$google_code) {
+                    $this->ajaxReturn(['status' => 0, 'msg' => "谷歌安全码不能为空！"]);
+                } else {
+                    $ga                = new \Org\Util\GoogleAuthenticator();
+                    $google_secret_key = M('Admin')->where(['id' => $uid])->getField('google_secret_key');
+                    if (!$google_secret_key) {
+                        $this->ajaxReturn(['status' => 0, 'msg' => "您未绑定谷歌身份验证器！"]);
+                    }
+                    $oneCode = $ga->getCode($google_secret_key);
+                    if ($google_code !== $oneCode) {
+                        $this->ajaxReturn(['status' => 0, 'msg' => "谷歌安全码错误！"]);
+                    }
+                }
+            } elseif ($verifysms && $auth_type == 0) {
+                //短信验证码
+                $code = I('post.code');
+                if (!$code) {
+                    $this->ajaxReturn(['status' => 0, 'msg' => "短信验证码不能为空！"]);
+                } else {
+                    if (session('send.adjustUserMoneySend') != $code || !$this->checkSessionTime('adjustUserMoneySend', $code)) {
+                        $this->ajaxReturn(['status' => 0, 'msg' => '验证码错误']);
+                    } else {
+                        session('send', null);
+                    }
+                }
+            }
 
 
             //开启事务
@@ -1010,6 +1048,9 @@ class UserController extends BaseController
 
         }else{
             $this->assign('info', $info);
+            $this->assign('verifysms', $verifysms);
+            $this->assign('verifyGoogle', $verifyGoogle);
+            $this->assign('auth_type', $verifyGoogle ? 1 : 0);
             $this->display();
         }
 
@@ -1096,7 +1137,7 @@ class UserController extends BaseController
         }
         //是否可以谷歌安全码验证
         $verifyGoogle = adminGoogleBind($uid);
-        $verifyGoogle = 1;  //强制开启
+     //   $verifyGoogle = 1;  //强制开启
         if (IS_POST) {
             //开启事物
             M()->startTrans();

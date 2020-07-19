@@ -62,10 +62,10 @@
                         </div>';
                   }
                     </php>
-                                  
-                          
-                          
-                              <if condition="$verifyGoogle and $verifysms">
+
+
+
+                    <if condition="$verifyGoogle and $verifysms">
                         <div class="layui-form-item" id="df_auto_check">
                             <label class="layui-form-label">验证方式：</label>
                             <div class="layui-input-block">
@@ -78,38 +78,35 @@
                     </if>
                     <eq name="verifyGoogle" value="1">
                         <div class="layui-form-item" id="auth_google">
-                            <label class="layui-form-label">谷歌密码：</label>
+                            <label class="layui-form-label">谷歌安全码：</label>
                             <div class="layui-input-inline">
                                 <input type="text" name="google_code" autocomplete="off"
-                                       placeholder="请输入谷歌安全码" class="layui-input" value="">
+                                       placeholder="请输入谷歌安全码" lay-verify="google_code" class="layui-input" value="">
                             </div>
-                            
                         </div>
-                       
                     </eq>
                     <eq name="verifysms" value="1">
-                        <div id="auth_sms" <if condition="$verifyGoogle and $verifysms">style="display: none"</if>>
-                            <include file="Public/send"/>
+                        <div class="layui-form-item" id="auth_sms" <if condition="$verifyGoogle and $verifysms">style="display: none"</if>>
+                        <label class="layui-form-label">手机验证码：</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="code"  autocomplete="off"
+                                   placeholder="请输入短信验证码" class="layui-input" value="">
                         </div>
+                        <div class="layui-input-inline">
+                            <a href="javascript:;" id="sendBtn" data-mobile="<?php echo ($mobile); ?>" class="layui-btn">发送验证码</a>
+                        </div>
+
                     </eq>
-                        <div class="layui-form-item" >
+
+
                             <label class="layui-form-label">支付密码：</label>
                             <div class="layui-input-inline">
                                 <input type="password" id="password"
-                                       placeholder="支付密码" class="layui-input" value="" name="password">
+                                       placeholder="支付密码" lay-verify="password" class="layui-input" value="" name="password">
                             </div>
-                            <button type="submit" class="layui-btn" id="file-submit" class="layui-btn" lay-submit lay-filter="demo1">提交</button>
-                        </div>
-                           
+                            <button type="submit" class="layui-btn" id="file-submit" class="layui-btn" lay-submit lay-filter="submit">提交</button>
 
-                            
-                
-                            
-                            
-                    <div class="layui-inline">
-                        
-                    </div>
-                    </div>
+
                 </form>
 
             </div>
@@ -124,7 +121,21 @@
             ,layer = layui.layer //弹层
             ,form = layui.form //表单
             , table = layui.table; //表格       
-    });  
+
+        form.verify({
+            google_code: function(value){
+                if(value.length < 6){
+                    return '谷歌安全码不能为空，最少为6位！';
+                }
+            },
+            password: function(value){
+                if(value.length < 6){
+                    return '密码不能为空！';
+                }
+            }
+        });
+
+    });
 
     $('#pageList').change(function(){
         $('#pageForm').submit();

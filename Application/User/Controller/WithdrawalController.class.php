@@ -77,9 +77,6 @@ class WithdrawalController extends UserController
                 exit();
             }
 
-
-
-
             $userid = session('user_auth.uid');
             //查询是否开启短信验证
             $sms_is_open = smsStatus();
@@ -217,6 +214,21 @@ class WithdrawalController extends UserController
             exit("操作成功");
 
         }
+
+        $verifysms   = 0; //是否可以短信验证
+        $sms_is_open = smsStatus();
+        if ($sms_is_open) {
+            $adminMobileBind = memberMobileBind($this->fans['uid']);
+            if ($adminMobileBind) {
+                $verifysms = 1;
+            }
+        }
+        //是否可以谷歌安全码验证
+        $verifyGoogle = memberGoogleBind($this->fans['uid']);
+
+        $this->assign('verifysms', $verifysms);
+        $this->assign('verifyGoogle', $verifyGoogle);
+        $this->assign('auth_type', $verifyGoogle ? 1 : 0);
         $this->assign('member', $this->fans);
         $this->display();
     }

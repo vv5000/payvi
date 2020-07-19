@@ -32,6 +32,38 @@
           <input type="password" name="reppassword" lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
         </div>
       </div>
+      <if condition="$verifyGoogle and $verifysms">
+        <div class="layui-form-item" id="df_auto_check">
+          <label class="layui-form-label">验证方式：</label>
+          <div class="layui-input-inline">
+            <input type="radio" name="auth_type" lay-filter="auth_type" value="1" title="谷歌安全码" checked>
+            <input type="radio" name="auth_type" lay-filter="auth_type" value="0" title="短信验证码">
+          </div>
+        </div>
+        <else />
+        <input type="hidden" name="auth_type" value="<{$auth_type}>">
+      </if>
+      <eq name="verifyGoogle" value="1">
+        <div class="layui-form-item" id="auth_google">
+          <label class="layui-form-label">谷歌安全码：</label>
+          <div class="layui-input-inline">
+            <input type="text" name="google_code" autocomplete="off"
+                   placeholder="请输入谷歌安全码" class="layui-input" value="">
+          </div>
+        </div>
+      </eq>
+      <eq name="verifysms" value="1">
+        <div class="layui-form-item" id="auth_sms" <if condition="$verifyGoogle and $verifysms">style="display: none"</if>>
+        <label class="layui-form-label">手机验证码：</label>
+        <div class="layui-input-inline">
+          <input type="text" name="code"  autocomplete="off"
+                 placeholder="请输入短信验证码" class="layui-input" value="">
+        </div>
+        <div class="layui-input-inline">
+          <a href="javascript:;" id="sendBtn" data-mobile="<?php echo ($mobile); ?>" class="layui-btn">发送验证码</a>
+        </div>
+
+      </eq>
       <div class="layui-form-item">
         <div class="layui-input-block">
           <button class="layui-btn" lay-submit lay-filter="user">立即提交</button>

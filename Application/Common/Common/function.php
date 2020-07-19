@@ -1171,6 +1171,17 @@ function adminMobileBind($id)
     }
     return 1;
 }
+/**
+ * 检查商户是否绑定手机号
+ */
+function memberMobileBind($id)
+{
+    $mobile = M('Member')->where(['id' => $id])->getField('mobile');
+    if (!$mobile) {
+        return 0;
+    }
+    return 1;
+}
 
 /**
  * 检查管理员是否绑定谷歌身份验证器
@@ -1182,6 +1193,22 @@ function adminGoogleBind($id)
         return 0;
     }
     $google_secret_key = M('Admin')->where(['id' => $id])->getField('google_secret_key');
+    if (!$google_secret_key) {
+        return 0;
+    }
+    return 1;
+}
+
+/**
+ * 检查商户是否绑定谷歌身份验证器
+ */
+function memberGoogleBind($id)
+{
+    $googleAuth = M('Websiteconfig')->getField('google_auth');
+    if (!$googleAuth) {
+        return 0;
+    }
+    $google_secret_key = M('Member')->where(['id' => $id])->getField('google_secret_key');
     if (!$google_secret_key) {
         return 0;
     }

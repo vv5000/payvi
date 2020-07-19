@@ -20,6 +20,19 @@ class AdminController extends BaseController
     }
 
     public function addAdmin(){
+
+        $uid         = session('admin_auth')['uid'];
+        $verifysms   = 0; //是否可以短信验证
+        $sms_is_open = smsStatus();
+        if ($sms_is_open) {
+            $adminMobileBind = adminMobileBind($uid);
+            if ($adminMobileBind) {
+                $verifysms = 1;
+            }
+        }
+        //是否可以谷歌安全码验证
+        $verifyGoogle = adminGoogleBind($uid);
+
         if(IS_POST){
             //防止跨站请求伪造
           //if (parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST) !== C('DOMAIN').':9696') {
@@ -35,6 +48,39 @@ class AdminController extends BaseController
             if($data["password"] != $data["reppassword"]){
                 $this->ajaxReturn(['status'=>0,'msg'=>'两次输入密码不一致！']);
             }
+
+            $auth_type  = I('post.auth_type', 0, 'intval');
+            if ($verifyGoogle && $auth_type == 1) {
+                //谷歌安全码验证
+                $google_code = I('request.google_code');
+                if (!$google_code) {
+                    $this->ajaxReturn(['status' => 0, 'msg' => "谷歌安全码不能为空！"]);
+                } else {
+                    $ga                = new \Org\Util\GoogleAuthenticator();
+                    $google_secret_key = M('Admin')->where(['id' => $uid])->getField('google_secret_key');
+                    if (!$google_secret_key) {
+                        $this->ajaxReturn(['status' => 0, 'msg' => "您未绑定谷歌身份验证器！"]);
+                    }
+                    $oneCode = $ga->getCode($google_secret_key);
+                    if ($google_code !== $oneCode) {
+                        $this->ajaxReturn(['status' => 0, 'msg' => "谷歌安全码错误！"]);
+                    }
+                }
+            } elseif ($verifysms && $auth_type == 0) {
+                //短信验证码
+                $code = I('post.code');
+                if (!$code) {
+                    $this->ajaxReturn(['status' => 0, 'msg' => "短信验证码不能为空！"]);
+                } else {
+                    if (session('send.adjustUserMoneySend') != $code || !$this->checkSessionTime('adjustUserMoneySend', $code)) {
+                        $this->ajaxReturn(['status' => 0, 'msg' => '验证码错误']);
+                    } else {
+                        session('send', null);
+                    }
+                }
+            }
+
+
 
             $data["password"]=md5($data["password"].C('DATA_AUTH_KEY'));
             $data["createtime"]=time();
@@ -58,6 +104,9 @@ class AdminController extends BaseController
             //用户组
             $groups = M('AuthGroup')->where(['status' => 1])->field('id,title')->select();
             $this->assign('groups',$groups);
+            $this->assign('verifysms', $verifysms);
+            $this->assign('verifyGoogle', $verifyGoogle);
+            $this->assign('auth_type', $verifyGoogle ? 1 : 0);
             $this->display();
         }
 
@@ -67,6 +116,7 @@ class AdminController extends BaseController
        if (parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST) !== C('DOMAIN')) {
          $this->ajaxReturn(['status' => 0, 'msg' => '防止跨站请求伪造,已关闭该功能,可联系管理员取消限制']);
       }
+        die();
         $id = I('id', 0, 'intval');
         if(!$id){
             parent::ajaxError('管理员不存在!');
