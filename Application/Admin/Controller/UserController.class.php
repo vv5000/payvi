@@ -149,6 +149,7 @@ class UserController extends BaseController
         if ($createtime) {
             list($cstime, $cetime) = explode('|', $createtime);
             $where['datetime']     = ['between', [$cstime, $cetime ? $cetime : date('Y-m-d')]];
+            $allsumMapdate['datetime'] = ['between', [$cstime, $cetime ? $cetime : date('Y-m-d')]];
         }
         $this->assign('createtime', $createtime);
 
@@ -181,11 +182,18 @@ class UserController extends BaseController
         //All
         if ($orderid) {
             $allsumMap['userid'] = array('eq', $orderid);
+            $allsumMapdate['userid'] = array('eq', $orderid);
         }
         $allsumMap['lx'] = ['in', '3,13'];
+        $allsumMapdate['lx'] = ['in', '3,13'];
         $stat['all_sum_add'] = M('Moneychange')->field("sum(money) as money,sum(sxmoney) as sxmoney")->where($allsumMap)->find();
+        $stat['all_sumdate_add'] = M('Moneychange')->field("sum(money) as money,sum(sxmoney) as sxmoney")->where($allsumMapdate)->find();
+
+
         $allsumMap['lx'] = ['in', '4'];
+        $allsumMapdate['lx'] = ['in', '4'];
         $stat['all_sum_sub'] = M('Moneychange')->field("sum(money) as money,sum(sxmoney) as sxmoney")->where($allsumMap)->find();
+        $stat['all_sumdate_sub'] = M('Moneychange')->field("sum(money) as money,sum(sxmoney) as sxmoney")->where($allsumMapdate)->find();
 
 
         $count           = M('Moneychange')->where($where)->count();

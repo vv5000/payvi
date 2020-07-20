@@ -51,13 +51,22 @@
 
                 <blockquote class="layui-elem-quote" style="font-size:14px;padding;8px;">
                     今日加款：<span class="label label-info"><{$stat.today_sum_add.money}>元</span> 手续费：<span class="label label-info"><{$stat.today_sum_add.sxmoney}>元</span>
+                    今日减款：<span class="label label-info"><{$stat.today_sum_sub.money}>元</span> 手续费：<span class="label label-info"><{$stat.today_sum_sub.sxmoney}>元</span>
                 </blockquote>
                 <blockquote class="layui-elem-quote" style="font-size:14px;padding;8px;">
                     本月加款：<span class="label label-info"><{$stat.month_sum_add.money}>元</span> 手续费：<span class="label label-info"><{$stat.month_sum_add.sxmoney}>元</span>
-                </blockquote>                
+                    本月减款：<span class="label label-info"><{$stat.month_sum_sub.money}>元</span> 手续费：<span class="label label-info"><{$stat.month_sum_sub.sxmoney}>元</span>
+                </blockquote>
                 <blockquote class="layui-elem-quote" style="font-size:14px;padding;8px;">
                     所有加款：<span class="label label-info"><{$stat.all_sum_add.money}>元</span>手续费：<span class="label label-info"><{$stat.all_sum_add.sxmoney}>元</span>
+                    所有减款：<span class="label label-info"><{$stat.all_sum_sub.money}>元</span>手续费：<span class="label label-info"><{$stat.all_sum_sub.sxmoney}>元</span>
                 </blockquote>
+                <if condition="$createtime neq ''">
+                <blockquote class="layui-elem-quote" style="font-size:14px;padding;8px;">
+                    <{$createtime}>加款：<span class="label label-info"><{$stat.all_sumdate_add.money}>元</span>手续费：<span class="label label-info"><{$stat.all_sumdate_add.sxmoney}>元</span>
+                    减款：<span class="label label-info"><{$stat.all_sumdate_sub.money}>元</span>手续费：<span class="label label-info"><{$stat.all_sumdate_sub.sxmoney}>元</span>
+                </blockquote>
+                </if>
                 <!--交易列表-->
                 <table class="layui-table" lay-data="{width:'100%',limit:<{$rows}>,id:'userData'}">
                     <thead>
@@ -81,7 +90,7 @@
                         <tr>
                             <td><{$vo.id}></td>
                             <td style="text-align:center; color:#090;">
-                                <{$vo["userid"]+10000}>
+                                <{$vo["userid"]}>
                             </td>
                             <td style="text-align:center;">
                                 <switch name="vo.lx">
