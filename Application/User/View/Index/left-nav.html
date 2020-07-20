@@ -88,6 +88,14 @@
                     <li><a href="<{:U("Withdrawal/spayment")}>" class="J_menuItem"><span class="nav-label">下级代付记录</span></a>     </li>
                 </ul>
             </li>
+            <li><a href="#"> <i class="fa fa fa-check"></i> <span class="nav-label">下级管理</span> <span
+                    class="fa arrow"></span> </a>
+                <ul class="nav nav-second-level">
+                    <li><a href="<{:U("Withdrawal/subpayment")}>" class="J_menuItem"><span class="nav-label">代付记录</span></a>     </li>
+                    <li><a href="<{:U("Account/subchangeRecord",array('bank'=>13))}>" class="J_menuItem"><span class="nav-label">充值记录</span></a>     </li>
+                    <li><a href="<{:U("Account/subchangeRecord",array('bank'=>14))}>" class="J_menuItem"><span class="nav-label">手续费记录</span></a>     </li>
+                </ul>
+            </li>
             <neq name="fans[groupid]" value="4">
                 <li><a href="#"> <i class="fa fa fa-gears"></i> <span class="nav-label">订单管理</span> <span
                         class="fa arrow"></span> </a>

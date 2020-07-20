@@ -1026,6 +1026,127 @@ class WithdrawalController extends UserController
     }
 
 
+
+    //下级所有会员
+
+    public function subpayment()
+    {
+        //通道
+        $products = M('ProductUser')
+            ->join('LEFT JOIN __PRODUCT__ ON __PRODUCT__.id = __PRODUCT_USER__.pid')
+            ->where(['pays_product_user.status' => 1, 'pays_product_user.userid' => $this->fans['uid']])
+            ->field('pays_product.name,pays_product.id,pays_product.code')
+            ->select();
+        $this->assign("banklist", $products);
+
+
+        $where        = array();
+        //查询所有的子类ID
+        $members=M('member')->field('id,parentid')->select();
+        $sub_uid = GetTeamMember($members, $this->fans['uid']);    //寻找无级子级
+        $where['userid']=array("in",implode(',',$sub_uid));
+        $map['userid']=array("in",implode(',',$sub_uid));
+
+        $submap['id'] = array("in", implode(',', $sub_uid));
+        $submembers=M('member')->field('id,username')->where($submap)->select();
+        $this->assign("submembers", $submembers);
+
+        $userid = I("request.userid");
+        if(isset($userid) && !empty($userid)){   //存在userid即商户号
+            $map['userid'] = $userid;
+            $where['userid'] = array('eq', $userid);
+        }
+
+
+        $this->assign("userid", $userid);
+
+        $bankfullname = I("request.bankfullname");
+        if ($bankfullname) {
+            $where['bankfullname'] = array('eq', $bankfullname);
+        }
+        $this->assign("bankfullname", $bankfullname);
+        $tongdao = I("request.tongdao");
+        if ($tongdao) {
+            $where['payapiid'] = array('eq', $tongdao);
+        }
+        $this->assign("tongdao", $tongdao);
+        $T = I("request.T");
+        if ($T != "") {
+            $where['t'] = array('eq', $T);
+        }
+        $this->assign("T", $T);
+        $status = I("request.status");
+        if ($status != "") {
+            $where['status'] = array('eq', $status);
+        }
+        $this->assign("status", $status);
+        $createtime = urldecode(I("request.createtime"));
+        if ($createtime) {
+            list($cstime, $cetime) = explode('|', $createtime);
+            $where['sqdatetime']   = ['between', [$cstime, $cetime ? $cetime : date('Y-m-d')]];
+        }
+        $this->assign("createtime", $createtime);
+        $successtime = urldecode(I("request.successtime"));
+        if ($successtime) {
+            list($sstime, $setime) = explode('|', $successtime);
+            $where['cldatetime']   = ['between', [$sstime, $setime ? $setime : date('Y-m-d')]];
+        }
+        $this->assign("successtime", $successtime);
+
+        $count           = M('Wttklist')->where($where)->count();
+        $size  = 15;
+        $rows  = I('get.rows', $size, 'intval');
+        if (!$rows) {
+            $rows = $size;
+        }
+        $page            = new Page($count, $rows);
+
+
+        $list            = M('Wttklist')
+            ->where($where)
+            ->limit($page->firstRow . ',' . $page->listRows)
+            ->order('id desc')
+            ->select();
+        //统计今日代付信息
+        $beginToday    = date("Y-m-d").' 00:00:00';
+        $endToday      = date("Y-m-d").' 23:59:59';
+
+        //今日代付总金额
+        $map['cldatetime']   = array('between', array($beginToday, $endToday));
+        $map['status']       = 2;
+        $stat['totay_total'] = round(M('Wttklist')->where($map)->sum('money'), 4);
+        //今日代付成功笔数
+        $stat['totay_success_count'] = M('Wttklist')->where($map)->count();
+        //今日代付待结算
+        unset($map['cldatetime']);
+        $map['sqdatetime']  = array('between', array($beginToday, $endToday));
+        $map['status']      = ['in', '0,1'];
+        $stat['totay_wait'] = round(M('Wttklist')->where($map)->sum('money'), 4);
+        //今日代付失败笔数
+        $map['status']            = 3;
+        $stat['totay_fail_count'] = M('Wttklist')->where($map)->count();
+        //统计汇总信息
+        //代付总金额
+        $totalMap = $where;
+        $totalMap['status']     = 2;
+        $stat['total'] = round(M('Wttklist')->where($totalMap)->sum('money'), 4);
+        //提款总待结算
+        $totalMap['status']      = ['in', '0,1'];
+        $stat['total_wait'] = round(M('Wttklist')->where($totalMap)->sum('money'), 4);
+        //提款成功总笔数
+        $totalMap['status']               = 2;
+        $stat['total_success_count'] = M('Wttklist')->where($totalMap)->count();
+        //提款失败总笔数
+        $totalMap['status']            = 3;
+        $stat['total_fail_count'] = M('Wttklist')->where($totalMap)->count();
+        $this->assign('stat', $stat);
+        $this->assign("list", $list);
+        $this->assign("page", $page->show());
+        $this->assign("rows", $rows);
+        $this->display();
+    }
+
+
     //导出委托提款记录
     public function exportweituo()
     {

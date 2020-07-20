@@ -1524,4 +1524,31 @@ function getLxuid($lxuids, $money, $orderid,$userid)
     }
 }
 
+/**
+ *@函数说明：寻找无限下级
+ * @param $members
+ * @param $mid
+ * @return array
+ * @author: 秋枫红叶
+ * @date: 2020/7/20  10:45
+ */
+function GetTeamMember($members, $mid)
+    {
+        $Teams = array();//最终结果
+        $Teams[] = $mid;
+        foreach ($members as $k => $v) {
+            //pid为当前ID的上级ID
+            //id为当前的ID
+            if (in_array($v['parentid'], $Teams, true) && !in_array($v['id'], $Teams, true)) {
+                $Teams[] = $v['id'];
+                unset($members[$k]);
+            } else {
+                unset($members[$k]);
+            }
+
+        }
+        return $Teams;
+    }
+
+
 ?>

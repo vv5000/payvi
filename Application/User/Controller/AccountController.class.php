@@ -649,6 +649,88 @@ class AccountController extends UserController
         C('TOKEN_ON', false);
         $this->display();
     }
+    /**
+     *  资金变动记录
+     */
+    public function subchangeRecord()
+    {
+
+        //商户支付通道
+        $products = M('ProductUser')
+            ->join('LEFT JOIN __PRODUCT__ ON __PRODUCT__.id = __PRODUCT_USER__.pid')
+            ->where(['pays_product_user.status' => 1, 'pays_product_user.userid' => $this->fans['uid']])
+            ->field('pays_product.name,pays_product.id,pays_product.code')
+            ->select();
+        $this->assign("products", $products);
+
+        $where   = array();
+        $orderid = I("get.orderid");
+        if ($orderid) {
+            $where['transid'] = array('eq', $orderid);
+        }
+        $this->assign('orderid', $orderid);
+
+        $members=M('member')->field('id,parentid')->select();
+        $sub_uid = GetTeamMember($members, $this->fans['uid']);    //寻找无级子级
+        $where['userid']=array("in",implode(',',$sub_uid));
+
+        $submap['id'] = array("in", implode(',', $sub_uid));
+        $submembers=M('member')->field('id,username')->where($submap)->select();
+        $this->assign("submembers", $submembers);
+
+
+
+        $userid = I("request.userid");
+
+        if ($userid) {
+                    $where['userid'] = array('eq', $userid);
+        }
+
+        $this->assign('userid', $userid);
+
+
+        $tongdao = I("request.tongdao");
+        if ($tongdao) {
+            $where['tongdao'] = array('eq', $tongdao);
+        }
+        $this->assign('tongdao', $tongdao);
+        $bank = I("request.bank", '');
+        if ($bank) {
+            $where['lx'] = array('eq', $bank);
+        }
+        $this->assign('bank', $bank);
+        $createtime = urldecode(I("request.createtime"));
+        if ($createtime) {
+            list($cstime, $cetime) = explode('|', $createtime);
+            $where['datetime']     = ['between', [$cstime, $cetime ? $cetime : date('Y-m-d')]];
+        }
+        $this->assign('createtime', $createtime);
+
+        $count           = M('Moneychange')->where($where)->count();
+        $size            = 15;
+        $rows            = I('get.rows', $size, 'intval');
+        if (!$rows) {
+            $rows = $size;
+        }
+        $page = new Page($count, $rows);
+
+
+        $list = M('Moneychange')
+            ->where($where)
+            ->limit($page->firstRow . ',' . $page->listRows)
+            ->order('id desc')
+            ->select();
+
+        $sxmongy = M('Moneychange')->where($where)->sum('sxmoney');
+        $mongy = M('Moneychange')->where($where)->sum('money');
+        $this->assign('rows', $rows);
+        $this->assign('sxmongy', $sxmongy);
+        $this->assign('mongy', $mongy);
+        $this->assign('list', $list);
+        $this->assign('page', $page->show());
+        C('TOKEN_ON', false);
+        $this->display();
+    }
 
     /**
      * 资金变动记录导出
