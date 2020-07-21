@@ -82,6 +82,7 @@ class IndexController extends PaymentController{
 						
                         $v['money'] = round($v['money'], 2);						
                         $result = R('Payment/' . $code . '/Payment' . $opt, [$v, $pfa_list]);
+                        file_put_contents('easy.txt', '接口返回结果：' .json_encode($result). PHP_EOL, FILE_APPEND);
 
                         if ($result == FALSE) {
                             if ($opt == 'Exec') {

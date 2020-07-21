@@ -52,6 +52,24 @@ class EasyController extends PaymentController
         $execGateway = $config['exec_gateway'];
         $notifyurl = $this->_site . 'Payment_Easy_notifyurl.html'; //异步通知
 
+        //代付余额查询
+        $parameter = [
+            'version' => '3.0',//版本号
+            'method' => 'Gt.online.paybalance',//名称
+            'partner' => $config['mch_id'],//商户ID
+        ];
+        $md5str="version=3.0&method=Gt.online.paybalance&partner=".$config['mch_id'].$config['signkey'];
+        $parameter['sign'] = md5($md5str);
+        $balanceJson = file_get_contents($execGateway.'/balance?'.http_build_query($parameter));
+        file_put_contents('easy.txt', '发送地址：'.$execGateway.'/balance?'.http_build_query($parameter). PHP_EOL, FILE_APPEND);
+        file_put_contents('easy.txt', '结果：'.$balanceJson. PHP_EOL, FILE_APPEND);
+
+        $balance = json_decode($balanceJson, true);
+        if($data['money']>$balance['data']){
+            return  ['status' => self::PAYMENT_PAY_FAILED, 'msg' => "上级余额不足，请充值！"];
+        }
+        //代付余额查询
+
         $parameter = [
             'version' => '3.0',//版本号
             'method' => 'Gt.online.pay',//名称
@@ -128,7 +146,7 @@ class EasyController extends PaymentController
             } else {
                 $return = [
                     'status' => self::PAYMENT_PAY_FAILED,
-                    'msg' => "错误：{$response['status']}：{$response['message']}"
+                    'msg' => "错误：{$response['code']}：{$response['status']}：{$response['message']}"
                 ];
             }
         }
