@@ -116,7 +116,6 @@ class AdminController extends BaseController
        if (parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST) !== C('DOMAIN')) {
          $this->ajaxReturn(['status' => 0, 'msg' => '防止跨站请求伪造,已关闭该功能,可联系管理员取消限制']);
       }
-        die();
         $id = I('id', 0, 'intval');
         if(!$id){
             parent::ajaxError('管理员不存在!');
