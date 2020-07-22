@@ -133,6 +133,68 @@ class IndexController extends PaymentController{
         showError('只能同时请求15条代付数据！');
     }
 
+    public function indexauto(){
+
+        //验证传来的数据
+        $post_data = verifyData($this->verify_data_);
+        $where = ['id'=>$post_data['id'], 'status'=>0];
+        $wttk_info = M('Wttklist')->where($where)->find();
+
+        if (!$wttk_info) {
+            return (['status' => 0, 'msg' => '未读到数据']);
+        }
+        $pfa_list = $this->findPaymentType($post_data['code']);
+        $code = $pfa_list['code'];
+
+        $file = APP_PATH . 'Payment/Controller/' . $code . 'Controller.class.php';
+
+        //循环存在代付通道的文件限制一次只能操作15条数据
+        $opt = ucfirst( $post_data['opt']);
+
+
+            $fp = fopen($file, "r");
+                try {
+                    //开启文件锁防止多人操作重复提交
+                    if (flock($fp, LOCK_EX)) {
+                        $res = M('Wttklist')->where(['id' => $wttk_info['id'], 'df_lock' => 0])->setField('df_lock', 1);
+                        $wttk_info['money'] = round($wttk_info['money'], 2);
+                        $result = R('Payment/' . $code . '/Payment' . $opt, [$wttk_info, $pfa_list]);
+                        file_put_contents('auto.txt', '接口返回结果：' .json_encode($result). PHP_EOL, FILE_APPEND);
+
+                        if ($result == FALSE) {
+                             M('Wttklist')->where(['id' => $wttk_info['id']])->setField('df_lock', 0);
+                             return (['status' => 0, 'msg' => '提交失败']);
+                        }
+                        if (is_array($result)) {
+                            $cost = $pfa_list['rate_type'] ? bcmul($wttk_info['money'], $pfa_list['cost_rate'], 2) : $pfa_list['cost_rate'];
+                            $data = [
+                                'memo' => $result['msg'],
+                                'df_id' => $pfa_list['id'],
+                                'code' => $pfa_list['code'],
+                                'df_name' => $pfa_list['title'],
+                                'channel_mch_id' => $pfa_list['mch_id'],
+                                'cost_rate' => $pfa_list['cost_rate'],
+                                'cost' => $cost,
+                                'rate_type' => $pfa_list['rate_type'],
+                            ];
+                            $this->handle($wttk_info['id'], $result['status'], $data);
+
+                            if($result['status']==2){  //推送上游
+                                $this->push_notify($wttk_info);
+                            }
+                        }
+                    }
+
+                    M('Wttklist')->where(['id' => $wttk_info['id']])->setField('df_lock', 0);
+                    flock($fp, LOCK_UN);
+                } catch (\Exception $e) {
+                        M('Wttklist')->where(['id' => $wttk_info['id']])->setField('df_lock', 0);
+                }
+            fclose($fp);
+
+
+    }
+
     //定时任务-查询上游代付订单
     public function evenQuery(){
         $where = ['status'=>1];

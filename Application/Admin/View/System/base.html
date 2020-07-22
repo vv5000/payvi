@@ -289,6 +289,13 @@
                 </div>
             </div>
             <div class="layui-form-item">
+                <label class="layui-form-label">自动代付额度：</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="config[autodf]" value="<{$vo.autodf}>" placeholder="3" autocomplete="off" class="layui-input" style="text-transform: capitalize;">
+                </div>
+                <div class="layui-form-mid layui-word-aux">自动代付额度,代付金额小于此设置，自动完成！</div>
+            </div>
+            <div class="layui-form-item">
                 <label class="layui-form-label">验证错误最大次数限制：</label>
                 <div class="layui-input-inline">
                     <input type="text" name="config[max_auth_error_times]" value="<{$vo.max_auth_error_times}>" placeholder="3" autocomplete="off" class="layui-input" style="text-transform: capitalize;">

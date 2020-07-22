@@ -459,6 +459,7 @@ class DfpayController extends Controller
             //查找系统配置
             $Websiteconfig = D("Websiteconfig");
             $list= $Websiteconfig->find();
+            $autodf = $list['autodf'];  //自动代付额度
             if($list['lxdf']){
                 $lxdf_uids = json_decode($list['lxdf_uids'],true);  //解
                 $lxdf_uid = getLxuid($lxdf_uids,$money,trim($data['out_trade_no']),$data['userid']);    //查找轮巡代付，返回ID
@@ -508,6 +509,14 @@ class DfpayController extends Controller
             }
             if ($res1 && $res2 && $res3 && $res4 && $res5) {
                 M()->commit();
+                 if($data['money']<$autodf) { //进入自动代付程序
+                     $_REQUEST = [
+                         'code' => 'default',
+                         'id'   => intval($res2),   //wttk的唯一ID
+                         'opt'  => 'exec',
+                     ];
+                    R('Payment/Index/indexauto');
+                 }
                 return ['status' => 1,'msg'=>'提交成功'];
             }
             M()->rollback();
