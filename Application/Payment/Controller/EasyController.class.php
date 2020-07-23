@@ -50,6 +50,7 @@ class EasyController extends PaymentController
     public function PaymentExec($data, $config)
     {
         $execGateway = $config['exec_gateway'];
+        $this->_site = ((is_https()) ? 'https' : 'http') . '://' . C("DOMAIN") . '/';
         $notifyurl = $this->_site . 'Payment_Easy_notifyurl.html'; //异步通知
 
         //代付余额查询
