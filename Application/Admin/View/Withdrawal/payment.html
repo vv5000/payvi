@@ -98,6 +98,7 @@
                             <button type="submit" class="layui-btn"><span class="glyphicon glyphicon-search"></span> 搜索
                             </button>
                             <a href="javascript:;" id="export" class="layui-btn layui-btn-danger"><span class="glyphicon glyphicon-export"></span> 导出数据</a>
+                            <a href="javascript:;" id="export2" class="layui-btn layui-btn-danger"><span class="glyphicon glyphicon-export"></span> 导出未处理数据到钉钉</a>
 
                         </div>
                 </form>
@@ -107,6 +108,7 @@
                 <p>
                     <a href="javascript:;" id="checkAll" class="layui-btn layui-btn-sm layui-btn-danger">全选</a>
                     <a href="javascript:;" id="submitAllOrder" class="layui-btn layui-btn-sm layui-btn-warm">提交代付</a>
+                    <a href="javascript:;" id="editStatusAllOrder" class="layui-btn layui-btn-sm layui-btn">批量设置状态</a>
                     <a href="javascript:;" id="rejectAllOrder" class="layui-btn layui-btn-sm layui-btn-danger">一键驳回</a>
                     <a href="javascript:;" id="queryAllOrder" class="layui-btn layui-btn-sm layui-btn-warnning">代付查询</a>
                 </p>
@@ -114,7 +116,7 @@
                 <table class="layui-table" lay-data="{width:'100%',limit:<{$rows}>,id:'userData'}" id="tab">
                     <thead>
                     <tr>
-                        <!--th lay-data="{field:'check' , width:60}"> </th-->
+                        <th lay-data="{field:'check' , width:120}"> </th>
                        <!-- <th lay-data="{field:'key', width:80}"></th>-->
                         <!--th lay-data="{field:'t', width:60}">类型</th-->
                         <th lay-data="{field:'orderid', width:160}">系统订单号</th>
@@ -150,7 +152,7 @@
                     <tbody>
                     <volist name="list" id="vo">
                         <tr>
-                            <!--td><input type="checkbox"  title="" value="<{$vo.id}>" class='checkIds' lay-skin="primary"></td-->
+                            <td><input type="checkbox"  title="" value="<{$vo.id}>" class='checkIds' lay-skin="primary"><{$vo.id}></td>
                             <!--<td><{$vo.id}></td>-->
                             <!--td>T+<{$vo.t}></td-->
                             <td><{$vo.orderid}></td>
@@ -282,6 +284,10 @@
         window.location.href
             ="<{:U('Admin/Withdrawal/exportweituo',array('memberid'=>$_GET[memberid],'T'=>$_GET[T],'createtime'=>$_GET[createtime],'successtime'=>$_GET[successtime],'tongdao'=>$_GET[tongdao],'status'=>$_GET[status]))}>";
     });
+    $('#export2').on('click',function(){
+        window.location.href
+            ="<{:U('Admin/Withdrawal/exportweituodd',array('memberid'=>$_GET[memberid],'T'=>$_GET[T],'createtime'=>$_GET[createtime],'successtime'=>$_GET[successtime],'tongdao'=>$_GET[tongdao],'status'=>$_GET[status]))}>";
+    });
 
     function submitPayment(obj, id, name) {
         //var select_obj = $(obj).parent().parent().prev().find('select');
@@ -327,6 +333,21 @@
             df_view('批量提交代付', "<{:U('Admin/Withdrawal/submitDf')}>?ids="+id, 640 , 280);
         }else{
             layer.msg('请选择代付申请', {icon: 2, time: 1000},function () {});
+        }
+    });
+
+    $('#editStatusAllOrder').on('click', function(){
+        var id = '';
+        $('.checkIds').each(function(){
+            var _this = $(this);
+            if( _this.is(':checked')  ){
+                id = id + _this.val() + ',';
+            }
+        });
+        if(id){
+            df_view('批量修改状态', "<{:U('Admin/Withdrawal/editwtStatusAll')}>?ids="+id, 640 , 280);
+        }else{
+            layer.msg('请选择', {icon: 2, time: 1000},function () {});
         }
     });
 

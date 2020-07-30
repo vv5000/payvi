@@ -755,7 +755,7 @@ class WithdrawalController extends BaseController
             $where['t'] = array('eq', $T);
         }
         $status = I("request.status", 0, 'intval');
-        if ($status) {
+        if (isset($status)) {
             $where['status'] = array('eq', $status);
         }
         $createtime = urldecode(I("request.createtime"));
@@ -820,6 +820,54 @@ class WithdrawalController extends BaseController
             );
         }
         $numberField = ['tkmoney', 'sxfmoney', 'money'];
+        exportexcel($list, $title, $numberField);
+    }
+    public function exportweituodd()
+    {
+        $where    = array();
+        $memberid = I("get.memberid");
+        if ($memberid) {
+            $where['userid'] = array('eq', $memberid - 10000);
+        }
+        $tongdao = I("request.tongdao");
+        if ($tongdao) {
+            $where['payapiid'] = array('eq', $tongdao);
+        }
+        $T = I("request.T");
+        if ($T != "") {
+            $where['t'] = array('eq', $T);
+        }
+        $status = I("request.status", 0, 'intval');
+        if (isset($status)) {
+            $where['status'] = array('eq', $status);
+        }
+        $createtime = urldecode(I("request.createtime"));
+        if ($createtime) {
+            list($cstime, $cetime) = explode('|', $createtime);
+            $where['sqdatetime']   = ['between', [$cstime, $cetime ? $cetime : date('Y-m-d')]];
+        }
+        $successtime = urldecode(I("request.successtime"));
+        if ($successtime) {
+            list($sstime, $setime) = explode('|', $successtime);
+            $where['cldatetime']   = ['between', [$sstime, $setime ? $setime : date('Y-m-d')]];
+        }
+
+        $title = array('序号（选填）', '收款方账户类型（必填）', '收款方账号（必填）', '收款方户名（必填）', '金额（必填，单位：元）', '备注（选填）', );
+        $data  = M('Wttklist')->where($where)->select();
+
+        foreach ($data as $item) {
+            if ($item['status'] == 0) {
+                $list[] = array(
+                    'id' => $item['orderid'],
+                    'type' => $item['orderid'],
+                    'banknumber'     => $item['banknumber'],//银行卡号
+                    'bankfullname'   => $item['bankfullname'],//开户名称
+                    'money'          => $item['money'],//到账金额
+                    "memo"           => $item["memo"],
+                );
+            }
+        }
+        $numberField = ['money'];
         exportexcel($list, $title, $numberField);
     }
 
@@ -1219,6 +1267,185 @@ class WithdrawalController extends BaseController
         } else {
             $info = M('Wttklist')->where(['id' => $id])->find();
             $this->assign('info', $info);
+            $this->display();
+        }
+    }
+
+    public function editwtStatusAll()
+    {
+        $ids = I('request.ids');
+        if (!$ids) {
+            $this->ajaxReturn(['status' => 0, 'msg' => "请选择！"]);
+        }
+
+        if (IS_POST) {
+
+            $ids  = I("post.ids");
+            $status  = I("post.status", 0, 'intval');
+            $ids = explode(',', $ids);
+
+            foreach ($ids as $id){
+              if(!$id){
+                  continue;   //如果ID为空直接跳入下一个！
+              }
+                file_put_contents("1.txt", 'Begin:'.date('H:i:s').$id . PHP_EOL, FILE_APPEND);
+            //开启事物
+            M()->startTrans();
+            $Wttklist  = M("Wttklist");
+            $map['id'] = $id;
+            $withdraw  = $Wttklist->where($map)->lock(true)->find();
+            //    $this->ajaxReturn(['status' => 0,'msg'=>json_encode($withdraw)]);
+            if (empty($withdraw)) {
+                continue;  //出现错误进入下一个！
+            }
+            $userid  = $withdraw['userid'];
+            $tkmoney = $withdraw['tkmoney'];
+
+            $data           = [];
+            $data["status"] = $status;
+           // $wtStatus       = $Wttklist->where(['id' => $id])->getField('status');
+            $wtStatus       = $withdraw['status'];
+            if ($wtStatus == 2 || $wtStatus == 3) {
+                file_put_contents("1.txt", date('H:i:s').$id . PHP_EOL, FILE_APPEND);
+                M()->rollback();
+                continue;  //出现错误进入下一个！
+            }
+            //判断状态
+           if($status==2) {
+               $data["cldatetime"] = date("Y-m-d H:i:s");
+               $apiid = $withdraw['df_api_id'];
+               $useridd = $withdraw['userid'];
+               $Order = M("df_api_order");
+               $ma = M("member");
+               $apikey = $ma->where(['id' => $useridd])->getField("apikey");
+               $notifyurl = $Order->where(['id' => $apiid])->getField("notifyurl");
+               file_put_contents("1.txt", '#2' . date('H:i:s') . $id . PHP_EOL, FILE_APPEND);
+
+               if ($notifyurl) {
+                   $out_trade_no = $Order->where(['id' => $apiid])->getField("out_trade_no");
+                   $trade_no = $Order->where(['id' => $apiid])->getField("trade_no");
+                   $money = $Order->where(['id' => $apiid])->getField("money");
+                   $arr['out_trade_no'] = $out_trade_no;
+                   $arr['amount'] = $money;
+                   $arr['transaction_id'] = $trade_no;
+                   $arr['status'] = 'success';
+                   $arr['msg'] = 'success';
+                   ksort($arr);
+                   $md5str = "";
+                   foreach ($arr as $key => $val) {
+                       $md5str = $md5str . $key . "=" . $val . "&";
+                   }
+
+                   $sign = strtoupper(md5($md5str . "key=" . $apikey));
+                   $arr["pays_md5sign"] = $sign;
+                   $postData = http_build_query($arr);
+                   $curl = curl_init();
+                   curl_setopt($curl, CURLOPT_URL, $notifyurl);
+                   curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false); // stop verifying certificate
+                   curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+                   curl_setopt($curl, CURLOPT_POST, true);
+                   curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form-urlencoded'));
+                   curl_setopt($curl, CURLOPT_POSTFIELDS, $postData);
+                   curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
+                   $res = curl_exec($curl);
+                   file_put_contents('0.txt', '回调数据:' . $postData . ',返回结果：' . $res . PHP_EOL, FILE_APPEND);
+                   curl_close($curl);
+               }
+
+           }elseif($status==3){
+                    file_put_contents("1.txt", '#3'.date('H:i:s').$id . PHP_EOL, FILE_APPEND);
+
+                    if ($withdraw['status'] == 2) {
+                      //  $this->ajaxReturn(['status' => 0, 'msg' => '提款申请已打款，不能驳回']);
+                        continue;//
+                    } elseif ($withdraw['status'] == 3) {
+                      //  $this->ajaxReturn(['status' => 0, 'msg' => '提款申请已驳回，不能驳回']);
+                        continue;//
+                    }
+                    $map['_string'] = 'status=0 OR status=1 OR status=4';
+                    //驳回操作
+                    //1,将金额返回给商户
+                    $Member     = M('Member');
+                    $memberInfo = $Member->where(['id' => $userid])->lock(true)->find();
+                    $res        = $Member->where(['id' => $userid])->save(['balance' => array('exp', "balance+{$tkmoney}")]);
+
+                    if (!$res) {
+                        M()->rollback();
+                      //  $this->ajaxReturn(['status' => 0]);
+                        continue;//
+                    }
+
+                    //2,记录流水订单号
+                    $arrayField = array(
+                        "userid"     => $userid,
+                        "ymoney"     => $memberInfo['balance'],
+                        "money"      => $tkmoney,
+                        "gmoney"     => $memberInfo['balance'] + $tkmoney,
+                        "datetime"   => date("Y-m-d H:i:s"),
+                        "tongdao"    => 0,
+                        "transid"    => $id,
+                        "orderid"    => $id,
+                        "lx"         => 12,
+                        'contentstr' => '代付驳回',
+                    );
+                 file_put_contents("1.txt", '#32'.date('H:i:s').json_encode($arrayField) . PHP_EOL, FILE_APPEND);
+
+               $res = M('Moneychange')->add($arrayField);
+
+                    if (!$res) {
+                        M()->rollback();
+                       // $this->ajaxReturn(['status' => 0]);
+                        continue;//
+                    }
+                    //代付驳回退回手续费
+                    if ($withdraw['df_charge_type']) {
+                        $res = $Member->where(['id' => $withdraw['userid']])->save(['balance' => array('exp', "balance+{$withdraw['sxfmoney']}")]);
+                        if (!$res) {
+                            M()->rollback();
+                           // $this->ajaxReturn(['status' => 0]);
+                            continue;//
+                        }
+                        $chargeField = array(
+                            "userid"     => $withdraw['userid'],
+                            "ymoney"     => $memberInfo['balance'] + $tkmoney,
+                            "money"      => $withdraw['sxfmoney'],
+                            "gmoney"     => $memberInfo['balance'] + $tkmoney + $withdraw['sxfmoney'],
+                            "datetime"   => date("Y-m-d H:i:s"),
+                            "tongdao"    => 0,
+                            "transid"    => $id,
+                            "orderid"    => $id,
+                            "lx"         => 15,
+                            'contentstr' => '代付结算驳回退回手续费',
+                        );
+                        $res = M('Moneychange')->add($chargeField);
+                        file_put_contents("1.txt", '#33'.date('H:i:s').json_encode($chargeField) . PHP_EOL, FILE_APPEND);
+
+                        if (!$res) {
+                            M()->rollback();
+                           // $this->ajaxReturn(['status' => 0]);
+                            continue;//
+                        }
+                    }
+                    $data["cldatetime"] = date("Y-m-d H:i:s");
+                    $data["memo"]       = I('post.memo');
+            }else{
+               continue;//不执行，进入下一个
+           }
+
+            $res = $Wttklist->where($map)->save($data);
+
+            if ($res) {
+                M()->commit();
+            }else{
+                M()->rollback();
+                continue;  //错误回顾，进入下一个！
+            }
+
+            }
+            $this->ajaxReturn(['status' => 1]);  //批量处理完成
+        } else {
+            $ids_array = explode(',', $ids);
+            $this->assign('ids', $ids);
             $this->display();
         }
     }
