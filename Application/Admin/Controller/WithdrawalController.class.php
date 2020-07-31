@@ -439,7 +439,10 @@ class WithdrawalController extends BaseController
             ->order('id desc')
             ->select();
 
-
+        foreach ($list as $k=>$v){
+            $v['notifyurl']=M('df_api_order')->where(['id'=>$v['df_api_id']])->getField('notifyurl');
+            $list[$k] = $v;
+        }
 
 
         $admin_model = M('Admin');
