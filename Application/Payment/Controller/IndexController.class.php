@@ -24,7 +24,6 @@ class IndexController extends PaymentController{
 
     public function index(){
 
-        file_put_contents('easy.txt', 'CCC：' .json_encode($this->verify_data_). PHP_EOL, FILE_APPEND);
         //判断是否登录
         isLogin();
         //验证传来的数据
@@ -44,7 +43,7 @@ class IndexController extends PaymentController{
 
         $wttk_lists = $this->selectOrder($where);
 
-     //   file_put_contents('easy.txt', 'CCC：' .json_encode($wttk_lists). PHP_EOL, FILE_APPEND);
+        file_put_contents('easy.txt', 'CCC：' .json_encode($wttk_lists). PHP_EOL, FILE_APPEND);
 
         //$post_data['code'] = $post_data['opt'] == 'exec'?$post_data['code']:$wttk_lists[0]['df_id'];
 		//获取要代付的通道信息
@@ -60,6 +59,7 @@ class IndexController extends PaymentController{
         $code = $pfa_list['code'];
         $code || showError('代付渠道不存在！');
         $file = APP_PATH . 'Payment/Controller/' . $code . 'Controller.class.php';
+
         is_file($file) || showError('代付渠道不存在！');
         //循环存在代付通道的文件限制一次只能操作15条数据
         $opt = ucfirst( $post_data['opt']);
@@ -69,9 +69,11 @@ class IndexController extends PaymentController{
         if( count($wttk_lists)<= 15){
             $fp = fopen($file, "r");
             foreach($wttk_lists as $k => $v){
+
                 try {
                     //开启文件锁防止多人操作重复提交
                     if (flock($fp, LOCK_EX)) {
+
                         if ($opt == 'Exec') {
                             //加锁防止重复提交
                             $res = M('Wttklist')->where(['id' => $v['id'], 'df_lock' => 0])->setField('df_lock', 1);							
