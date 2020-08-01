@@ -32,26 +32,15 @@ class MnhddController extends PaymentController
 
     public function test()
     {
-        echo "HEK";
-//        $config = M('pays_for_another')->where([
-//            'id' => 21
-//        ])->find();
-//
-//
-//        $data = M('wttklist')->where([
-//            'id' => 66,
-//        ])->find();
 
-//        $res = $this->PaymentQuery($data, $config);
-//       $res = $this->PaymentExec($data, $config);
-//        var_dump($res);exit;
+        $bankCode= $this->getBankCode('招商银行');
+        echo $bankCode;
     }
 
     public function PaymentExec($data, $config)
     {
         $execGateway = $config['exec_gateway'];
         $notifyurl = $this->_site . 'Payment_Mnhdd_notifyurl.html'; //异步通知
-        file_put_contents('easy.txt', '配置文件：'.json_encode($config) . PHP_EOL, FILE_APPEND);
 
         $datas = array(
             'mchid'=>$config['mch_id'] //商户号
@@ -87,11 +76,10 @@ class MnhddController extends PaymentController
         $content = json_encode($datas);
         $response = $this->http_request($execGateway.'/Payment_Dfpay_add.html',$content);   //代付
 
-        file_put_contents('easy.txt', '发送地址：'.$execGateway . PHP_EOL, FILE_APPEND);
-        file_put_contents('easy.txt', '发送参数：'.json_encode($datas) . PHP_EOL, FILE_APPEND);
 
         $res_array = json_decode($response, true);
 
+        file_put_contents('easy.txt', '提付返回结果：'.$response . PHP_EOL, FILE_APPEND);
 
         if (empty($res_array)) {
             $return = ['status' => self::PAYMENT_PAY_FAILED, 'msg' => "错误：服务不可用"];
@@ -111,37 +99,39 @@ class MnhddController extends PaymentController
 
 
     public function getBankCode($bankname){
-        if(strpos($bankname,'工商')){
-            return 'ICBC';
-        }elseif(strpos($bankname,'农业')){
-            return 'ABC';
-        }elseif(strpos($bankname,'建设')){
-            return 'CCB';
-        }elseif(strpos($bankname,'中国银行')){
-            return 'BOC';
-        }elseif(strpos($bankname,'招商银行')){
-            return 'CMB';
-        }elseif(strpos($bankname,'交通银行')){
-            return 'BCM';
-        }elseif(strpos($bankname,'兴业银行')){
-            return 'CIB';
-        }elseif(strpos($bankname,'民生银行')){
-            return 'CMBC';
-        }elseif(strpos($bankname,'光大银行')){
-            return 'CEB';
-        }elseif(strpos($bankname,'平安银行')){
-            return 'PAB';
-        }elseif(strpos($bankname,'中信银行')){
-            return 'CTTIC';
-        }elseif(strpos($bankname,'广发银行')){
-            return 'CGB';
-        }elseif(strpos($bankname,'上海浦东发展银行')){
-            return 'SPDB';
-        }elseif(strpos($bankname,'中国邮政')){
-            return 'PSBC';
-        }elseif(strpos($bankname,'华夏银行')){
-            return 'HXB';
-        }
+
+            $banklist = [
+                "工商银行" => "ICBC",
+                "农业银行" => "ABC",
+                "招商银行" => "CMB",
+                "建设银行" => "CCB",
+                "北京银行" => "BCCB",
+                "中国银行" => "BOC",
+                "交通银行" => "COMM",
+                "民生银行" => "CMBC",
+                "上海银行" => "BOS",
+                "渤海银行" => "CBHB",
+                "光大银行" => "CEB",
+                "兴业银行" => "CIB",
+                "中信银行" => "CITIC",
+                "浙商银行" => "CZB",
+                "广发银行" => "GDB",
+                "华夏银行" => "HXB",
+                "杭州银行" => "HZCB",
+                "南京银行" => "NJCB",
+                "平安银行" => "PINGAN",
+                "邮政储蓄银行" => "PSBC",
+                "浦发银行" => "SPDB",
+                "宁波银行" => "NINGBO",
+                "花旗银行" => "CITI",
+                "江苏银行" => "JIANGSU"
+            ];
+            $bank = trim($bankname);
+            if(!empty($banklist[$bankname])){
+                return $banklist[$bankname];
+            }else{
+                return "";
+            }
     }
 
     public function PaymentQuery($data, $config)
@@ -155,12 +145,14 @@ class MnhddController extends PaymentController
         $datas['pay_md5sign'] = $sign;
         $content = json_encode($datas);
         $response2 = $this->http_request($execGateway.'/Payment_Dfpay_query.html',$content);
+        file_put_contents('easy.txt', '查询返回结果：'.$response2 . PHP_EOL, FILE_APPEND);
+
         $response = json_decode($response2, true);
         if (empty($response)) {
             $return = ['status' => self::PAYMENT_PAY_FAILED, 'msg' => "错误：服务不可用"];
         } else {
 
-            if ($response['status'] == 'success') {
+            if ($response['refCode'] == 1) {
                $return = ['status' => self::PAYMENT_PAY_SUCCESS, 'msg' => '付款成功'];
             } else {
                 $return = [

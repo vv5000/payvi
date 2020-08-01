@@ -515,7 +515,11 @@ class DfpayController extends Controller
                          'id'   => intval($res2),   //wttk的唯一ID
                          'opt'  => 'exec',
                      ];
-                    R('Payment/Index/indexauto');
+                     $result= R('Payment/Index/indexauto');
+                     if($result['status']!=1){  //自动失败
+                         M()->rollback();
+                         return (['status' => 0, 'msg' => '提交失败'.$result['msg']]);
+                     }
                  }
                 return ['status' => 1,'msg'=>'提交成功'];
             }

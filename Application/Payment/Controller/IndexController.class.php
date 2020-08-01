@@ -167,7 +167,7 @@ class IndexController extends PaymentController{
                              M('Wttklist')->where(['id' => $wttk_info['id']])->setField('df_lock', 0);
                              return (['status' => 0, 'msg' => '提交失败']);
                         }
-                        if (is_array($result)) {
+                        if (is_array($result) && $result['status']==1) {
                             $cost = $pfa_list['rate_type'] ? bcmul($wttk_info['money'], $pfa_list['cost_rate'], 2) : $pfa_list['cost_rate'];
                             $data = [
                                 'memo' => $result['msg'],
@@ -184,6 +184,9 @@ class IndexController extends PaymentController{
                             if($result['status']==2){  //推送上游
                                 $this->push_notify($wttk_info);
                             }
+                            return $result;
+                        }else{
+                            return (['status' => 0, 'msg' => '提交失败'.$result['msg']]);
                         }
                     }
 
