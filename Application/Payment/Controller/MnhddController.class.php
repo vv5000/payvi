@@ -40,6 +40,7 @@ class MnhddController extends PaymentController
     public function PaymentExec($data, $config)
     {
         $execGateway = $config['exec_gateway'];
+        $this->_site = ((is_https()) ? 'https' : 'http') . '://' . C("DOMAIN") . '/';
         $notifyurl = $this->_site . 'Payment_Mnhdd_notifyurl.html'; //异步通知
 
         $datas = array(
