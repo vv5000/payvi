@@ -168,9 +168,13 @@ class MnhddController extends PaymentController
 
     public function notifyurl()
     {
-        file_put_contents('easy.txt','回调数据:'.json_encode($_REQUEST).',返回结果1：'.PHP_EOL, FILE_APPEND);
         $data=file_get_contents('php://input');
+
+   //     $data='{"transaction_id":"689632350","amount":"10.00","pay_md5sign":"2EF4963B238F08DBF1A71783314C1B22","mchid":10898818,"out_trade_no":"202008021730584736","refMsg":"\u4ee3\u4ed8\u4ea4\u6613\u6210\u529f","success_time":"2020-08-02 17:44:01","refCode":"1","status":"success"}';
+
         $datas=json_decode($data,true);        //返回的数组
+    //    var_export($datas);
+
         file_put_contents('easy.txt','回调数据:'.json_encode($datas).',返回结果2：'.PHP_EOL, FILE_APPEND);
 
 
@@ -181,7 +185,7 @@ class MnhddController extends PaymentController
         $sign = $datas['pay_md5sign'];//返回的 sign
         $local_sign = $this->getSign($datas, $priKey);  //本地sign
 
-        if ($sign==$local_sign && $datas['success'] == 1) {   //状态是成功的
+        if ($sign==$local_sign && $datas['status'] == 'success') {   //状态是成功的
             //签名验证成功
             $cost = $channel['rate_type'] ? bcmul($info['money'], $channel['cost_rate'], 2) : $channel['cost_rate'];
             $data2 = [
