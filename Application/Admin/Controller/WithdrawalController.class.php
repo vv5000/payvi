@@ -439,8 +439,12 @@ class WithdrawalController extends BaseController
             ->order('id desc')
             ->select();
 
+        $df_api_ids = array_column($list, 'df_api_id');
+        $df_notify=M('df_api_order')->field('id,notifyurl')->where(['id'=>array('in',$df_api_ids)])->select();
+        $df_notifyurl=array_column($df_notify,'notifyurl','id');
+
         foreach ($list as $k=>$v){
-            $v['notifyurl']=M('df_api_order')->where(['id'=>$v['df_api_id']])->getField('notifyurl');
+            $v['notifyurl']=$df_notifyurl[$v['df_api_id']];
             $list[$k] = $v;
         }
 
@@ -467,20 +471,23 @@ class WithdrawalController extends BaseController
         //统计总结算信息
         $totalMap           = $where;
         $totalMap['status'] = 2;
-        //结算金额
-        $stat['total'] = round(M('Wttklist')->where($totalMap)->sum('money'), 2);
+     //   $stat['total'] = round(M('Wttklist')->where($totalMap)->sum('money'), 2);
+     //   $stat['total_success_count'] = M('Wttklist')->where($totalMap)->count();
+     //   $stat['total_profit'] = M('Wttklist')->where($totalMap)->sum('sxfmoney-cost');
+
+        $stat1 = M('Wttklist')->field("sum(money) as money,count(*) as total_success_count,sum(sxfmoney-cost) as total_profit")->where($totalMap)->find();
+        $stat['total'] = round($stat1['total'],2); //结算金额
+        $stat['total_success_count'] = $stat1['total_success_count']; //完成笔数
+        $stat['total_profit'] = $stat1['total_profit'];//平台手续费利润
+
+
         //待结算
         $totalMap['status'] = ['in', '0,1'];
         $stat['total_wait'] = round(M('Wttklist')->where($totalMap)->sum('money'), 2);
-        //完成笔数
-        $totalMap['status']          = 2;
-        $stat['total_success_count'] = M('Wttklist')->where($totalMap)->count();
         //驳回笔数
         $totalMap['status']       = 3;
         $stat['total_fail_count'] = M('Wttklist')->where($totalMap)->count();
-        //平台手续费利润
-        $totalMap['status']   = 2;
-        $stat['total_profit'] = M('Wttklist')->where($totalMap)->sum('sxfmoney-cost');
+
 
         //统计今日代付信息
         $beginToday = mktime(0, 0, 0, date('m'), date('d'), date('Y'));
@@ -491,53 +498,49 @@ class WithdrawalController extends BaseController
         //今日代付总金额
         $map['cldatetime']   = array('between', array(date('Y-m-d H:i:s', $beginToday), date('Y-m-d H:i:s', $endToday)));
         $map['status']       = 2;
-        $stat['totay_total'] = round(M('Wttklist')->where($map)->sum('money'), 2);
+
+        $stat1 = M('Wttklist')->field("sum(money) as totay_total,count(*) as totay_success_count,sum(sxfmoney-cost) as totay_profit")->where($map)->find();
+        $stat['totay_total'] = round($stat1['totay_total'], 2);
+        $stat['totay_success_count'] = $stat1['totay_success_count'];  //今日代付成功笔数
+        $stat['totay_profit']= $stat1['totay_profit'];
+
+
         //今日代付待结算
         unset($map['cldatetime']);
         $map['sqdatetime']  = array('between', array(date('Y-m-d H:i:s', $beginToday), date('Y-m-d H:i:s', $endToday)));
         $map['status']      = ['in', '0,1'];
         $stat['totay_wait'] = round(M('Wttklist')->where($map)->sum('money'), 2);
-        //今日代付成功笔数
+       //今日代付失败笔数
         unset($map['sqdatetime']);
-        $map['cldatetime']           = array('between', array(date('Y-m-d H:i:s', $beginToday), date('Y-m-d H:i:s', $endToday)));
-        $map['status']               = 2;
-        $stat['totay_success_count'] = M('Wttklist')->where($map)->count();
-        //今日代付失败笔数
-        unset($map['cldatetime']);
         $map['sqdatetime']        = array('between', array(date('Y-m-d H:i:s', $beginToday), date('Y-m-d H:i:s', $endToday)));
         $map['status']            = ['in', '3,4'];
         $stat['totay_fail_count'] = M('Wttklist')->where($map)->count();
         //今日平台手续费利润
+
+
         unset($map['sqdatetime']);
-        $map['cldatetime']    = array('between', array(date('Y-m-d H:i:s', $beginToday), date('Y-m-d H:i:s', $endToday)));
-        $map['status']        = 2;
-        $stat['totay_profit'] = M('Wttklist')->where($map)->sum('sxfmoney-cost');
+        unset($map['cldatetime']);
         //统计本月代付信息
         $monthBegin = date('Y-m-01') . ' 00:00:00';
         //本月代付总金额
         $map['cldatetime']   = array('egt', $monthBegin);
         $map['status']       = 2;
-        $stat['month_total'] = round(M('Wttklist')->where($map)->sum('money'), 2);
+        $stat1 = M('Wttklist')->field("sum(money) as month_total,count(*) as month_success_count,sum(sxfmoney-cost) as month_profit")->where($map)->find();
+        $stat['month_total'] = round($stat1['month_total'], 2);  //本月代付总金额
+        $stat['month_success_count'] = $stat1['month_success_count'];    //本月代付成功笔数
+        $stat['month_profit'] =$stat1['month_profit'];   //本月平台手续费利润
+
         //本月代付待结算
         unset($map['cldatetime']);
         $map['sqdatetime']  = array('egt', $monthBegin);
         $map['status']      = ['in', '0,1'];
         $stat['month_wait'] = round(M('Wttklist')->where($map)->sum('money'), 2);
-        //本月代付成功笔数
+       //本月代付失败笔数
         unset($map['sqdatetime']);
-        $map['cldatetime']           = array('egt', $monthBegin);
-        $map['status']               = 2;
-        $stat['month_success_count'] = M('Wttklist')->where($map)->count();
-        //本月代付失败笔数
-        unset($map['cldatetime']);
         $map['sqdatetime']        = array('egt',  $monthBegin);
         $map['status']            = ['in', '3,4'];
         $stat['month_fail_count'] = M('Wttklist')->where($map)->count();
         //本月平台手续费利润
-        unset($map['sqdatetime']);
-        $map['cldatetime']    = array('egt', $monthBegin);
-        $map['status']        = 2;
-        $stat['month_profit'] = M('Wttklist')->where($map)->sum('sxfmoney-cost');
         foreach ($stat as $k => $v) {
             $stat[$k] += 0;
         }

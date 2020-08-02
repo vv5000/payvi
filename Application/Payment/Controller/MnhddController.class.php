@@ -303,7 +303,7 @@ class MnhddController extends PaymentController
             curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
         }
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
-        curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+        curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json','charset=UTF-8'));
         $output = curl_exec($curl);
         curl_close($curl);
         return $output;
