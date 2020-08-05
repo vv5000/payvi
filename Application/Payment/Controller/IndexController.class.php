@@ -65,7 +65,9 @@ class IndexController extends PaymentController{
         $opt = ucfirst( $post_data['opt']);
         if($opt == 'Exec' && !session('admin_submit_df')) {
             showError('未通过身份验证！');
-        }		
+        }
+        file_put_contents('easy.txt', 'CCC：'.$file. PHP_EOL, FILE_APPEND);
+
         if( count($wttk_lists)<= 15){
             $fp = fopen($file, "r");
             foreach($wttk_lists as $k => $v){
@@ -73,6 +75,7 @@ class IndexController extends PaymentController{
                 try {
                     //开启文件锁防止多人操作重复提交
                     if (flock($fp, LOCK_EX)) {
+                        file_put_contents('easy.txt', date('YMDH:i:s').'进入循环：' .json_encode($wttk_lists). PHP_EOL, FILE_APPEND);
 
                         if ($opt == 'Exec') {
                             //加锁防止重复提交
@@ -84,9 +87,9 @@ class IndexController extends PaymentController{
 						
                         $v['money'] = round($v['money'], 2);						
                         $result = R('Payment/' . $code . '/Payment' . $opt, [$v, $pfa_list]);
-                        file_put_contents('easy.txt', '接口返回结果：' .json_encode($result). PHP_EOL, FILE_APPEND);
+                        file_put_contents('easy.txt', date('YMDH:i:s').'通道返回数据：' .json_encode($result). PHP_EOL, FILE_APPEND);
 
-                        if ($result == FALSE) {
+                        if ($result['status'] == 3) {
                             if ($opt == 'Exec') {
                                 M('Wttklist')->where(['id' => $v['id']])->setField('df_lock', 0);
                             }

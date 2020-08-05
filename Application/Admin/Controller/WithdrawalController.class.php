@@ -442,11 +442,17 @@ class WithdrawalController extends BaseController
         $df_api_ids = array_column($list, 'df_api_id');
         $df_notify=M('df_api_order')->field('id,notifyurl')->where(['id'=>array('in',$df_api_ids)])->select();
         $df_notifyurl=array_column($df_notify,'notifyurl','id');
-
+        $df_ipy=M('df_api_order')->field('id,ip')->where(['id'=>array('in',$df_api_ids)])->select();
+        $df_ipys=array_column($df_ipy,'ip','id');
         foreach ($list as $k=>$v){
             $v['notifyurl']=$df_notifyurl[$v['df_api_id']];
+            $v['df_ip']=$df_ipys[$v['df_api_id']];            
             $list[$k] = $v;
         }
+
+
+
+
 
 
         $admin_model = M('Admin');
@@ -471,11 +477,11 @@ class WithdrawalController extends BaseController
         //统计总结算信息
         $totalMap           = $where;
         $totalMap['status'] = 2;
-     //   $stat['total'] = round(M('Wttklist')->where($totalMap)->sum('money'), 2);
+    //    $stat['total'] = round(M('Wttklist')->where($totalMap)->sum('money'), 2);
      //   $stat['total_success_count'] = M('Wttklist')->where($totalMap)->count();
      //   $stat['total_profit'] = M('Wttklist')->where($totalMap)->sum('sxfmoney-cost');
 
-        $stat1 = M('Wttklist')->field("sum(money) as money,count(*) as total_success_count,sum(sxfmoney-cost) as total_profit")->where($totalMap)->find();
+        $stat1 = M('Wttklist')->field("sum(money) as total,count(*) as total_success_count,sum(sxfmoney-cost) as total_profit")->where($totalMap)->find();
         $stat['total'] = round($stat1['total'],2); //结算金额
         $stat['total_success_count'] = $stat1['total_success_count']; //完成笔数
         $stat['total_profit'] = $stat1['total_profit'];//平台手续费利润

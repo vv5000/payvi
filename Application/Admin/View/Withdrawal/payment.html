@@ -111,41 +111,57 @@
                     <a href="javascript:;" id="editStatusAllOrder" class="layui-btn layui-btn-sm layui-btn">批量设置状态</a>
                     <a href="javascript:;" id="rejectAllOrder" class="layui-btn layui-btn-sm layui-btn-danger">一键驳回</a>
                     <a href="javascript:;" id="queryAllOrder" class="layui-btn layui-btn-sm layui-btn-warnning">代付查询</a>
+                    <a href="/admin_Withdrawal_payment.html?m=admin&c=Withdrawal&a=payment&p=1&orderid=&out_trade_no=&bankfullname=&memberid=&createtime=&successtime=&dfid=&lxdf_uid=&status=0&T=" class="layui-btn layui-btn-sm layui-btn-warnning">刷新未处理订单</a>                     
                 </p>
                <!--交易列表-->
                 <table class="layui-table" lay-data="{width:'100%',limit:<{$rows}>,id:'userData'}" id="tab">
                     <thead>
                     <tr>
-                        <th lay-data="{field:'check' , width:50}"> </th>
+                        <th lay-data="{field:'check' , width:85}">O</th>
                        <!-- <th lay-data="{field:'key', width:80}"></th>-->
                         <!--th lay-data="{field:'t', width:60}">类型</th-->
-                        <th lay-data="{field:'orderid', width:160}">系统订单号</th>
-                         <th lay-data="{field:'out_trade_no', width:175}">商户订单号</th>
-                        <th lay-data="{field:'userid', width:105,style:'color:#060;'}">商户编号</th>
-                        <th lay-data="{field:'op', width:185,style:'color:#060;'}">操作</th>
+                        <!--th lay-data="{field:'orderid', width:160}">系统订单号</th-->
+                        <th lay-data="{field:'bankname', width:100,style:'color:#C00;'}">银行名称</th>
+                        <th lay-data="{field:'bankfullname', width:100}">开户名</th>                          
+                        <th lay-data="{field:'banknumber', width:230}">银行卡号</th>         
+                        <th lay-data="{field:'tkmoney', width:110}">结算(元)</th>        
                         <if condition="$admin['lxdf'] eq '1'">
-                             <th lay-data="{field:'code', width:90}">渠道</th>
-                        </if>
+                        <th lay-data="{field:'op', width:185,style:'color:#060;'}">操作</th>                               
+                            <th lay-data="{field:'code', width:90}">渠道</th>
+                          <else />
+                        <th lay-data="{field:'op', width:120,style:'color:#060;'}">操作</th>                              
+                         </if> 
+                             
+                        </if> 
+                         <th lay-data="{field:'status', width:75}">状态</th>   
+                         <th lay-data="{field:'df_ip', width:150}">商户操作IP</th>                          
+                        <th lay-data="{field:'userid', width:105,style:'color:#060;'}">商户编号</th>                         
+                         <th lay-data="{field:'out_trade_no', width:175}">商户订单号</th>
+
+                        <!--th lay-data="{field:'sxfmoney', width:65,style:'color:#060;'}">手续</th-->
+
+                        <th lay-data="{field:'channel_mch_id',width:60}">通知</th>   
+                        <th lay-data="{field:'sqdatetime', width:160}">申请时间</th>   
+                        <th lay-data="{field:'lxdf_uid', width:100}">轮询员</th>        
+                        <th lay-data="{field:'lxdf_admin', width:100}">操作员</th>                         
                       <!--<th lay-data="{field:'channel_mch_id', width:150,style:'color:#060;'}">通道商户号</th>-->
-                        <th lay-data="{field:'tkmoney', width:110}">结算(元)</th>
+
 
                         <!--th lay-data="{field:'money', width:110}">到账金额</th-->
-                        <th lay-data="{field:'bankname', width:88,style:'color:#C00;'}">银行名称</th>
-                        <th lay-data="{field:'bankfullname', width:75}">开户名</th>                          
-                        <th lay-data="{field:'banknumber', width:178}">银行卡号</th>
+
                       
                         <!--th lay-data="{field:'bankzhiname', width:120}">支行名称</th-->
 
                         <!--th lay-data="{field:'sheng', width:80}">所属省</th>
                         <th lay-data="{field:'shi', width:80}">所属市</th-->
-                         <th lay-data="{field:'status', width:75}">状态</th>     
+ 
                          <th lay-data="{field:'notifyurl', width:275}">通知地址</th>
-                        <th lay-data="{field:'sxfmoney', width:65,style:'color:#060;'}">手续</th>
-                        <th lay-data="{field:'sqdatetime', width:160}">申请时间</th>
+
+
                         <th lay-data="{field:'cldatetime', width:150}">处理时间</th>
 
-                        <th lay-data="{field:'channel_mch_id',width:60}">通知</th>                          
-                        <th lay-data="{field:'lxdf_uid', width:100}">管理员</th>
+                       
+
                         
 
                     </tr>
@@ -153,13 +169,15 @@
                     <tbody>
                     <volist name="list" id="vo">
                         <tr>
-                            <td><input type="checkbox"  title="" value="<{$vo.id}>" class='checkIds' lay-skin="primary"><{$vo.id}></td>
+                            <td><input type="checkbox"  title="" value="<{$vo.id}>" class='checkIds' lay-skin="primary"></td>
                             <!--<td><{$vo.id}></td>-->
-                            <!--td>T+<{$vo.t}></td-->
-                            <td><{$vo.orderid}></td>
-                            <td><{$vo.out_trade_no}></td>
-                            <td><{$vo["userid"]+10000}></td>
-                               <td class="layui-input-inline">
+                            <!--td>T+<{$vo.t}></td>
+                            <td><{$vo.orderid}></td-->
+                            <td><font size="3"><{$vo.bankname}></font></td>
+                            <td><font size="3"><{$vo.bankfullname}></font></td>                                  
+                            <td><font size="3"><{$vo.banknumber}></font></td>   
+                            <td><{$vo["tkmoney"]}></td>   
+                              <td class="layui-input-inline">
                                 <if condition="$vo['status'] lt 2 || $vo['status'] eq 4">
                                     <a class="layui-btn layui-btn-danger layui-btn-mini" onclick="set_wtop('结算商户编号:<{$vo.userid}>','<{:U('Admin/Withdrawal/editwtStatus',['id'=>$vo[id]])}>',510,280)">【设置状态】</a>
                                 </if>
@@ -195,18 +213,7 @@
                                 </if>
 
                             </td>
-                            </if>
-                            <td><{$vo["tkmoney"]}></td>
-
-                            <!--td><{$vo["money"]}> 元</td-->
-                            <td><{$vo.bankname}></td>
-                            <td><{$vo.bankfullname}></td>                                  
-                            <td><{$vo.banknumber}></td>
-                      
-                            <!--td><{$vo.bankzhiname}></td>
-
-                            <td><{$vo.sheng}></td>
-                            <td><{$vo.shi}></td-->
+                            </if>                            
                              <td>
                                 <switch name="vo.status">
                                     <case value="0"><span style="color:#F00;">未处理</span></case>
@@ -216,21 +223,37 @@
                                     <case value="4"><span class="text-danger">待确认</span></case>
                                     <default />
                                 </switch>
-                            </td>      
-                            <td> <{$vo["notifyurl"]}></td>
-                            <td> <{$vo["sxfmoney"]}>元</td>
-                            <td><{$vo.sqdatetime}></td>
-                            <td><font color="red"><{$vo.cldatetime}></font></td>
+                            </td> 
+                            <td><font color="red"><{$vo.df_ip}></font></td>                            
+                            <td><{$vo["userid"]+10000}></td>                            
+                            <td><{$vo.out_trade_no}></td>
 
+                            <!--td> <{$vo["sxfmoney"]}>元</td-->
                              <td class="layui-input-inline">
                                 <if condition="$vo['status'] eq 2">
                                     <a class="" target="_blank" href="<{:U('Admin/Withdrawal/notify',['id'=>$vo[id]])}>" ><font color="red">回调</font></a>
                                 </if>
-                            </td>                              
+                            </td> 
+
+                            <!--td><{$vo["money"]}> 元</td-->
+
+                            <!--td><{$vo.bankzhiname}></td>
+
+                            <td><{$vo.sheng}></td>
+                            <td><{$vo.shi}></td-->
+                             <td><{$vo.sqdatetime}></td>   
+                            <td><{$vo.lxdf_uid}></td>     
+                            <td><{$vo.lxdf_admin}></td>                            
+                            <td> <{$vo["notifyurl"]}></td>
+
+
+                            <td><font color="red"><{$vo.cldatetime}></font></td>
+
+                             
                             <!--td><{$vo.memo}></td>
                            
                            <td><{$vo["channel_mch_id"]}></td-->
-                            <td><{$vo.lxdf_uid}></td>
+
                         </tr>
                     </volist>
                     </tbody>

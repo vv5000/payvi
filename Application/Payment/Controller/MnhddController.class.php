@@ -146,7 +146,7 @@ class MnhddController extends PaymentController
         $datas['pay_md5sign'] = $sign;
         $content = json_encode($datas);
         $response2 = $this->http_request($execGateway.'/Payment_Dfpay_query.html',$content);
-        file_put_contents('easy.txt', '查询返回结果：'.$response2 . PHP_EOL, FILE_APPEND);
+        file_put_contents('easy.txt', date('YMDH:i:s').'查询返回结果：'.$response2 . PHP_EOL, FILE_APPEND);
 
         $response = json_decode($response2, true);
         if (empty($response)) {
@@ -162,6 +162,7 @@ class MnhddController extends PaymentController
                 ];
             }
         }
+    //    file_put_contents('easy.txt', date('YMDH:i:s').'返回数据：'.json_encode($return) . PHP_EOL, FILE_APPEND);
 
         return $return;
     }
