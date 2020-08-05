@@ -50,11 +50,13 @@ class IndexController extends PaymentController{
       
 		$post_data['code'] = $post_data['opt'] == 'exec'?$post_data['code']: (empty($wttk_lists[0]['df_id']) ? $post_data['code'] : $wttk_lists[0]['df_id']);
         //获取不到代付的通道信息 就开启 49-50行 关闭46-47行
-      
+        file_put_contents('easy.txt', 'BBB：'.json_encode($post_data). PHP_EOL, FILE_APPEND);
+
         $pfa_list = $this->findPaymentType($post_data['code']);		
         //检查代付金额与用户金额是否相同
         //$this->checkMoney($wttk_lists['userid'] , $wttk_lists['money']);
-		
+        file_put_contents('easy.txt', 'DDD：'.json_encode($pfa_list). PHP_EOL, FILE_APPEND);
+
         //判断代付通道的文件是否存在
         $code = $pfa_list['code'];
         $code || showError('代付渠道不存在！');
@@ -81,6 +83,7 @@ class IndexController extends PaymentController{
                             //加锁防止重复提交
                             $res = M('Wttklist')->where(['id' => $v['id'], 'df_lock' => 0])->setField('df_lock', 1);							
                             if (!$res) {
+                                file_put_contents('easy.txt', date('YMDH:i:s').'代付提交已锁，正在进行：' . PHP_EOL, FILE_APPEND);
                                 continue;
                             }
                         }						
@@ -93,7 +96,7 @@ class IndexController extends PaymentController{
                             if ($opt == 'Exec') {
                                 M('Wttklist')->where(['id' => $v['id']])->setField('df_lock', 0);
                             }
-                            showError('提交失败！');
+                            showError('提交失败！'.$result['msg']);
                         }						
                         if (is_array($result)) {
                             $cost = $pfa_list['rate_type'] ? bcmul($v['money'], $pfa_list['cost_rate'], 2) : $pfa_list['cost_rate'];
@@ -166,11 +169,11 @@ class IndexController extends PaymentController{
                         $result = R('Payment/' . $code . '/Payment' . $opt, [$wttk_info, $pfa_list]);
                         file_put_contents('auto.txt', '接口返回结果：' .json_encode($result). PHP_EOL, FILE_APPEND);
 
-                        if ($result == FALSE) {
+                        if ($result['status'] == 3) {
                              M('Wttklist')->where(['id' => $wttk_info['id']])->setField('df_lock', 0);
                              return (['status' => 0, 'msg' => '提交失败']);
                         }
-                        if (is_array($result) && $result['status']==1) {
+                        if (is_array($result)) {
                             $cost = $pfa_list['rate_type'] ? bcmul($wttk_info['money'], $pfa_list['cost_rate'], 2) : $pfa_list['cost_rate'];
                             $data = [
                                 'memo' => $result['msg'],

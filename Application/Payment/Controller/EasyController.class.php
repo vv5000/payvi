@@ -92,7 +92,7 @@ class EasyController extends PaymentController
 
 
         $response = curlPost($execGateway, $parameter, "", true);
-        //   file_put_contents('easy.txt', $response . PHP_EOL, FILE_APPEND);
+        file_put_contents('easy.txt', $response . PHP_EOL, FILE_APPEND);
         $res_array = json_decode($response, true);
 
 
@@ -104,7 +104,7 @@ class EasyController extends PaymentController
             } else {
                 $return = [
                     'status' => self::PAYMENT_PAY_FAILED,
-                    'msg' => "错误：{$response['status']}：{$response['message']}"
+                    'msg' => "错误：{$response['code']}：{$response['msg']}"
                 ];
             }
         }
@@ -147,7 +147,7 @@ class EasyController extends PaymentController
             } else {
                 $return = [
                     'status' => self::PAYMENT_PAY_FAILED,
-                    'msg' => "错误：{$response['code']}：{$response['status']}：{$response['message']}"
+                    'msg' => "错误：{$response['code']}：{$response['code']}：{$response['msg']}"
                 ];
             }
         }

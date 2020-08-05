@@ -1677,6 +1677,8 @@ class WithdrawalController extends BaseController
             }
             $auth_type = I('request.auth_type', 0, 'intval');
 
+
+
             if($verifyGoogle && $verifysms) {
                 if(!in_array($auth_type,[0,1])) {
                     $this->ajaxReturn(['status' => 0, 'msg' => "参数错误！"]);
@@ -1726,6 +1728,8 @@ class WithdrawalController extends BaseController
                 'id'   => $ids,
                 'opt'  => 'exec',
             ];
+
+            file_put_contents('easy.txt', date("His").'CCC：' .json_encode($_REQUEST). PHP_EOL, FILE_APPEND);
             return R('Payment/Index/index');
         } else {
             $ids = I('request.ids');
