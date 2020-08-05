@@ -3023,8 +3023,37 @@ class WithdrawalController extends UserController
                         $data["cldatetime"] = date("Y-m-d H:i:s");
                         $data["memo"]       = $reject_reason;
                         //修改代付的数据
-                        $res = M('wttklist')->where(['id' => $withdraw['df_id'], 'status' => 0])->save($data);
-                        if ($res) {
+                        $res2 = M('wttklist')->where(['id' => $withdraw['df_id'], 'status' => 0])->save($data);
+
+                        // 3.代付手续费问题
+
+                        if ($withdraw['df_charge_type']) {
+                            $res = $Member->where(['id' => $withdraw['userid']])->save(['balance' => array('exp', "balance+{$withdraw['sxfmoney']}")]);
+                            if (!$res) {
+                                M()->rollback();
+                                $this->ajaxReturn(['status' => 0]);
+                            }
+                            $chargeField = array(
+                                "userid"     => $withdraw['userid'],
+                                "ymoney"     => $memberInfo['balance'] + $df_order['tkmoney'],
+                                "money"      => $withdraw['sxfmoney'],
+                                "gmoney"     => $memberInfo['balance'] + $df_order['tkmoney'] + $withdraw['sxfmoney'],
+                                "datetime"   => date("Y-m-d H:i:s"),
+                                "tongdao"    => 0,
+                                "transid"    => $id,
+                                "orderid"    => $id,
+                                "lx"         => 15,
+                                'contentstr' => '代付结算驳回退回手续费',
+                            );
+                            $res = M('Moneychange')->add($chargeField);
+                            if (!$res) {
+                                M()->rollback();
+                                $this->ajaxReturn(['status' => 0]);
+                            }
+                        }
+
+
+                        if ($res2) {
                             M()->commit();
                             $this->ajaxReturn(['status' => $res, 'msg' => '驳回成功']);
                         }
