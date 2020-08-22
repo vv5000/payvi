@@ -5,6 +5,7 @@
 namespace Payment\Controller;
 
 use Think\Controller;
+use Think\Page;
 
 class DfpayController extends Controller
 {
@@ -314,6 +315,235 @@ class DfpayController extends Controller
         $return['sign'] = $this->createSign($this->merchants['apikey'],$return);
         echo json_encode($return);
     }
+
+    public function adminQuery()
+    {
+
+        $admin_id = I("request.admin_id");
+        if(!$admin_id) {
+            $this->showmessage("缺少管理员ID");
+        }
+        $status = I("request.status");
+
+        //用户信息
+        $this->merchants = D('admin')->where(array('id'=>$admin_id))->find();
+        if(empty($this->merchants)) {
+            $this->showmessage('管理员不存在！');
+        }
+
+        $where=['lxdf_uid'=>$admin_id,'status'=>$status];
+
+        $count = M('Wttklist')->where($where)->count();
+        $size  = 5000;
+        $rows  = I('request.rows', $size, 'intval');
+        if (!$rows) {
+            $rows = $size;
+        }
+        $fields = 'id,userid,bankname,bankzhiname,banknumber,bankfullname,sheng,shi,sqdatetime,cldatetime,status,tkmoney,sxfmoney,money,memo,code,df_id,df_name,orderid,out_trade_no,df_api_id,lxdf_uid';
+        $page = new Page($count, $rows);
+        $list = M('Wttklist')
+            ->field($fields)
+            ->where($where)
+            ->limit($page->firstRow . ',' . $page->listRows)
+            ->order('id desc')
+            ->select();
+
+        if(!$list){
+            $return = [
+                'status'=>'error',
+                'msg'=>'请求成功',
+                'refCode'=>'7',
+                'refMsg'=>'交易不存在',
+            ];
+            echo json_encode($return);exit;
+        }else{
+
+            $df_api_ids = array_column($list, 'df_api_id');
+            $df_notify=M('df_api_order')->field('id,notifyurl')->where(['id'=>array('in',$df_api_ids)])->select();
+            $df_notifyurl=array_column($df_notify,'notifyurl','id');
+            $df_ipy=M('df_api_order')->field('id,ip')->where(['id'=>array('in',$df_api_ids)])->select();
+            $df_ipys=array_column($df_ipy,'ip','id');
+            foreach ($list as $k=>$v){
+                $v['notifyurl']=$df_notifyurl[$v['df_api_id']];
+                $v['df_ip']=$df_ipys[$v['df_api_id']];
+                $list[$k] = $v;
+            }
+        }
+        $return = [
+            'status'=>'success',
+            'msg'=>'请求成功',
+            'data' => $list,
+        ];
+        echo json_encode($return);
+    }
+
+    public function adminDoStatus()
+    {
+        $id = I("request.id", 0, 'intval');
+        $status  = I("request.status", 0, 'intval');
+        $userid  = I('request.userid', 0, 'intval');
+        $tkmoney = I('request.tkmoney');
+        if (!$id) {
+            $this->showmessage('操作失败,ID不能空');
+        }
+        if(!$status) {
+            $this->showmessage("状态不能为空");
+        }
+        if (!$userid) {
+            $this->showmessage('商户ID不能为空');
+        }
+        if(!$tkmoney) {
+            $this->showmessage("提款金额不能为空");
+        }
+
+        //开启事物
+        M()->startTrans();
+        $Wttklist  = M("Wttklist");
+        $map['id'] = $id;
+        $withdraw  = $Wttklist->where($map)->lock(true)->find();
+        if (empty($withdraw)) {
+            $this->showmessage('提款申请不存在');
+        }
+        $data           = [];
+        $data["status"] = $status;
+        $wtStatus       = $Wttklist->where(['id' => $id])->getField('status');
+        if ($wtStatus == 2 || $wtStatus == 3) {
+            M()->rollback();
+            $this->showmessage('错误操作');
+        }
+        //判断状态
+        switch ($status) {
+            case '2':
+                $data["cldatetime"] = date("Y-m-d H:i:s");
+                $apiid = $withdraw['df_api_id'];
+                $useridd = $withdraw['userid'];
+                $Order = M("df_api_order");
+                $ma = M("member");
+                $apikey = $ma->where(['id' => $useridd])->getField("apikey");
+                $notifyurl = $Order->where(['id' => $apiid])->getField("notifyurl");
+
+                if($notifyurl){
+                    $out_trade_no = $Order->where(['id' => $apiid])->getField("out_trade_no");
+                    $trade_no = $Order->where(['id' => $apiid])->getField("trade_no");
+                    $money = $Order->where(['id' => $apiid])->getField("money");
+                    $arr['out_trade_no'] =  $out_trade_no;
+                    $arr['amount'] =  $money;
+                    $arr['transaction_id'] =  $trade_no;
+                    $arr['status'] =  'success';
+                    $arr['msg'] =  'success';
+                    ksort($arr);
+                    $md5str = "";
+                    foreach ($arr as $key => $val) {
+                        $md5str = $md5str . $key . "=" . $val . "&";
+                    }
+
+                    $sign = strtoupper(md5($md5str . "key=" . $apikey));
+                    $arr["pays_md5sign"] = $sign;
+                    $postData = http_build_query($arr);
+                    $curl = curl_init();
+                    curl_setopt($curl, CURLOPT_URL, $notifyurl);
+                    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false); // stop verifying certificate
+                    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+                    curl_setopt($curl, CURLOPT_POST, true);
+                    curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form-urlencoded'));
+                    curl_setopt($curl, CURLOPT_POSTFIELDS, $postData);
+                    curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
+                    $res = curl_exec($curl);
+                    file_put_contents('0.txt','回调数据:'.$postData.',返回结果：'.$res.PHP_EOL, FILE_APPEND);
+                    curl_close($curl);
+                }
+                break;
+            case '3':
+
+                // if($withdraw['status'] == 1){
+                //     $this->ajaxReturn(['status' => 0, 'msg' => '提款申请处理中，不能驳回']);
+                // } else
+                if ($withdraw['status'] == 2) {
+                    $this->showmessage('提款申请已打款，不能驳回');
+                } elseif ($withdraw['status'] == 3) {
+                    $this->showmessage('提款申请已驳回，不能驳回');
+                }
+                $map['_string'] = 'status=0 OR status=1 OR status=4';
+                //驳回操作
+                //1,将金额返回给商户
+                $Member     = M('Member');
+                $memberInfo = $Member->where(['id' => $userid])->lock(true)->find();
+                $res        = $Member->where(['id' => $userid])->save(['balance' => array('exp', "balance+{$tkmoney}")]);
+
+                if (!$res) {
+                    M()->rollback();
+                    $this->ajaxReturn(['status' => 0]);
+                }
+
+                //2,记录流水订单号
+                $arrayField = array(
+                    "userid"     => $userid,
+                    "ymoney"     => $memberInfo['balance'],
+                    "money"      => $tkmoney,
+                    "gmoney"     => $memberInfo['balance'] + $tkmoney,
+                    "datetime"   => date("Y-m-d H:i:s"),
+                    "tongdao"    => 0,
+                    "transid"    => $id,
+                    "orderid"    => $id,
+                    "lx"         => 12,
+                    'contentstr' => '代付驳回',
+                );
+                $res = M('Moneychange')->add($arrayField);
+
+                if (!$res) {
+                    M()->rollback();
+                    $this->ajaxReturn(['status' => 0]);
+                }
+                //代付驳回退回手续费
+                if ($withdraw['df_charge_type']) {
+                    $res = $Member->where(['id' => $withdraw['userid']])->save(['balance' => array('exp', "balance+{$withdraw['sxfmoney']}")]);
+                    if (!$res) {
+                        M()->rollback();
+                        $this->showmessage('代付驳回');
+                    }
+                    $chargeField = array(
+                        "userid"     => $withdraw['userid'],
+                        "ymoney"     => $memberInfo['balance'] + $tkmoney,
+                        "money"      => $withdraw['sxfmoney'],
+                        "gmoney"     => $memberInfo['balance'] + $tkmoney + $withdraw['sxfmoney'],
+                        "datetime"   => date("Y-m-d H:i:s"),
+                        "tongdao"    => 0,
+                        "transid"    => $id,
+                        "orderid"    => $id,
+                        "lx"         => 15,
+                        'contentstr' => '代付结算驳回退回手续费',
+                    );
+                    $res = M('Moneychange')->add($chargeField);
+                    if (!$res) {
+                        M()->rollback();
+                        $this->showmessage('代付驳回');
+                    }
+                }
+                $data["cldatetime"] = date("Y-m-d H:i:s");
+                $data["memo"]       = I('post.memo');
+                break;
+            default:
+                # code...
+                break;
+        }
+
+        $res = $Wttklist->where($map)->save($data);
+
+        if ($res) {
+            M()->commit();
+            $return = [
+                'status'=>'success',
+                'msg'=>'请求成功',
+                'data' => $res,
+            ];
+            echo json_encode($return);
+        }
+
+        M()->rollback();
+        $this->showmessage('操作错误');
+
+    }
+
 
     /**
      * 自动审核提交代付请求到后台
