@@ -409,8 +409,9 @@ class DfpayController extends Controller
         $wtStatus       = $Wttklist->where(['id' => $id])->getField('status');
         if ($wtStatus == 2 || $wtStatus == 3) {
             M()->rollback();
-            $this->showmessage('错误操作');
+            $this->showmessage('错误操作,状态为2或是3');
         }
+
         //判断状态
         switch ($status) {
             case '2':
@@ -446,6 +447,7 @@ class DfpayController extends Controller
                     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
                     curl_setopt($curl, CURLOPT_POST, true);
                     curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form-urlencoded'));
+                    curl_setopt($curl, CURLOPT_TIMEOUT, 1);
                     curl_setopt($curl, CURLOPT_POSTFIELDS, $postData);
                     curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
                     $res = curl_exec($curl);
@@ -527,6 +529,8 @@ class DfpayController extends Controller
                 break;
         }
 
+
+
         $res = $Wttklist->where($map)->save($data);
 
         if ($res) {
@@ -537,10 +541,10 @@ class DfpayController extends Controller
                 'data' => $res,
             ];
             echo json_encode($return);
+        }else{
+            M()->rollback();
+            $this->showmessage('操作错误333');
         }
-
-        M()->rollback();
-        $this->showmessage('操作错误');
 
     }
 
