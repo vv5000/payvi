@@ -107,7 +107,7 @@
             </div>
 
             <div class="layui-form-item">
-                <label class="layui-form-label">轮询代付：</label>
+                <label class="layui-form-label">显示代付通道：</label>
                 <div class="layui-input-block">
                     <input type="radio" name="config[lxdf]" value="1" title="开启" <if
                         condition="$vo['lxdf'] eq 1">checked
@@ -123,13 +123,22 @@
             <volist name="admlist" id="v">
             <div class="layui-form-item">
                 <label class="layui-form-label"></label>
-                    <div class="layui-input-inline">
+                    <div class="layui-input-inline" style="width: 120px;">
                     <input type="checkbox" name="config[lxdf_uids][<{$v.id}>][id]"  value="<{$v.id}>" title="<{$v.username}>" <if
                             condition="$v.lxdf eq 1">checked
                     </if>></div>
-                    <div class="layui-input-inline">
-                    <input type="text" name="config[lxdf_uids][<{$v.id}>][money]"  placeholder="限额"   value="<{$v.lx_money}>" class="layui-input" autocomplete="off"   style="text-transform: capitalize;">
-                    </div>
+                <label class="layui-input-inline" style="width:60px;">总限额：</label>
+                <div class="layui-input-inline" style="width: 80px;">
+                    <input type="text" style="width:80px;" name="config[lxdf_uids][<{$v.id}>][money]"  placeholder="总限额"   value="<{$v.lx_money}>" class="layui-input" autocomplete="off"   style="text-transform: capitalize;">
+                </div>
+                <label class="layui-input-inline" style="width:80px;"> 单笔限额：</label>
+                <div class="layui-input-inline" style="width: 80px;">
+                   <input type="text" style="width:80px;" name="config[lxdf_uids][<{$v.id}>][submoney]"  placeholder="单笔限额"   value="<{$v.submoney}>" class="layui-input" autocomplete="off"   style="text-transform: capitalize;">
+                </div>
+                <label class="layui-input-inline" style="width:50px;">笔数：</label>
+                <div class="layui-input-inline" style="width: 60px;">
+                    <input type="text" style="width:60px;" name="config[lxdf_uids][<{$v.id}>][subnumber]"  placeholder="笔数"   value="<{$v.subnumber}>" class="layui-input" autocomplete="off"   style="text-transform: capitalize;">
+                </div>
 
             </div>
             </volist>
@@ -294,7 +303,7 @@
                     <input type="text" name="config[autodf]" value="<{$vo.autodf}>" placeholder="3" autocomplete="off" class="layui-input" style="text-transform: capitalize;">
                 </div>
                 <div class="layui-form-mid layui-word-aux">自动代付额度,代付金额小于此设置，自动完成！</div>
-            </div>
+            </div>                  
             <div class="layui-form-item">
                 <label class="layui-form-label">验证错误最大次数限制：</label>
                 <div class="layui-input-inline">

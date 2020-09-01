@@ -23,7 +23,7 @@
 						 class="layui-input">
 				</div>
 			  </div>
-				<div class="layui-form-item">
+				<!--div-- class="layui-form-item">
 					<label class="layui-form-label">绑定管理员：</label>
 					<div class="layui-input-inline">
 						<select name="u[lxuid]" lay-search="">
@@ -32,6 +32,15 @@
 								<option value="<{$v.id}>" <if condition="$u['lxuid'] eq $v['id']">selected</if>><{$v.username}></option>
 							</volist>
 						</select>
+					</div>
+				</div-->
+				<div class="layui-form-item">
+					<label class="layui-form-label">绑定管理员：</label>
+					<div class="layui-input-inline">
+						<input type="text" name="u[lxuid]" lay-verify="required" autocomplete="off"
+							   value="<{$u.lxuid|htmlentities}>"
+							   placeholder="多个管理员ID，用英文的逗号隔开"
+							   class="layui-input">
 					</div>
 				</div>
               

@@ -1471,21 +1471,51 @@ function getLxuid($lxuids, $money, $orderid,$userid)
 
     $lxdf_uid = M('Member')->where(['id' => $userid])->getField('lxuid');
     if ($lxdf_uid) {
-        $lxlog = [
-            'uid' => $lxdf_uid,
-            'orderid' => $orderid,
-            'userid' => $userid,
-            'money' => $money,
-            'createtime' => date('Y-m-d H:i:s'),
-            'createdate' => date('Y-m-d'),
-        ];
-        $result = M('lxlog')->add($lxlog);
-        return $lxdf_uid;
+        $lxids_new = explode(',', $lxdf_uid);
+        $rndKey = array_rand($lxids_new);
+        $lxdf_uid = $lxids_new[$rndKey];   //当前轮巡的管理员UID
+        $lxdf_uid = intval($lxdf_uid);
+        $lxmoney = M('lxlog')->where(['uid' => $lxdf_uid, 'createdate' => date("Y-m-d")])->sum('money');
+        $lxnumber = M('lxlog')->where(['uid' => $lxdf_uid, 'createdate' => date("Y-m-d")])->count();
+        $lxmoney += $money;
+
+        if($lxuids[$lxdf_uid]['money']==0){   //不限额直接运行
+            $lxlog = [
+                'uid' => $lxdf_uid,
+                'orderid' => $orderid,
+                'userid' => $userid,
+                'money' => $money,
+                'createtime' => date('Y-m-d H:i:s'),
+                'createdate' => date('Y-m-d'),
+            ];
+            $result = M('lxlog')->add($lxlog);
+            return $lxdf_uid;
+        }
+
+
+        if($money <= $lxuids[$lxdf_uid]['submoney'] && $lxmoney <= $lxuids[$lxdf_uid]['money'] && $lxnumber <= $lxuids[$lxdf_uid]['subnumber'])
+            {
+            //同时符合3个条件 优先查找出来
+            $lxlog = [
+                'uid' => $lxdf_uid,
+                'orderid' => $orderid,
+                'userid' => $userid,
+                'money' => $money,
+                'createtime' => date('Y-m-d H:i:s'),
+                'createdate' => date('Y-m-d'),
+            ];
+            $result = M('lxlog')->add($lxlog);
+            return $lxdf_uid;
+        }
+
     }
-    $lxids_new = array_column($lxuids, 'id');
+    $lxids_new = array_column($lxuids,NULL,'id');
     $rndKey = array_rand($lxids_new);
     $lxdf_uid = $lxids_new[$rndKey];   //当前轮巡的管理员UID
+
     $lxmoney = M('lxlog')->where(['uid' => $lxdf_uid, 'createdate' => date("Y-m-d")])->sum('money');
+    $lxnumber = M('lxlog')->where(['uid' => $lxdf_uid, 'createdate' => date("Y-m-d")])->count();
+
     $lxmoney += $money;
     //die();
     if ($lxdf_uid) {   //查到轮巡ID
@@ -1503,10 +1533,16 @@ function getLxuid($lxuids, $money, $orderid,$userid)
             return $lxdf_uid;
         }
 
-        if ($lxmoney > $lxuids[$lxdf_uid]['money']) {//超额
+        if($money > $lxuids[$lxdf_uid]['submoney']) {//单笔超额
             unset($lxuids[$lxdf_uid]);//销毁当前值
             return getLxuid($lxuids, $money, $orderid,$userid);  //运行本身再次查找
-        } else {
+        }elseif ($lxmoney > $lxuids[$lxdf_uid]['money']) {//累计超额
+            unset($lxuids[$lxdf_uid]);//销毁当前值
+            return getLxuid($lxuids, $money, $orderid,$userid);  //运行本身再次查找
+        }elseif ($lxnumber > $lxuids[$lxdf_uid]['subnumber']) {//次数超额
+            unset($lxuids[$lxdf_uid]);//销毁当前值
+            return getLxuid($lxuids, $money, $orderid,$userid);  //运行本身再次查找
+        }else {
             //写入记录
             $lxlog = [
                 'uid' => $lxdf_uid,
