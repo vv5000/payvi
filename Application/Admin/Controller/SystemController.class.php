@@ -64,6 +64,7 @@ class SystemController extends BaseController
                 $va['lxdf'] = 1;
                 $va['lx_money'] = $lxdfs[$va['id']]['money'];
                 $va['submoney'] = $lxdfs[$va['id']]['submoney'];
+                $va['subsmoney'] = $lxdfs[$va['id']]['subsmoney'];
                 $va['subnumber'] = $lxdfs[$va['id']]['subnumber'];
             }else{
                 $va['lxdf'] = 0;
