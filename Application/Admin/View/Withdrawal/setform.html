@@ -153,6 +153,20 @@
 			condition="$configs['tk_charge_type'] eq 1">checked
 		</if>>
 	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">单笔小于：</label>
+		<div class="layui-input-inline">
+			<input type="number" min="0" name="u[out]" autocomplete="off"
+				   value="<{$configs.out}>"  class="layui-input">
+		</div>
+		<label class="layui-form-label">手续费：</label>
+		<div class="layui-input-inline">
+			<input type="number" min="0" name="u[out_money]" autocomplete="off" value="<{$configs.out_money}>"
+				   placeholder="0.00" class="layui-input">
+		</div>
+	</div>
+
 	<div class="layui-form-item">
 		<label class="layui-form-label">提款状态：</label>
 		<div class="layui-input-block">

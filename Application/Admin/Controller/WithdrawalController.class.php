@@ -171,6 +171,12 @@ class WithdrawalController extends BaseController
 
     /**
      * 保存系统提款设置
+     * ALTER TABLE `pays_tikuanconfig`
+    MODIFY COLUMN `out2_money`  decimal(10,2) NOT NULL AFTER `out2`,
+    MODIFY COLUMN `out3_money`  decimal(10,2) NOT NULL AFTER `out3`,
+    MODIFY COLUMN `out4_money`  decimal(10,2) NOT NULL AFTER `out4`,
+    ADD COLUMN `out`  decimal(10,2) NOT NULL AFTER `tk_charge_type`,
+    ADD COLUMN `out_money`  decimal(10,2) NOT NULL AFTER `out`;
      */
     public function saveWithdrawal()
     {

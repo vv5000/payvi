@@ -1431,10 +1431,13 @@ function log_server_notify($orderid, $url, $notifystr, $httpCode, $return)
     return false;
 }
 
+
 /**
+ *@函数说明：
+ * 如果金额小于最低限，直接扣手续费，然后再按序列逐一查找手续费
  * @param $money
- * @return mixed|null
- * @author:秋枫红叶
+ * @return int|mixed|null
+ * @date: 2020/10/23  21:12
  */
 function getRank($money)
 {
@@ -1446,15 +1449,21 @@ function getRank($money)
         $tikuan['out2'] => $tikuan['out2_money'],
         $tikuan['out1'] => $tikuan['out1_money'],
     ];
-    $rank_name = null;
-    foreach ($rank as $check_rank_point => $check_rank_name) {
 
-        if (intval($money) >= intval($check_rank_point)) {
-            $rank_name = $check_rank_name;
-            break;
-        } else {
-            $rank_name = 0;
-        };
+    $rank_name = null;
+
+    if(intval($money)<=intval($tikuan['out'])){
+        $rank_name= $tikuan['out_money'];
+    }else{
+        foreach ($rank as $check_rank_point => $check_rank_name) {
+
+            if (intval($money) >= intval($check_rank_point)) {
+                $rank_name = $check_rank_name;
+                break;
+            } else {
+                $rank_name = 0;
+            };
+        }
     }
     return $rank_name;
 }
@@ -1493,9 +1502,9 @@ function getLxuid($lxuids, $money, $orderid,$userid)
         }
 
 
-        if($money <= $lxuids[$lxdf_uid]['submoney'] && $money >= $lxuids[$lxdf_uid]['subsmoney'] && $lxmoney <= $lxuids[$lxdf_uid]['money'] && $lxnumber <= $lxuids[$lxdf_uid]['subnumber'])
+        if($money <= $lxuids[$lxdf_uid]['submoney'] && $lxmoney <= $lxuids[$lxdf_uid]['money'] && $lxnumber <= $lxuids[$lxdf_uid]['subnumber'])
             {
-            //同时符合4个条件 优先查找出来
+            //同时符合3个条件 优先查找出来
             $lxlog = [
                 'uid' => $lxdf_uid,
                 'orderid' => $orderid,
@@ -1533,10 +1542,7 @@ function getLxuid($lxuids, $money, $orderid,$userid)
             return $lxdf_uid;
         }
 
-        if($money > $lxuids[$lxdf_uid]['submoney']) {//单笔超额 超上限
-            unset($lxuids[$lxdf_uid]);//销毁当前值
-            return getLxuid($lxuids, $money, $orderid,$userid);  //运行本身再次查找
-        }elseif($money < $lxuids[$lxdf_uid]['subsmoney']) {//单笔超额 不够下限
+        if($money > $lxuids[$lxdf_uid]['submoney']) {//单笔超额
             unset($lxuids[$lxdf_uid]);//销毁当前值
             return getLxuid($lxuids, $money, $orderid,$userid);  //运行本身再次查找
         }elseif ($lxmoney > $lxuids[$lxdf_uid]['money']) {//累计超额
