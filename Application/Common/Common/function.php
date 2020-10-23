@@ -1468,6 +1468,7 @@ function getRank($money)
     return $rank_name;
 }
 
+
 /**
  *@函数说明：
  * @param $lxuids 系统设置的轮巡UIDS   Json串decode这后的值
@@ -1502,9 +1503,9 @@ function getLxuid($lxuids, $money, $orderid,$userid)
         }
 
 
-        if($money <= $lxuids[$lxdf_uid]['submoney'] && $lxmoney <= $lxuids[$lxdf_uid]['money'] && $lxnumber <= $lxuids[$lxdf_uid]['subnumber'])
-            {
-            //同时符合3个条件 优先查找出来
+        if($money <= $lxuids[$lxdf_uid]['submoney'] && $money >= $lxuids[$lxdf_uid]['subsmoney'] && $lxmoney <= $lxuids[$lxdf_uid]['money'] && $lxnumber <= $lxuids[$lxdf_uid]['subnumber'])
+        {
+            //同时符合4个条件 优先查找出来
             $lxlog = [
                 'uid' => $lxdf_uid,
                 'orderid' => $orderid,
@@ -1542,7 +1543,10 @@ function getLxuid($lxuids, $money, $orderid,$userid)
             return $lxdf_uid;
         }
 
-        if($money > $lxuids[$lxdf_uid]['submoney']) {//单笔超额
+        if($money > $lxuids[$lxdf_uid]['submoney']) {//单笔超额 超上限
+            unset($lxuids[$lxdf_uid]);//销毁当前值
+            return getLxuid($lxuids, $money, $orderid,$userid);  //运行本身再次查找
+        }elseif($money < $lxuids[$lxdf_uid]['subsmoney']) {//单笔超额 不够下限
             unset($lxuids[$lxdf_uid]);//销毁当前值
             return getLxuid($lxuids, $money, $orderid,$userid);  //运行本身再次查找
         }elseif ($lxmoney > $lxuids[$lxdf_uid]['money']) {//累计超额
