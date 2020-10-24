@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title><{:C("WEB_TITLE")}></title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="/Public/Front/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Public/Front/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/Public/Front/css/animate.css" rel="stylesheet">
+    <link href="/Public/Front/css/style.css" rel="stylesheet">
+    <link href="/Public/Front/js/plugins/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Public/Front/js/plugins/layui/css/layui.css">
+    <style>
+        .layui-form-switch {width:54px;}
+        .layui-form-label {width:110px;padding:4px}
+    </style>
+<body>
+<form class="layui-form" action="" id="userProduct">
+    <input type="hidden" name="id" value="<{$u['id']}>">
+<div class="form-group">
+    <label>管理员</label>
+        <select name="adminid" class="layui-input">
+            <option value="">全部管理员</option>
+            <volist name="admlist" id="vo">
+                <option <if condition="$u[adminid] eq $vo[id]">selected</if>
+                value="<{$vo.id}>"><{$vo.username}></option>
+            </volist>
+        </select>
+</div>
+
+<div class="form-group">
+    <label class="inline">银行名称</label>
+    <input type="text" list="saleslist"  name="bank_title" placeholder="请选择或输入银行" class="layui-input inline" value="<{$u['bank_title']}>"/>
+    <datalist id="saleslist" style="display: none;">
+        <option value="">选择开户行</option>
+        <option value="农业银行">农业银行</option>
+        <option value="工商银行">工商银行</option>
+        <option value="建设银行">建设银行</option>
+        <option value="中国银行">中国银行</option>
+        <option value="兴业银行">兴业银行</option>
+        <option value="平安银行">平安银行</option>
+        <option value="交通银行">交通银行</option>
+        <option value="招商银行">招商银行</option>
+        <option value="农村信用社">农村信用社</option>
+        <option value="邮政储蓄">邮政储蓄</option>
+        <option value="北京银行">北京银行</option>
+        <option value="浙商银行">浙商银行</option>
+        <option value="广发银行">广发银行</option>
+        <option value="民生银行">民生银行</option>
+        <option value="东亚银行">东亚银行</option>
+        <option value="上海银行">上海银行</option>
+        <option value="光大银行">光大银行</option>
+        <option value="浦东发展银行">浦东发展银行</option>
+        <option value="深圳发展银行">深圳发展银行</option>
+        <option value="华夏银行">华夏银行</option>
+        <option value="南京银行">南京银行</option>
+        <option value="宁波银行">宁波银行</option>
+        <option value="中信银行">中信银行</option>
+        <option value="广西北部湾银行">广西北部湾银行</option>
+    </datalist>
+</div>
+
+<div class="form-group">
+    <label for="tel">银行账号</label>
+    <input type="text" class="form-control" id="bank_number" name="bank_number" placeholder="请输入银行账号" value="<{$u['bank_number']}>">
+</div>
+<div class="form-group">
+    <label for="email">开户人姓名</label>
+    <input type="text" class="form-control" id="bank_name" name="bank_name" placeholder="请输入开户人姓名" value="<{$u['bank_name']}>">
+</div>
+
+<div class="layui-form-item">
+    <div class="layui-input-block">
+        <button class="layui-btn" lay-submit="submit" lay-filter="save">提交保存</button>
+    </div>
+</div>
+</form>
+<script src="/Public/Front/js/jquery.min.js"></script>
+<script src="/Public/Front/js/bootstrap.min.js"></script>
+<script src="/Public/Front/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="/Public/Front/js/content.js"></script>
+<script src="/Public/Front/js/plugins/layui/layui.js" charset="utf-8"></script>
+<include file="Public/footer"/>
+
+<script>
+
+    // 用户-编辑
+    function member_edit(title, url, id, w, h) {
+        x_admin_show(title, url, w, h);
+    }
+
+    var channels = <{$channels}>;
+    layui.use(['layer', 'form','laydate'], function(){
+        var form = layui.form
+            ,laydate = layui.laydate
+            ,layer = layui.layer;
+
+        //监听提交
+        form.on('submit(save)', function(data){
+            $.ajax({
+                url:"<{:U('Banknumbers/editbankcard')}>",
+                type:"post",
+                data:$('#userProduct').serialize(),
+                success:function(res){
+                    console.log(data);
+                    console.log(res);
+
+                    if(res.status){
+                        layer.alert("编辑成功", {icon: 6},function () {
+                            parent.location.reload();
+                            var index = parent.layer.getFrameIndex(window.name);
+                            parent.layer.close(index);
+                        });
+                    }else{
+                        layer.alert("操作失败", {icon: 5},function () {
+                            parent.location.reload();
+                            var index = parent.layer.getFrameIndex(window.name);
+                            parent.layer.close(index);
+                        });
+                    }
+                }
+            });
+            return false;
+        });
+    });
+</script>
+<!--统计代码，可删除-->
+</body>
+</html>

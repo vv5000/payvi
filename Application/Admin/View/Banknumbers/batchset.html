@@ -1,0 +1,71 @@
+<include file="Public/header"/>
+<div class="row">
+    <div class="col-md-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <form class="layui-form" action="" autocomplete="off" id="editwtstatus">
+                    <input type="hidden" name="ids" value="<{$_GET['ids']}>">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <div class="layui-input-inline">
+                                <label>管理员</label>
+                                <select name="adminid" class="layui-input">
+                                    <option value="">全部管理员</option>
+                                    <volist name="admlist" id="vo">
+                                        <option <if condition="$u[adminid] eq $vo[id]">selected</if>
+                                        value="<{$vo.id}>"><{$vo.username}></option>
+                                    </volist>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="layui-inline">
+                            <div class="layui-input-inline">
+                                <button class="layui-btn" lay-submit="" lay-filter="wtsave">立即提交</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public/footer"/>
+<script>
+    layui.use(['laydate', 'laypage', 'layer', 'table', 'form'], function () {
+        var laydate = layui.laydate //日期
+            , laypage = layui.laypage //分页
+            , layer = layui.layer //弹层
+            , form = layui.form //表单
+            , table = layui.table; //表格
+
+        //监听提交
+        form.on('submit(wtsave)', function (data) {
+            $.ajax({
+                url: "<{:U('Admin/Banknumbers/batchset')}>",
+                type: "post",
+                data: $('#editwtstatus').serialize(),
+                success: function (res) {
+                    console.log(data);
+                    if (res.status) {
+                        layer.alert("编辑成功", {icon: 6}, function () {
+                            parent.location.reload();
+                            var index = parent.layer.getFrameIndex(window.name);
+                            parent.layer.close(index);
+                        });
+                    } else {
+                        layer.msg(res.msg ? res.msg : "操作失败!", {icon: 5}, function () {
+                            parent.location.reload();
+                            var index = parent.layer.getFrameIndex(window.name);
+                            parent.layer.close(index);
+                        });
+                        return false;
+                    }
+                }
+            });
+            return false;
+        });
+    });
+</script>
+</body>
+</html>
