@@ -143,6 +143,21 @@ class BanknumbersController extends BaseController
         }
     }
 
+    public function batchDel()
+    {
+
+        $ids = I('request.ids');
+        if (!$ids) {
+            $this->ajaxReturn(['status' => 0, 'msg' => "请选择！"]);
+        }
+        if (IS_POST) {
+            $id  = I('post.ids', 0, 'trim');
+            $where['id'] = array('in',$id);//查找ID在这范围内的
+            $res = M('Banknumbers')->where($where)->delete();
+            $this->ajaxReturn(['status' => $res]);
+        }
+    }
+
     public function editbankcard()
     {
         if (IS_POST) {
