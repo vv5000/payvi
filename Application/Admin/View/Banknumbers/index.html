@@ -53,6 +53,9 @@
                         <a href="javascript:;" id="checkAll"  lay-filter="allChoose" class="layui-btn layui-btn-sm layui-btn-danger">全选</a>
                         <a href="javascript:;" id="editStatusAllOrder" class="layui-btn layui-btn-sm layui-btn">批量设备管理员</a>
                     </p>
+                    <blockquote class="layui-elem-quote" style="font-size:14px;padding;8px;">
+                        银行卡数量：<span class="label label-info"><{$count}></span>
+                    </blockquote>
                     <!--用户列表-->
                     <table class="layui-table" lay-data="{width:'100%',limit:<{$rows}>,id:'userData'}">
                         <thead>
@@ -277,7 +280,7 @@
             }
         });
         if(id){
-            df_view('批量修改管理员', "<{:U('Banknumbers/batchset')}>?ids="+id, 640 , 280);
+            df_view('批量修改管理员', "<{:U('Banknumbers/batchset')}>?ids="+id, 300 , 680);
         }else{
             layer.msg('请选择', {icon: 2, time: 1000},function () {});
         }

@@ -11,6 +11,7 @@
                                 <label>管理员</label>
                                 <select name="adminid" class="layui-input">
                                     <option value="">全部管理员</option>
+                                    <option value="">清除管理员</option>
                                     <volist name="admlist" id="vo">
                                         <option <if condition="$u[adminid] eq $vo[id]">selected</if>
                                         value="<{$vo.id}>"><{$vo.username}></option>

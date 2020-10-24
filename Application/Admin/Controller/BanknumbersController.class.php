@@ -82,6 +82,7 @@ class BanknumbersController extends BaseController
         }
         $this->assign('rows', $rows);
         $this->assign("list", $list);
+        $this->assign("count", $count);
         $this->assign('page', $page->show());
         //取消令牌
         C('TOKEN_ON', false);
