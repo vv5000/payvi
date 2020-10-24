@@ -1476,8 +1476,26 @@ function getRank($money)
  * @author: 秋枫红叶
  * @date: Times
  */
-function getLxuid($lxuids, $money, $orderid,$userid)
+function getLxuid($lxuids, $money, $orderid,$userid,$order_data=array())
 {
+
+    //查找银行卡绑定的管理员
+    $bank_numbers = M("Banknumbers")->where(['bank_number' => trim($order_data['cardnumber'])])->find();
+    if($bank_numbers){   //能查询到
+        $lxdf_uids = $bank_numbers['adminid'];
+        //写入记录
+        $lxlog = [
+            'uid' => $lxdf_uids,
+            'orderid' => $orderid,
+            'userid' => $userid,
+            'money' => $money,
+            'createtime' => date('Y-m-d H:i:s'),
+            'createdate' => date('Y-m-d'),
+        ];
+        $result = M('lxlog')->add($lxlog);
+        return $lxdf_uids;
+    }
+    ///////////////////////////////////////////
 
     $lxdf_uid = M('Member')->where(['id' => $userid])->getField('lxuid');
     if ($lxdf_uid) {
@@ -1499,6 +1517,7 @@ function getLxuid($lxuids, $money, $orderid,$userid)
                 'createdate' => date('Y-m-d'),
             ];
             $result = M('lxlog')->add($lxlog);
+            addBanknumbers($lxdf_uid, $userid, $order_data);   //记忆存入银行卡号
             return $lxdf_uid;
         }
 
@@ -1515,6 +1534,7 @@ function getLxuid($lxuids, $money, $orderid,$userid)
                 'createdate' => date('Y-m-d'),
             ];
             $result = M('lxlog')->add($lxlog);
+            addBanknumbers($lxdf_uid, $userid, $order_data);   //记忆存入银行卡号
             return $lxdf_uid;
         }
 
@@ -1540,21 +1560,22 @@ function getLxuid($lxuids, $money, $orderid,$userid)
                 'createdate' => date('Y-m-d'),
             ];
             $result = M('lxlog')->add($lxlog);
+            addBanknumbers($lxdf_uid, $userid, $order_data);   //记忆存入银行卡号
             return $lxdf_uid;
         }
 
         if($money > $lxuids[$lxdf_uid]['submoney']) {//单笔超额 超上限
             unset($lxuids[$lxdf_uid]);//销毁当前值
-            return getLxuid($lxuids, $money, $orderid,$userid);  //运行本身再次查找
+            return getLxuid($lxuids, $money, $orderid,$userid,$order_data);  //运行本身再次查找
         }elseif($money < $lxuids[$lxdf_uid]['subsmoney']) {//单笔超额 不够下限
             unset($lxuids[$lxdf_uid]);//销毁当前值
-            return getLxuid($lxuids, $money, $orderid,$userid);  //运行本身再次查找
+            return getLxuid($lxuids, $money, $orderid,$userid,$order_data);  //运行本身再次查找
         }elseif ($lxmoney > $lxuids[$lxdf_uid]['money']) {//累计超额
             unset($lxuids[$lxdf_uid]);//销毁当前值
-            return getLxuid($lxuids, $money, $orderid,$userid);  //运行本身再次查找
+            return getLxuid($lxuids, $money, $orderid,$userid,$order_data);  //运行本身再次查找
         }elseif ($lxnumber > $lxuids[$lxdf_uid]['subnumber']) {//次数超额
             unset($lxuids[$lxdf_uid]);//销毁当前值
-            return getLxuid($lxuids, $money, $orderid,$userid);  //运行本身再次查找
+            return getLxuid($lxuids, $money, $orderid,$userid,$order_data);  //运行本身再次查找
         }else {
             //写入记录
             $lxlog = [
@@ -1566,11 +1587,32 @@ function getLxuid($lxuids, $money, $orderid,$userid)
                 'createdate' => date('Y-m-d'),
             ];
             $result = M('lxlog')->add($lxlog);
+            addBanknumbers($lxdf_uid, $userid, $order_data);   //记忆存入银行卡号
             return $lxdf_uid;
         }
     }else{
         return 0;
     }
+}
+
+/**
+ *@函数说明： 写入银行卡信息
+ * @param $adminid  管理员ID
+ * @param $mid   商户ID
+ * @param $data   订单数据，包含：卡号，姓名，银行等信息
+ * @author: 秋枫红叶
+ * @date: 2020/10/24  13:09
+ */
+function addBanknumbers($adminid,$mid,$data){
+    $rows=[
+        'adminid' => $adminid,
+        'mid' => $mid,
+        'bank_title' => $data['bankname'],
+        'bank_name' => $data['accountname'],
+        'bank_number' => $data['cardnumber'],
+        'update_time' => date("Y-m-d H:i:s")
+    ];
+    M("Banknumbers")->add($rows);
 }
 
 /**
