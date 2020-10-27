@@ -164,14 +164,19 @@ class AdminController extends BaseController
 
             $admin_result = $admin_model->save($data);
             if($admin_result!==false){
-                //更新权限
+
+                M("auth_group_access")->where(array("uid"=>$data['id']))->setField("group_id",$data["groupid"]);
+
+
+                /*//更新权限
                 $groupAccess= M("auth_group_access")->where(array("uid"=>$data['id'],"group_id"=>$data["groupid"]))->find();
 
                 if($groupAccess){
-                   // M("auth_group_access")->where(array("uid"=>$data['id']))->setField("group_id",$data["groupid"]);
+                   //
                 }else{
                     M("auth_group_access")->add(array("uid"=>$data['id'],"group_id"=>$data["groupid"]));
-                }
+                }*/
+
                 $this->ajaxReturn(['status'=>1,'msg'=>'修改成功!']);
             }else{
                 $this->ajaxReturn(['status'=>0,'msg'=>'修改失败!']);

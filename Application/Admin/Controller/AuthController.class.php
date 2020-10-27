@@ -163,7 +163,7 @@ class AuthController extends BaseController
         if(!$group_info){
             $this->ajaxReturn(['status'=>0,'msg'=>'角色不存在!']);
         }
-        $change_result = $admin_auth_group_model->changeResult($id, 2);
+        $change_result =  $admin_auth_group_model->where(array('id'=>$id))->delete();
         $this->ajaxReturn(['status'=>$change_result]);
     }
 
