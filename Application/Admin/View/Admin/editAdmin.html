@@ -45,6 +45,17 @@
                 </div>
             </div>
       <div class="layui-form-item">
+                <label class="layui-form-label">显示ID轮巡：</label>
+                <div class="layui-input-block">
+                    <input type="radio" name="lxdfon" value="1" title="开启" <if
+                        condition="$admin_info['lxdfon'] eq 1">checked
+                </if>>
+                    <input type="radio" name="lxdfon" value="0" title="关闭" <if
+                        condition="$admin_info['lxdfon'] eq 0">checked
+                </if>>
+                </div>
+            </div>
+      <div class="layui-form-item">
         <div class="layui-input-block">
           <button class="layui-btn" lay-submit lay-filter="user">立即提交</button>
           <button type="reset" class="layui-btn layui-btn-primary">重置</button>

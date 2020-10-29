@@ -379,9 +379,19 @@ class WithdrawalController extends BaseController
         $uid               = session('admin_auth')['uid'];
         $user = M('admin')->where(['id'=>$uid])->find();
 
-        if($user['groupid']>1){
+        if($user['lxdfon']==1){
+            //开启之后不进行权限控制
+
+        }else{
+
             $where['lxdf_uid'] = $user['id'];
+
+            /*if($user['groupid']>1){
+                $where['lxdf_uid'] = $user['id'];
+            }*/
         }
+
+
 
         $memberid = I("get.memberid");
         if ((intval($memberid) - 10000) > 0) {
