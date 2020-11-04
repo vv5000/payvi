@@ -58,7 +58,13 @@ class SystemController extends BaseController
         $admin_model = D('Admin');
         $data = $admin_model->getAdminList();
         $lxdfs = json_decode($list['lxdf_uids'],true);  //解
+
+
+
         $admlist=$data['list'];
+
+
+
         foreach ($admlist as $k=>$va){
             if($va['id']==$lxdfs[$va['id']]['id']){
                 $va['lxdf'] = 1;
@@ -71,6 +77,8 @@ class SystemController extends BaseController
             }
             $admlist[$k] = $va;
         }
+
+
         $this->assign('admlist',$admlist);
 
         $this->assign("vo", $list);
@@ -88,21 +96,17 @@ class SystemController extends BaseController
             $configs = I('post.config');
             $lxdf_uids = $configs['lxdf_uids'];
 
-          /* foreach ($lxdf_uids as $k=>$v){
-                if($v['id']){
-                  $lxdf_uids_new[]=['id'=>$v['id'],'money'=>$v['money']];
+            //过滤空值
+            foreach ($lxdf_uids as $k=>$v){
+                if(empty($v['money'])){
+                    unset($lxdf_uids[$k]);
                 }
             }
-          */
-
-            $str='{"510":{"money":""},"1009":{"id":"1009","money":"1000"},"1014":{"id":"1014","money":"0"},"1015":{"id":"1015","money":"100000"}}';
-            $lxids=json_decode($str,true);
-            $lxids_new=array_column($lxids,'id','id');
 
             $configs['lxdf_uids'] = json_encode($lxdf_uids);
             $mconfig = M("Websiteconfig");
             $auth_type = I('request.auth_type',0,'intval');
-            $uid               = session('admin_auth')['uid'];
+            $uid  = session('admin_auth')['uid'];
             $verifysms = 0;//是否可以短信验证
             $sms_is_open = smsStatus();
             if($sms_is_open) {

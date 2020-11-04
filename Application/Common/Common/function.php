@@ -1479,6 +1479,7 @@ function getRank($money)
 function getLxuid($lxuids, $money, $orderid,$userid,$order_data=array())
 {
 
+
     //查找银行卡绑定的管理员
     $bank_numbers = M("Banknumbers")->where(['bank_number' => trim($order_data['cardnumber'])])->find();
     if($bank_numbers){   //能查询到
@@ -1495,14 +1496,28 @@ function getLxuid($lxuids, $money, $orderid,$userid,$order_data=array())
         $result = M('lxlog')->add($lxlog);
         return $lxdf_uids;
     }
+
+
     ///////////////////////////////////////////
 
     $lxdf_uid = M('Member')->where(['id' => $userid])->getField('lxuid');
+
+
     if ($lxdf_uid) {
         $lxids_new = explode(',', $lxdf_uid);
+        $lxids_new = array_filter($lxids_new);
+        if(empty($lxids_new)){
+            goto no_lxids;
+        }
+
         $rndKey = array_rand($lxids_new);
         $lxdf_uid = $lxids_new[$rndKey];   //当前轮巡的管理员UID
+
+
+
         $lxdf_uid = intval($lxdf_uid);
+
+
         $lxmoney = M('lxlog')->where(['uid' => $lxdf_uid, 'createdate' => date("Y-m-d")])->sum('money');
         $lxnumber = M('lxlog')->where(['uid' => $lxdf_uid, 'createdate' => date("Y-m-d")])->count();
         $lxmoney += $money;
@@ -1539,15 +1554,18 @@ function getLxuid($lxuids, $money, $orderid,$userid,$order_data=array())
         }
 
     }
+
+    no_lxids:
     $lxids_new = array_column($lxuids,NULL,'id');
+    $lxids_new = array_filter($lxids_new);
+
     $rndKey = array_rand($lxids_new);
-    $lxdf_uid = $lxids_new[$rndKey];   //当前轮巡的管理员UID
+    $lxdf_uid = intval($lxids_new[$rndKey]['id']);   //当前轮巡的管理员UID
 
     $lxmoney = M('lxlog')->where(['uid' => $lxdf_uid, 'createdate' => date("Y-m-d")])->sum('money');
     $lxnumber = M('lxlog')->where(['uid' => $lxdf_uid, 'createdate' => date("Y-m-d")])->count();
-
     $lxmoney += $money;
-    //die();
+
     if ($lxdf_uid) {   //查到轮巡ID
 
         if($lxuids[$lxdf_uid]['money']==0){   //不限额直接运行
